@@ -21,6 +21,7 @@ void AFootball::BeginPlay()
 
 	if(footballMesh)
 	{
+		RootComponent = footballMesh;
 		footballMesh->SetNotifyRigidBodyCollision(true);
 		footballMesh->SetSimulatePhysics(true);
 		footballMesh->OnComponentHit.AddDynamic(this, &AFootball::OnFootballHit);

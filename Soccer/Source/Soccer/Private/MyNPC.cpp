@@ -4,8 +4,9 @@
 #include "MyNPC.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
-//#include "Runtime/AIModule/Classes/AIController.h"
-//#include "NavigationSystem.h"
+// #include "Runtime/AIModule/Classes/AIController.h"
+// #include "NavigationSystem.h"
+
 
 
 // Sets default values
@@ -31,7 +32,7 @@ void AMyNPC::BeginPlay()
 	// if(myAIController)
 	// {
 	// 	//myAIController->Move
-	// }
+	// }//
 	
 	
 }
