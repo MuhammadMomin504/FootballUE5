@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/muhammadmomin/Documents/Unreal Projects/Soccer/Source/Soccer/Soccer.Build.cs",
+		"/Users/muhammadmomin/Documents/Unreal Projects/Soccer/Source/Soccer.Target.cs",
+		"/Users/muhammadmomin/Documents/Unreal Projects/Soccer/Source/SoccerEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}
