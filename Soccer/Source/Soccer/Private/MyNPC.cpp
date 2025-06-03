@@ -4,7 +4,13 @@
 #include "MyNPC.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
-// #include "Runtime/AIModule/Classes/AIController.h"
+#include "BehaviorTree/BehaviorTree.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "AIController.h"
+
+
+//#include "Runtime/AIModule/Classes/AIController.h"
+
 // #include "NavigationSystem.h"
 
 
