@@ -51,7 +51,7 @@ void AFootball::Tick(float DeltaTime)
 	if(idleTimeElapsed >= idleTimeDuration)
 	{
 		idleTimeElapsed = 0.f;
-		ApplyIdleForce();
+		//ApplyIdleForce();
 	}
 
 }

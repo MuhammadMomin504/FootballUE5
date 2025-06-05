@@ -8,10 +8,12 @@
 UMyBTTask_SearchAround::UMyBTTask_SearchAround()
 {
 	NodeName = "SearchAround";
+	bNotifyTick = false;
 }
 
 EBTNodeResult::Type UMyBTTask_SearchAround::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Search Around...!"));
 	APawn* Pawn = OwnerComp.GetAIOwner()->GetPawn();
 	if (!Pawn) return EBTNodeResult::Failed;
 

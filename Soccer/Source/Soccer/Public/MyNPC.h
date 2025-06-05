@@ -4,9 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+
 #include "MyNPC.generated.h"
 
 class AAIController;
+class UPawnSensingComponent;
+
 
 UCLASS()
 class SOCCER_API AMyNPC : public ACharacter
@@ -22,6 +25,9 @@ public:
 	ACharacter* myCharacter;
 	
 	AAIController* myAIController;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+	UPawnSensingComponent* pawnSensingComponent;
 
 protected:
 	// Called when the game starts or when spawned

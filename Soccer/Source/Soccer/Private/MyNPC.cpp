@@ -6,6 +6,7 @@
 #include "Components/CapsuleComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "Perception/PawnSensingComponent.h"
 #include "AIController.h"
 
 
@@ -20,6 +21,7 @@ AMyNPC::AMyNPC()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	pawnSensingComponent = CreateDefaultSubobject<UPawnSensingComponent>(TEXT("PawnSensingComponent"));
 	GetMesh()->SetCollisionObjectType(ECollisionChannel:: ECC_WorldDynamic);
 	GetMesh()->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
 	GetMesh()->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
@@ -31,6 +33,7 @@ AMyNPC::AMyNPC()
 void AMyNPC::BeginPlay()
 {
 	Super::BeginPlay();
+	
 	// myCharacter = Cast<ACharacter>(GetOwner());
 	// if(myCharacter)
 	// 	myAIController = Cast<AAIController>(myCharacter->GetController());
