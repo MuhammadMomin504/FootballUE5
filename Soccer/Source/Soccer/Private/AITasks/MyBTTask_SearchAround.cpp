@@ -13,13 +13,13 @@ UMyBTTask_SearchAround::UMyBTTask_SearchAround()
 
 EBTNodeResult::Type UMyBTTask_SearchAround::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Search Around...!"));
+	//UE_LOG(LogTemp, Warning, TEXT("Search Around...!"));
 	APawn* Pawn = OwnerComp.GetAIOwner()->GetPawn();
 	if (!Pawn) return EBTNodeResult::Failed;
 
 	FRotator RandomRotation = FRotator(0.f, FMath::RandRange(-180.f, 180.f), 0.f);
-	Pawn->AddActorLocalRotation(RandomRotation);
-	UE_LOG(LogTemp, Warning, TEXT("setting rotation...!"));
+	// Pawn->AddActorLocalRotation(RandomRotation);
+	// UE_LOG(LogTemp, Warning, TEXT("setting rotation...!"));
 
 	return EBTNodeResult::Succeeded;
 }

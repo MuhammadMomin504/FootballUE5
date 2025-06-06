@@ -31,37 +31,50 @@ EBTNodeResult::Type UMyBTTask_FindBall::ExecuteTask(UBehaviorTreeComponent& Owne
 		return EBTNodeResult::Failed;
 	}
 
+	float FOVDegrees = sensingComponent->GetPeripheralVisionAngle();
+	float FOVDotThreshold = FMath::Cos(FMath::DegreesToRadians(FOVDegrees * 0.5f)); // e.g., 90° = dot > 0
+	
 	for (TActorIterator<AActor> It(AIPawn->GetWorld()); It; ++It)
 	{
 		AActor* Ball = *It;
-
+		
 		if(Ball && Ball-> ActorHasTag("Ball"))
 		{
-			FVector ballDistance = Ball->GetActorLocation() - AIPawn->GetActorLocation();
-			float distanceSquared = ballDistance.SizeSquared();
+			FVector directionToBall = (Ball->GetActorLocation() - AIPawn->GetActorLocation()).GetSafeNormal();
+			FVector forwardVector = AIPawn->GetActorForwardVector();
 
-			if(distanceSquared < FMath::Square(sensingComponent->SightRadius))
+			float dotProduct = FVector::DotProduct(forwardVector, directionToBall);
+
+			if(dotProduct > FOVDotThreshold)
 			{
-				FHitResult HitResult;
-				FCollisionQueryParams Params;
-				Params.AddIgnoredActor(AIPawn);
-
-				bool bHit = AIPawn->GetWorld()->LineTraceSingleByChannel(
-					HitResult,
-					AIPawn->GetActorLocation(),
-					Ball->GetActorLocation(),
-					ECC_Visibility,
-					Params
-				);
+				FVector ballDistance = Ball->GetActorLocation() - AIPawn->GetActorLocation();
+				float distanceSquared = ballDistance.SizeSquared();
 				
-
-				if (bHit)
+				if(distanceSquared < FMath::Square(sensingComponent->SightRadius))
 				{
-					DrawDebugLine(AIPawn->GetWorld(), AIPawn->GetActorLocation(), Ball->GetActorLocation(), FColor::Green, false, 1.0f);
-					OwnerComp.GetBlackboardComponent()->SetValueAsObject("TargetActor", Ball);
-					UE_LOG(LogTemp, Warning, TEXT("AI sees the ball!"));
-					return EBTNodeResult::Succeeded;
+					FHitResult HitResult;
+					FCollisionQueryParams Params;
+					Params.AddIgnoredActor(AIPawn);
+
+					bool bHit = AIPawn->GetWorld()->LineTraceSingleByChannel(
+						HitResult,
+						AIPawn->GetActorLocation(),
+						Ball->GetActorLocation(),
+						ECC_Visibility,
+						Params
+					);
+					if (bHit)
+					{
+						DrawDebugLine(AIPawn->GetWorld(), AIPawn->GetActorLocation(), Ball->GetActorLocation(), FColor::Green, false, 1.0f);
+						OwnerComp.GetBlackboardComponent()->SetValueAsObject("TargetActor", Ball);
+						UE_LOG(LogTemp, Warning, TEXT("AI sees the ball!"));
+						return EBTNodeResult::Succeeded;
+					}
 				}
+			}
+			else
+			{
+				//UE_LOG(LogTemp, Warning, TEXT("Ball is behind the AI. Ignored."));
 			}
 		}
 
