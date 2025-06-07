@@ -64,7 +64,7 @@
 -fpch-validate-input-files-content
 -stdlib=libc++
 -fpch-instantiate-templates
-"/Users/muhammadmomin/Documents/Unreal Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h"
--MD -MF"/Users/muhammadmomin/Documents/Unreal Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h.d"
--o "/Users/muhammadmomin/Documents/Unreal Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h.gch"
+"/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h"
+-MD -MF"/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h.d"
+-o "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h.gch"
 -DUE_USE_SWIFT_UI_MAIN=0
