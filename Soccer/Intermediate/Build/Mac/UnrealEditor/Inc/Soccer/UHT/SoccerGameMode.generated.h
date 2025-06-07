@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SOCCER_SoccerGameMode_generated_h
 
-#define FID_muhammadmomin_Documents_Unreal_Projects_Soccer_Source_Soccer_SoccerGameMode_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerGameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASoccerGameMode(); \
 	friend struct Z_Construct_UClass_ASoccerGameMode_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ASoccerGameMode)
 
 
-#define FID_muhammadmomin_Documents_Unreal_Projects_Soccer_Source_Soccer_SoccerGameMode_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerGameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASoccerGameMode(ASoccerGameMode&&); \
@@ -35,12 +35,12 @@ public: \
 	SOCCER_API virtual ~ASoccerGameMode();
 
 
-#define FID_muhammadmomin_Documents_Unreal_Projects_Soccer_Source_Soccer_SoccerGameMode_h_9_PROLOG
-#define FID_muhammadmomin_Documents_Unreal_Projects_Soccer_Source_Soccer_SoccerGameMode_h_12_GENERATED_BODY \
+#define FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerGameMode_h_9_PROLOG
+#define FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerGameMode_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_muhammadmomin_Documents_Unreal_Projects_Soccer_Source_Soccer_SoccerGameMode_h_12_INCLASS_NO_PURE_DECLS \
-	FID_muhammadmomin_Documents_Unreal_Projects_Soccer_Source_Soccer_SoccerGameMode_h_12_ENHANCED_CONSTRUCTORS \
+	FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerGameMode_h_12_INCLASS_NO_PURE_DECLS \
+	FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerGameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SOCCER_API UClass* StaticClass<class ASoccerGameMode>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_muhammadmomin_Documents_Unreal_Projects_Soccer_Source_Soccer_SoccerGameMode_h
+#define CURRENT_FILE_ID FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerGameMode_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

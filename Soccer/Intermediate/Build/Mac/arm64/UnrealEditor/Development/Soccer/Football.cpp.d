@@ -1,6 +1,6 @@
-/Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Football.cpp.o: \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedPCH.Engine.Project.ValApi.Cpp20.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedDefinitions.Engine.Project.ValApi.Cpp20.h \
+/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Football.cpp.o: \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedPCH.Engine.Project.ValApi.Cpp20.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedDefinitions.Engine.Project.ValApi.Cpp20.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Slate/Public/SlateSharedPCH.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/CoreUObjectSharedPCH.h \
@@ -3746,8 +3746,8 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_destructor.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.Cpp20.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Project.ValApi.Cpp20.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.Cpp20.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Project.ValApi.Cpp20.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/UnrealEdSharedPCH.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Messaging/Public/IMessageContext.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
@@ -3869,12 +3869,12 @@
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/MRUFavoritesList.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/MRUList.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/UnrealEd/UHT/AssetEditorSubsystem.generated.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Source/Soccer/Private/Football.cpp \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Definitions.Soccer.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Source/Soccer/Public/Football.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/Football.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Definitions.Soccer.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/Football.h \
   Runtime/Core/Public/CoreMinimal.h \
   Runtime/Engine/Classes/GameFramework/Actor.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/Football.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/Football.generated.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
   Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
   Runtime/Engine/Classes/GameFramework/Character.h \

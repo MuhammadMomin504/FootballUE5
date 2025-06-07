@@ -1,6 +1,6 @@
-/Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/MyNPC.cpp.o: \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedPCH.Engine.Project.ValApi.Cpp20.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedDefinitions.Engine.Project.ValApi.Cpp20.h \
+/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/MyNPC.cpp.o: \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedPCH.Engine.Project.ValApi.Cpp20.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedDefinitions.Engine.Project.ValApi.Cpp20.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Slate/Public/SlateSharedPCH.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/CoreUObjectSharedPCH.h \
@@ -3746,8 +3746,8 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_destructor.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.Cpp20.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Project.ValApi.Cpp20.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.Cpp20.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Project.ValApi.Cpp20.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/UnrealEdSharedPCH.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Messaging/Public/IMessageContext.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
@@ -3869,9 +3869,9 @@
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/MRUFavoritesList.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/MRUList.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/UnrealEd/UHT/AssetEditorSubsystem.generated.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Source/Soccer/Private/MyNPC.cpp \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Definitions.Soccer.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Source/Soccer/Public/MyNPC.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/MyNPC.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Definitions.Soccer.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/MyNPC.h \
   Runtime/Core/Public/CoreMinimal.h \
   Runtime/Engine/Classes/GameFramework/Character.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
@@ -3897,10 +3897,84 @@
   Runtime/CoreUObject/Public/UObject/Class.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
-  /Users/muhammadmomin/Documents/Unreal\ Projects/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyNPC.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyNPC.generated.h \
   Runtime/Engine/Classes/Components/SkeletalMeshComponent.h \
   Runtime/Engine/Classes/Components/CapsuleComponent.h \
   Runtime/Engine/Classes/Components/ShapeComponent.h \
   Runtime/Engine/Classes/Components/PrimitiveComponent.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ShapeComponent.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CapsuleComponent.generated.h
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CapsuleComponent.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTree.h \
+  Runtime/Engine/Classes/Engine/Blueprint.h \
+  Runtime/AIModule/Classes/BehaviorTree/BTCompositeNode.h \
+  Runtime/AIModule/Classes/BehaviorTree/BTNode.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeTypes.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKey.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
+  Runtime/Core/Public/Stats/Stats.h \
+  Runtime/InputCore/Classes/InputCoreTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BehaviorTreeTypes.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeComponent.h \
+  Runtime/Engine/Public/EngineDefines.h \
+  Runtime/GameplayTags/Classes/GameplayTagContainer.h \
+  Runtime/Core/Public/Misc/ComparisonUtility.h \
+  Runtime/Core/Public/Containers/StringFwd.h \
+  Runtime/Core/Public/Containers/StringView.h \
+  Runtime/Core/Public/HAL/Platform.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagContainer.generated.h \
+  Runtime/AIModule/Classes/AITypes.h \
+  Runtime/NavigationSystem/Public/NavigationSystemTypes.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAgentSelector.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavAgentSelector.generated.h \
+  Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AITypes.generated.h \
+  Runtime/AIModule/Classes/BrainComponent.h \
+  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
+  Runtime/AIModule/Classes/AIResourceInterface.h \
+  Runtime/CoreUObject/Public/UObject/Interface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIResourceInterface.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BrainComponent.generated.h \
+  Runtime/Core/Public/ProfilingDebugging/CsvProfiler.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BehaviorTreeComponent.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardAssetProvider.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardAssetProvider.generated.h \
+  Runtime/GameplayTasks/Classes/GameplayTaskOwnerInterface.h \
+  Runtime/AIModule/Classes/Tasks/AITask.h \
+  Runtime/GameplayTasks/Classes/GameplayTask.h \
+  Runtime/CoreUObject/Public/UObject/Package.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AITask.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BTNode.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BTCompositeNode.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BehaviorTree.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardComponent.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKeyType.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKeyEnums.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardKeyEnums.generated.h \
+  Runtime/CoreUObject/Public/Templates/IsUEnumClass.h \
+  Runtime/CoreUObject/Public/UObject/ReflectedTypeAccessors.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardKeyType.generated.h \
+  Runtime/AIModule/Classes/AISystem.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
+  Runtime/Engine/Classes/Engine/World.h \
+  Runtime/Engine/Classes/AI/AISystemBase.h \
+  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/AISystemBase.generated.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AISystem.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardData.h \
+  Runtime/Engine/Classes/Engine/DataAsset.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardData.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardComponent.generated.h \
+  Runtime/AIModule/Classes/Perception/PawnSensingComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/PawnSensingComponent.generated.h \
+  Runtime/AIModule/Classes/AIController.h \
+  Runtime/Engine/Classes/GameFramework/Controller.h \
+  Runtime/AIModule/Classes/Perception/AIPerceptionListenerInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIPerceptionListenerInterface.generated.h \
+  Runtime/AIModule/Classes/GenericTeamAgentInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/GenericTeamAgentInterface.generated.h \
+  Runtime/Engine/Public/VisualLogger/VisualLoggerDebugSnapshotInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/VisualLoggerDebugSnapshotInterface.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIController.generated.h
