@@ -7,6 +7,7 @@
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Perception/PawnSensingComponent.h"
+
 #include "AIController.h"
 
 
@@ -44,6 +45,26 @@ void AMyNPC::BeginPlay()
 	// }//
 	
 	
+}
+
+void AMyNPC::MoveForward(float Value)
+{
+	Super::MoveForward(Value);
+}
+
+void AMyNPC::Turn(float Value)
+{
+	Super::Turn(Value);
+}
+
+void AMyNPC::MoveRight(float Value)
+{
+	Super::MoveRight(Value);
+}
+
+void AMyNPC::Run(float Value)
+{
+	Super::Run(Value);
 }
 
 // Called every frame

@@ -3873,6 +3873,7 @@
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Definitions.Soccer.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/MyNPC.h \
   Runtime/Core/Public/CoreMinimal.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/CharacterMovementController.h \
   Runtime/Engine/Classes/GameFramework/Character.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
   Runtime/CoreUObject/Public/UObject/UObjectGlobals.h \
@@ -3897,6 +3898,7 @@
   Runtime/CoreUObject/Public/UObject/Class.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/CharacterMovementController.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyNPC.generated.h \
   Runtime/Engine/Classes/Components/SkeletalMeshComponent.h \
   Runtime/Engine/Classes/Components/CapsuleComponent.h \

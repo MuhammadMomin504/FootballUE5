@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesAMyNPC(); \
 	friend struct Z_Construct_UClass_AMyNPC_Statics; \
 public: \
-	DECLARE_CLASS(AMyNPC, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Soccer"), NO_API) \
+	DECLARE_CLASS(AMyNPC, ACharacterMovementController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Soccer"), NO_API) \
 	DECLARE_SERIALIZER(AMyNPC)
 
 
