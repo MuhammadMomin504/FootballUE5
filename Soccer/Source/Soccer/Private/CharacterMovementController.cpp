@@ -59,6 +59,7 @@ void ACharacterMovementController::MoveRight(float Value)
 	if((Controller != nullptr) && Value != 0.f)
 	{
 		//find out which way is right
+		UE_LOG(LogTemp, Warning, TEXT("Move right: %f"), Value);
 		const FRotator controlRotation = GetControlRotation();
 		const FRotator yawRotation(0, controlRotation.Yaw, 0);
 		const FVector direction = FRotationMatrix(yawRotation).GetUnitAxis(EAxis::Y);

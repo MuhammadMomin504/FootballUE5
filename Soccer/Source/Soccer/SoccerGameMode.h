@@ -8,8 +8,8 @@
 
 class AMyNPC;
 
-//UCLASS(minimalapi)
-UCLASS()
+UCLASS(minimalapi)
+//UCLASS()
 class ASoccerGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
@@ -18,9 +18,20 @@ public:
 	ASoccerGameMode();
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Gameplay Settings")
-	TSubclassOf<APawn> PlayerCharacterClass;
+	APawn* NPCPawnClass;
+
+protected:
+
+	virtual void BeginPlay() override;
+	
+	UFUNCTION()
+	void SwitchToNewPawn();
+
+private:
+	FTimerHandle SwitchPawnTimerHandle;
 
 };
+
 
 
 
