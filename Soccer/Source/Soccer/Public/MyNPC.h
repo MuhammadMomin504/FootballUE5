@@ -20,7 +20,7 @@ public:
 	// Sets default values for this character's properties
 	AMyNPC();
 	virtual void Tick(float DeltaTime) override;
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	ACharacter* myCharacter;
 	

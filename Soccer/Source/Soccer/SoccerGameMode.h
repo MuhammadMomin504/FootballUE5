@@ -6,13 +6,20 @@
 #include "GameFramework/GameModeBase.h"
 #include "SoccerGameMode.generated.h"
 
-UCLASS(minimalapi)
+class AMyNPC;
+
+//UCLASS(minimalapi)
+UCLASS()
 class ASoccerGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
 public:
 	ASoccerGameMode();
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Gameplay Settings")
+	TSubclassOf<APawn> PlayerCharacterClass;
+
 };
 
 

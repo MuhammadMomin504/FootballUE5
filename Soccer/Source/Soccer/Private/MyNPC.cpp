@@ -74,10 +74,8 @@ void AMyNPC::Tick(float DeltaTime)
 
 }
 
-// Called to bind functionality to input
 void AMyNPC::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
 

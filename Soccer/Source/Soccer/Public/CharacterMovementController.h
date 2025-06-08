@@ -3,10 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+//#include "MyNPC.h"
 #include "GameFramework/Character.h"
 #include "CharacterMovementController.generated.h"
 
 class UCharacterMovementComponent;
+
 
 UCLASS()
 class SOCCER_API ACharacterMovementController : public ACharacter
@@ -21,6 +23,8 @@ public:
 	float currentSpeed = 0.f;
 
 	bool shouldRun = false;
+
+
 
 
 protected:

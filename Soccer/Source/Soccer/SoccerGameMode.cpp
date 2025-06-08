@@ -2,6 +2,7 @@
 
 #include "SoccerGameMode.h"
 #include "SoccerCharacter.h"
+#include "MyNPC.h"
 #include "UObject/ConstructorHelpers.h"
 
 ASoccerGameMode::ASoccerGameMode()
@@ -12,4 +13,5 @@ ASoccerGameMode::ASoccerGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+	
 }
