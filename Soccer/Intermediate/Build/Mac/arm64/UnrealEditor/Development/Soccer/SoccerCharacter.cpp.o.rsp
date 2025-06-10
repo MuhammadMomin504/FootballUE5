@@ -356,7 +356,7 @@
 -std=c++20
 -fpch-validate-input-files-content
 -stdlib=libc++
-"/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/SoccerCharacter.cpp"
+"/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerCharacter.cpp"
 -MD -MF"/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/SoccerCharacter.cpp.d"
 -o "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/SoccerCharacter.cpp.o"
 -DUE_USE_SWIFT_UI_MAIN=0

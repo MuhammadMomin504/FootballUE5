@@ -37,8 +37,13 @@ struct Z_Construct_UClass_ACharacterMovementController_Statics
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Public/CharacterMovementController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_proximityDistance_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/CharacterMovementController.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_currentSpeed;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_proximityDistance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -47,8 +52,10 @@ struct Z_Construct_UClass_ACharacterMovementController_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_currentSpeed = { "currentSpeed", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACharacterMovementController, currentSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_currentSpeed_MetaData), NewProp_currentSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_proximityDistance = { "proximityDistance", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACharacterMovementController, proximityDistance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_proximityDistance_MetaData), NewProp_proximityDistance_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACharacterMovementController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_currentSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_proximityDistance,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACharacterMovementController_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ACharacterMovementController_Statics::DependentSingletons[])() = {
@@ -91,10 +98,10 @@ ACharacterMovementController::~ACharacterMovementController() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACharacterMovementController, ACharacterMovementController::StaticClass, TEXT("ACharacterMovementController"), &Z_Registration_Info_UClass_ACharacterMovementController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACharacterMovementController), 723417620U) },
+		{ Z_Construct_UClass_ACharacterMovementController, ACharacterMovementController::StaticClass, TEXT("ACharacterMovementController"), &Z_Registration_Info_UClass_ACharacterMovementController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACharacterMovementController), 2495316689U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_3169618515(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_3638573747(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

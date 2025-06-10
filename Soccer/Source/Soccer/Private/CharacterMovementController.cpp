@@ -2,9 +2,14 @@
 
 
 #include "CharacterMovementController.h"
+
+#include "MyNPC.h"
+#include "SoccerGameMode.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
+
 
 // Sets default values
 ACharacterMovementController::ACharacterMovementController()
@@ -27,6 +32,7 @@ ACharacterMovementController::ACharacterMovementController()
 // Called when the game starts or when spawned
 void ACharacterMovementController::BeginPlay()
 {
+	soccerGameMode = Cast<ASoccerGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 	Super::BeginPlay();
 	//GetCharacterMovement()->
 	
@@ -59,7 +65,7 @@ void ACharacterMovementController::MoveRight(float Value)
 	if((Controller != nullptr) && Value != 0.f)
 	{
 		//find out which way is right
-		UE_LOG(LogTemp, Warning, TEXT("Move right: %f"), Value);
+		//UE_LOG(LogTemp, Warning, TEXT("Move right: %f"), Value);
 		const FRotator controlRotation = GetControlRotation();
 		const FRotator yawRotation(0, controlRotation.Yaw, 0);
 		const FVector direction = FRotationMatrix(yawRotation).GetUnitAxis(EAxis::Y);
@@ -93,6 +99,9 @@ void ACharacterMovementController::Tick(float DeltaTime)
 	{
 		GetCharacterMovement()->MaxWalkSpeed = 600.0f;
 	}
+
+	if(canControl)
+		CheckProximityToNPC();
 	
 	//currentSpeed = GetCharacterMovement()->Velocity.Size() / 100.0f; //divide by 100 to get speed in m/s
 }
@@ -107,5 +116,36 @@ void ACharacterMovementController::SetupPlayerInputComponent(UInputComponent* Pl
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterMovementController::MoveRight);
 	PlayerInputComponent->BindAxis("Run", this, &ACharacterMovementController::Run);
 
+}
+
+void ACharacterMovementController::CheckProximityToBall()
+{
+}
+
+void ACharacterMovementController::CheckProximityToNPC()
+{
+	FVector playerCurrentLocation = GetActorLocation();
+	TArray<AActor*> foundNPC;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AMyNPC::StaticClass(), foundNPC);
+	for(AActor* actor : foundNPC)
+	{
+		if(actor && actor->ActorHasTag("NPC"))
+		{
+			FVector npcLocation = actor->GetActorLocation();
+			float distance = FVector::Dist(playerCurrentLocation, npcLocation);
+			if(distance <= proximityDistance)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), distance);
+				if(soccerGameMode)
+				{
+					soccerGameMode->SwitchPlayerControlsToNPC(this, Cast<APawn>(actor));
+					canControl = false;
+					break;
+				}
+			}
+		}
+	}
+
+	
 }
 

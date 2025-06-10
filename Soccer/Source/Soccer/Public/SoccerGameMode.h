@@ -7,8 +7,10 @@
 #include "SoccerGameMode.generated.h"
 
 class AMyNPC;
+class ACharacterMovementController;
 
 UCLASS(minimalapi)
+
 //UCLASS()
 class ASoccerGameMode : public AGameModeBase
 {
@@ -20,12 +22,16 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Gameplay Settings")
 	APawn* NPCPawnClass;
 
+	UFUNCTION()
+	void SwitchPlayerControlsToNPC(ACharacterMovementController* PlayerController, APawn* NewPawn);
+
 protected:
 
 	virtual void BeginPlay() override;
 	
 	UFUNCTION()
 	void SwitchToNewPawn();
+
 
 private:
 	FTimerHandle SwitchPawnTimerHandle;

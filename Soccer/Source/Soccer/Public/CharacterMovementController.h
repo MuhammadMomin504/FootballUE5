@@ -7,6 +7,7 @@
 #include "GameFramework/Character.h"
 #include "CharacterMovementController.generated.h"
 
+class ASoccerGameMode;
 class UCharacterMovementComponent;
 
 
@@ -22,9 +23,10 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
 	float currentSpeed = 0.f;
 
+	UPROPERTY(BlueprintReadWrite, Category = "Movement")
+	float proximityDistance = 300.f;
+
 	bool shouldRun = false;
-
-
 
 
 protected:
@@ -44,5 +46,12 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	void CheckProximityToBall();
+	void CheckProximityToNPC();
+
+ private:
+	ASoccerGameMode* soccerGameMode;
+	bool canControl = true;
 
 };

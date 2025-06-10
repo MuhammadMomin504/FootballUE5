@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "Soccer/SoccerCharacter.h"
+#include "Soccer/Public/SoccerCharacter.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSoccerCharacter() {}
 
@@ -35,7 +35,7 @@ struct Z_Construct_UClass_ASoccerCharacter_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "SoccerCharacter.h" },
-		{ "ModuleRelativePath", "SoccerCharacter.h" },
+		{ "ModuleRelativePath", "Public/SoccerCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -44,7 +44,7 @@ struct Z_Construct_UClass_ASoccerCharacter_Statics
 		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "SoccerCharacter.h" },
+		{ "ModuleRelativePath", "Public/SoccerCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Camera boom positioning the camera behind the character" },
 #endif
@@ -56,7 +56,7 @@ struct Z_Construct_UClass_ASoccerCharacter_Statics
 		{ "Comment", "/** Follow camera */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "SoccerCharacter.h" },
+		{ "ModuleRelativePath", "Public/SoccerCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Follow camera" },
 #endif
@@ -67,7 +67,7 @@ struct Z_Construct_UClass_ASoccerCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** MappingContext */" },
 #endif
-		{ "ModuleRelativePath", "SoccerCharacter.h" },
+		{ "ModuleRelativePath", "Public/SoccerCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MappingContext" },
 #endif
@@ -78,7 +78,7 @@ struct Z_Construct_UClass_ASoccerCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Jump Input Action */" },
 #endif
-		{ "ModuleRelativePath", "SoccerCharacter.h" },
+		{ "ModuleRelativePath", "Public/SoccerCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Jump Input Action" },
 #endif
@@ -89,7 +89,7 @@ struct Z_Construct_UClass_ASoccerCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Move Input Action */" },
 #endif
-		{ "ModuleRelativePath", "SoccerCharacter.h" },
+		{ "ModuleRelativePath", "Public/SoccerCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Move Input Action" },
 #endif
@@ -100,7 +100,7 @@ struct Z_Construct_UClass_ASoccerCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Look Input Action */" },
 #endif
-		{ "ModuleRelativePath", "SoccerCharacter.h" },
+		{ "ModuleRelativePath", "Public/SoccerCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Look Input Action" },
 #endif
@@ -171,14 +171,14 @@ ASoccerCharacter::~ASoccerCharacter() {}
 // End Class ASoccerCharacter
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerCharacter_h_Statics
+struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASoccerCharacter, ASoccerCharacter::StaticClass, TEXT("ASoccerCharacter"), &Z_Registration_Info_UClass_ASoccerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASoccerCharacter), 4236488116U) },
+		{ Z_Construct_UClass_ASoccerCharacter, ASoccerCharacter::StaticClass, TEXT("ASoccerCharacter"), &Z_Registration_Info_UClass_ASoccerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASoccerCharacter), 3505310545U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerCharacter_h_3387971797(TEXT("/Script/Soccer"),
-	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_SoccerCharacter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerCharacter_h_3447629978(TEXT("/Script/Soccer"),
+	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
