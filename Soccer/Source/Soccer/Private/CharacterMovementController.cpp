@@ -5,6 +5,8 @@
 
 #include "MyNPC.h"
 #include "SoccerGameMode.h"
+#include "Chaos/AABBTree.h"
+#include "Engine/OverlapResult.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -124,27 +126,52 @@ void ACharacterMovementController::CheckProximityToBall()
 
 void ACharacterMovementController::CheckProximityToNPC()
 {
-	FVector playerCurrentLocation = GetActorLocation();
-	TArray<AActor*> foundNPC;
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AMyNPC::StaticClass(), foundNPC);
-	for(AActor* actor : foundNPC)
+	TArray<FOverlapResult> overlaps;
+	FCollisionShape collisionShape = FCollisionShape::MakeSphere(proximityDistance);
+
+	bool bHit = GetWorld()->OverlapMultiByObjectType(
+		overlaps,
+		GetActorLocation(),
+		FQuat::Identity,
+		FCollisionObjectQueryParams(ECollisionChannel::ECC_Pawn),
+		collisionShape
+	);
+
+
+	for (auto& Hit : overlaps)
 	{
-		if(actor && actor->ActorHasTag("NPC"))
+		AMyNPC* currentNPC = Cast<AMyNPC>(Hit.GetActor());
+		if(currentNPC)
 		{
-			FVector npcLocation = actor->GetActorLocation();
-			float distance = FVector::Dist(playerCurrentLocation, npcLocation);
-			if(distance <= proximityDistance)
-			{
-				UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), distance);
-				if(soccerGameMode)
-				{
-					soccerGameMode->SwitchPlayerControlsToNPC(this, Cast<APawn>(actor));
-					canControl = false;
-					break;
-				}
-			}
+			UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), proximityDistance);
+			soccerGameMode->SwitchPlayerControlsToNPC(this, Cast<APawn>(currentNPC));
+			canControl = false;
+			break;
 		}
 	}
+
+	
+	// FVector playerCurrentLocation = GetActorLocation();
+	// TArray<AActor*> foundNPC;
+	// UGameplayStatics::GetAllActorsOfClass(GetWorld(), AMyNPC::StaticClass(), foundNPC);
+	// for(AActor* actor : foundNPC)
+	// {
+	// 	if(actor && actor->ActorHasTag("NPC"))
+	// 	{
+	// 		FVector npcLocation = actor->GetActorLocation();
+	// 		float distance = FVector::Dist(playerCurrentLocation, npcLocation);
+	// 		if(distance <= proximityDistance)
+	// 		{
+	// 			UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), distance);
+	// 			if(soccerGameMode)
+	// 			{
+	// 				soccerGameMode->SwitchPlayerControlsToNPC(this, Cast<APawn>(actor));
+	// 				canControl = false;
+	// 				break;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	
 }
