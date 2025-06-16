@@ -5,14 +5,15 @@
 #include "MyNPC.h"
 #include "SoccerGameMode.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Chaos/AABBTree.h"
 #include "Engine/OverlapResult.h"
-
 
 // Sets default values
 AMySoccerCharacter::AMySoccerCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
 }
 
@@ -69,8 +70,8 @@ void AMySoccerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if(canControl)
-		CheckProximityToNPC();
+	// if(canControl)
+	// 	CheckProximityToNPC();
 
 }
 

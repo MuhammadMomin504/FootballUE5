@@ -18,7 +18,7 @@ ACharacterMovementController::ACharacterMovementController()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	AutoPossessPlayer = EAutoReceiveInput::Player0;
+	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 360.f, 0.f);
 	// characterMovementComponent = GetCharacterMovement();
@@ -56,6 +56,8 @@ void ACharacterMovementController::MoveForward(float Value)
 void ACharacterMovementController::Turn(float Value)
 {
 	AddControllerYawInput(Value);
+	UE_LOG(LogTemp, Warning, TEXT("Turn"));
+
 }
 
 void ACharacterMovementController::LookUp(float Value)
@@ -72,6 +74,8 @@ void ACharacterMovementController::MoveRight(float Value)
 		const FRotator yawRotation(0, controlRotation.Yaw, 0);
 		const FVector direction = FRotationMatrix(yawRotation).GetUnitAxis(EAxis::Y);
 		AddMovementInput(direction, Value);
+		UE_LOG(LogTemp, Warning, TEXT("MoveRight"));
+
 	}
 }
 
