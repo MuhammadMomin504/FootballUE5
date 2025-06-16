@@ -9,7 +9,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class ACharacterMovementController;
 class APawn;
 #ifdef SOCCER_SoccerGameMode_generated_h
 #error "SoccerGameMode.generated.h already included, missing '#pragma once' in SoccerGameMode.h"

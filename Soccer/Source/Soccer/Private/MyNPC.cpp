@@ -67,6 +67,16 @@ void AMyNPC::Run(float Value)
 	Super::Run(Value);
 }
 
+void AMyNPC::PawnEnter()
+{
+	Super::PawnEnter();
+}
+
+void AMyNPC::PawnExit()
+{
+	Super::PawnExit();
+}
+
 // Called every frame
 void AMyNPC::Tick(float DeltaTime)
 {

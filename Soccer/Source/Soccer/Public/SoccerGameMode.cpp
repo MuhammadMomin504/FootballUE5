@@ -19,15 +19,23 @@ ASoccerGameMode::ASoccerGameMode()
 	
 }
 
-void ASoccerGameMode::SwitchPlayerControlsToNPC(ACharacterMovementController* PlayerController, APawn* NewPawn)
+void ASoccerGameMode::SwitchPlayerControlsToNPC(APawn* NewPawn)
 {
-	APlayerController* PC = PlayerController->GetController<APlayerController>();
-
-	if(PC && NewPawn)
+	
+	// if(PC)
+	// {
+	// 	UE_LOG(LogTemp, Warning, TEXT("my player: %s"), *PC->GetName());
+	// }
+	//ACharacterMovementController* newPC = NewPawn->GetController<ACharacterMovementController>();
+	if(NewPawn)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Switching player controls to NPC"));
-		PC->UnPossess(); // Unpossess the current pawn
-		PC->Possess(NewPawn); // Possess the new pawn
+		if(storedOriginalPlayerController)
+		{
+			storedOriginalPlayerController->UnPossess(); // Unpossess the current pawn
+			storedOriginalPlayerController->Possess(NewPawn); // Possess the new pawn
+			UE_LOG(LogTemp, Warning, TEXT("Switching player controls to NPC"));
+		}
+		//newPC->PawnEnter();
 	}
 	else
 	{
@@ -40,7 +48,11 @@ void ASoccerGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
-
+	storedOriginalPlayerController = GetWorld()->GetFirstPlayerController();
+	if(storedOriginalPlayerController)
+	{
+		storedOriginalPawn = storedOriginalPlayerController->GetPawn();
+	}
 	// TArray<AActor*> FoundNPCs;
 	// UGameplayStatics::GetAllActorsOfClass(GetWorld(), APawn::StaticClass(), FoundNPCs);
 	//

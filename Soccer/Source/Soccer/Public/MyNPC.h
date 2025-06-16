@@ -37,6 +37,8 @@ protected:
 	//void LookUp(float Value) override;
 	void MoveRight(float Value) override;
 	void Run(float Value) override;
+	void PawnEnter() override;
+	void PawnExit() override;
 
 private:
 	

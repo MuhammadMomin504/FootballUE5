@@ -9,6 +9,7 @@
 
 class ASoccerGameMode;
 class UCharacterMovementComponent;
+class AMyNPC;
 
 
 UCLASS()
@@ -23,7 +24,7 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
 	float currentSpeed = 0.f;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Movement")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Movement")
 	float proximityDistance = 300.f;
 
 	bool shouldRun = false;
@@ -38,6 +39,8 @@ protected:
 	virtual void LookUp(float Value);
 	virtual void MoveRight(float Value);
 	virtual void Run(float Value);
+	virtual void TryPossessNPC();
+	
 
 
 public:	
@@ -47,11 +50,16 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	virtual void PawnExit();
+	virtual void PawnEnter();
+	
 	void CheckProximityToBall();
 	void CheckProximityToNPC();
+	
 
  private:
 	ASoccerGameMode* soccerGameMode;
+	AMyNPC* currentNPC;
 	bool canControl = true;
 
 };

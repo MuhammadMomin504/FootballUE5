@@ -22,8 +22,14 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Gameplay Settings")
 	APawn* NPCPawnClass;
 
+	UPROPERTY()
+	APlayerController* storedOriginalPlayerController = nullptr;
+
+	UPROPERTY()
+	APawn* storedOriginalPawn = nullptr;
+	
 	UFUNCTION()
-	void SwitchPlayerControlsToNPC(ACharacterMovementController* PlayerController, APawn* NewPawn);
+	void SwitchPlayerControlsToNPC(APawn* NewPawn);
 
 protected:
 

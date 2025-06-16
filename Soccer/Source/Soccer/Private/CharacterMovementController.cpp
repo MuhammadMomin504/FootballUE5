@@ -87,6 +87,8 @@ void ACharacterMovementController::Run(float Value)
 	}
 }
 
+
+
 // Called every frame
 void ACharacterMovementController::Tick(float DeltaTime)
 {
@@ -117,11 +119,33 @@ void ACharacterMovementController::SetupPlayerInputComponent(UInputComponent* Pl
 	PlayerInputComponent->BindAxis("LookUp", this, &ACharacterMovementController::LookUp);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterMovementController::MoveRight);
 	PlayerInputComponent->BindAxis("Run", this, &ACharacterMovementController::Run);
+	PlayerInputComponent->BindAction("PossessNPC", IE_Pressed, this, &ACharacterMovementController::TryPossessNPC);
 
 }
 
 void ACharacterMovementController::CheckProximityToBall()
 {
+}
+
+void ACharacterMovementController::TryPossessNPC()
+{
+	UE_LOG(LogTemp, Warning, TEXT("E key is pressed"));
+	if(!canControl && currentNPC)
+	{
+		// soccerGameMode->SwitchPlayerControlsToNPC(this, Cast<APawn>(currentNPC));
+		//canControl = true;
+		//currentNPC = nullptr;
+	}
+}
+
+void ACharacterMovementController::PawnExit()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Pawn Exit"));
+}
+
+void ACharacterMovementController::PawnEnter()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Pawn Enter"));
 }
 
 void ACharacterMovementController::CheckProximityToNPC()
@@ -140,15 +164,16 @@ void ACharacterMovementController::CheckProximityToNPC()
 
 	for (auto& Hit : overlaps)
 	{
-		AMyNPC* currentNPC = Cast<AMyNPC>(Hit.GetActor());
+		currentNPC = Cast<AMyNPC>(Hit.GetActor());
 		if(currentNPC)
 		{
 			UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), proximityDistance);
-			soccerGameMode->SwitchPlayerControlsToNPC(this, Cast<APawn>(currentNPC));
-			canControl = false;
+			soccerGameMode->SwitchPlayerControlsToNPC(Cast<APawn>(currentNPC));
 			break;
 		}
 	}
+	
+	canControl = false;
 
 	
 	// FVector playerCurrentLocation = GetActorLocation();
@@ -175,4 +200,5 @@ void ACharacterMovementController::CheckProximityToNPC()
 
 	
 }
+
 
