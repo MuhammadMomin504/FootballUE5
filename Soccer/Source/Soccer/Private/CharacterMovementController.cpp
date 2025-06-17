@@ -56,8 +56,6 @@ void ACharacterMovementController::MoveForward(float Value)
 void ACharacterMovementController::Turn(float Value)
 {
 	AddControllerYawInput(Value);
-	UE_LOG(LogTemp, Warning, TEXT("Turn"));
-
 }
 
 void ACharacterMovementController::LookUp(float Value)
@@ -74,7 +72,6 @@ void ACharacterMovementController::MoveRight(float Value)
 		const FRotator yawRotation(0, controlRotation.Yaw, 0);
 		const FVector direction = FRotationMatrix(yawRotation).GetUnitAxis(EAxis::Y);
 		AddMovementInput(direction, Value);
-		UE_LOG(LogTemp, Warning, TEXT("MoveRight"));
 
 	}
 }

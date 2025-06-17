@@ -40,7 +40,7 @@ public:
 	void CheckProximityToNPC();
 
 	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:
 	AMyNPC* currentNPC;

@@ -32,6 +32,8 @@ void AMySoccerCharacter::MoveForward(float Value)
 void AMySoccerCharacter::Turn(float Value)
 {
 	Super::Turn(Value);
+	//UE_LOG(LogTemp, Warning, TEXT("Turn"));
+
 }
 
 void AMySoccerCharacter::MoveRight(float Value)
