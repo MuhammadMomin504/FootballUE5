@@ -59,11 +59,11 @@ void AMySoccerCharacter::PawnExit()
 void AMySoccerCharacter::TryPossessNPC()
 {
 	UE_LOG(LogTemp, Warning, TEXT("E key is pressed"));
-	if(!canControl && currentNPC)
+	if(canControl && currentNPC)
 	{
-		// soccerGameMode->SwitchPlayerControlsToNPC(this, Cast<APawn>(currentNPC));
-		//canControl = true;
-		//currentNPC = nullptr;
+		soccerGameMode->SwitchPlayerControlsToNPC(Cast<APawn>(currentNPC));
+		canControl = false;
+		currentNPC = nullptr;
 	}
 }
 
@@ -72,8 +72,8 @@ void AMySoccerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	// if(canControl)
-	// 	CheckProximityToNPC();
+	//if(canControl)
+		CheckProximityToNPC();
 
 }
 
@@ -106,7 +106,7 @@ void AMySoccerCharacter::CheckProximityToNPC()
 		FCollisionObjectQueryParams(ECollisionChannel::ECC_Pawn),
 		collisionShape
 	);
-	DrawDebugSphere(GetWorld(), GetActorLocation(), proximityDistance, 16, FColor::Green, true, 1.0f);
+	DrawDebugSphere(GetWorld(), GetActorLocation(), proximityDistance, 16, FColor::Green, false, 0.1f);
 
 	if(bHit)
 	{
@@ -121,18 +121,20 @@ void AMySoccerCharacter::CheckProximityToNPC()
 				if(distance <= proximityDistance)
 				{
 					UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), proximityDistance);
-					soccerGameMode->SwitchPlayerControlsToNPC(Cast<APawn>(currentNPC));
+					//soccerGameMode->SwitchPlayerControlsToNPC(Cast<APawn>(currentNPC));
+					canControl = true;
 					break;
 				}
 				else
 				{
 					UE_LOG(LogTemp, Warning, TEXT("Overlap hit, but NPC is too far: %f"), distance);
+					canControl = false;
 				}
 			}
 		}
 	}
-	
-	canControl = false;
+	UE_LOG(LogTemp, Warning, TEXT("Cannot control the NPC"));
+	//canControl = false;
 
 	
 	// FVector playerCurrentLocation = GetActorLocation();
