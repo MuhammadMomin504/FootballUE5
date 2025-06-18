@@ -24,8 +24,6 @@ public: \
 
 
 #define FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_BallChaseAIController_h_19_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ABallChaseAIController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ABallChaseAIController(ABallChaseAIController&&); \
@@ -33,7 +31,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABallChaseAIController); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABallChaseAIController); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABallChaseAIController) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABallChaseAIController) \
 	NO_API virtual ~ABallChaseAIController();
 
 

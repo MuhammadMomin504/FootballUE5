@@ -106,7 +106,7 @@ void AMySoccerCharacter::CheckProximityToNPC()
 		FCollisionObjectQueryParams(ECollisionChannel::ECC_Pawn),
 		collisionShape
 	);
-	DrawDebugSphere(GetWorld(), GetActorLocation(), proximityDistance, 16, FColor::Green, false, 0.1f);
+	//DrawDebugSphere(GetWorld(), GetActorLocation(), proximityDistance, 16, FColor::Green, false, 0.1f);
 
 	if(bHit)
 	{
@@ -116,7 +116,7 @@ void AMySoccerCharacter::CheckProximityToNPC()
 			if(currentNPC)
 			{
 				float distance = FVector::Dist(GetActorLocation(), currentNPC->GetActorLocation());
-				UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), distance);
+				//UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), distance);
 				
 				if(distance <= proximityDistance)
 				{
@@ -127,13 +127,13 @@ void AMySoccerCharacter::CheckProximityToNPC()
 				}
 				else
 				{
-					UE_LOG(LogTemp, Warning, TEXT("Overlap hit, but NPC is too far: %f"), distance);
+					//UE_LOG(LogTemp, Warning, TEXT("Overlap hit, but NPC is too far: %f"), distance);
 					canControl = false;
 				}
 			}
 		}
 	}
-	UE_LOG(LogTemp, Warning, TEXT("Cannot control the NPC"));
+	//UE_LOG(LogTemp, Warning, TEXT("Cannot control the NPC"));
 	//canControl = false;
 
 	

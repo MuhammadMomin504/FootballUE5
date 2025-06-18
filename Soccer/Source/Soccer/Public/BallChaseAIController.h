@@ -19,6 +19,7 @@ class SOCCER_API ABallChaseAIController : public AAIController
 	GENERATED_BODY()
 	
 public:
+	ABallChaseAIController();
 	virtual void OnPossess(APawn* InPawn) override;
 	UPROPERTY(EditDefaultsOnly)
 	UBlackboardComponent* myBlackboard;

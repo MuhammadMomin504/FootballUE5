@@ -35,9 +35,14 @@ void AMyNPC::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	// myCharacter = Cast<ACharacter>(GetOwner());
-	// if(myCharacter)
-	// 	myAIController = Cast<AAIController>(myCharacter->GetController());
+
+	
+	myCharacter = Cast<ACharacter>(GetOwner());
+	if(myCharacter)
+	{
+		myAIController = Cast<AAIController>(myCharacter->GetController());
+		UE_LOG(LogTemp, Warning, TEXT("NPC Controller"));
+	}
 	//
 	// if(myAIController)
 	// {

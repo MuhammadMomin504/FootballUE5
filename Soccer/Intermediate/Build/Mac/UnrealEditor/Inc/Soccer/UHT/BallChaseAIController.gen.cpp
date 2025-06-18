@@ -101,7 +101,6 @@ template<> SOCCER_API UClass* StaticClass<ABallChaseAIController>()
 {
 	return ABallChaseAIController::StaticClass();
 }
-ABallChaseAIController::ABallChaseAIController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ABallChaseAIController);
 ABallChaseAIController::~ABallChaseAIController() {}
 // End Class ABallChaseAIController
