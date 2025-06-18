@@ -36,13 +36,22 @@ void AMyNPC::BeginPlay()
 	Super::BeginPlay();
 	
 
-	
-	myCharacter = Cast<ACharacter>(GetOwner());
-	if(myCharacter)
+	AController* CurrentController = GetController();
+	if (CurrentController)
 	{
-		myAIController = Cast<AAIController>(myCharacter->GetController());
-		UE_LOG(LogTemp, Warning, TEXT("NPC Controller"));
+		UE_LOG(LogTemp, Warning, TEXT("NPC is possessed by: %s"), *CurrentController->GetName());
 	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("NPC has no controller!"));
+	}
+	
+	// myCharacter = Cast<ACharacter>(GetOwner());
+	// if(myCharacter)
+	// {
+	// 	myAIController = Cast<AAIController>(myCharacter->GetController());
+	// 	UE_LOG(LogTemp, Warning, TEXT("NPC Controller"));
+	// }
 	//
 	// if(myAIController)
 	// {

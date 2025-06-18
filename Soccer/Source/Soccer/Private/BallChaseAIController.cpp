@@ -11,8 +11,19 @@ ABallChaseAIController::ABallChaseAIController()
 	UE_LOG(LogTemp, Warning, TEXT("BallChasingAIController created"));
 }
 
+void ABallChaseAIController::BeginPlay()
+{
+	Super::BeginPlay();
+	UE_LOG(LogTemp, Warning, TEXT("BallChasingAIController beginplay"));
+}
+
 void ABallChaseAIController::OnPossess(APawn* InPawn)
 {
+	if (!behaviorTreeAsset || !blackboardAsset)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Missing BT or Blackboard asset!"));
+		return;
+	}
 	Super::OnPossess(InPawn);
 
 	myBlackboard = GetBlackboardComponent();
@@ -23,4 +34,6 @@ void ABallChaseAIController::OnPossess(APawn* InPawn)
 		RunBehaviorTree(behaviorTreeAsset);
 		UE_LOG(LogTemp, Warning, TEXT("Runnnnn"));
 	}
+
+	
 }

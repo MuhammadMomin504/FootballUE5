@@ -20,6 +20,7 @@ class SOCCER_API ABallChaseAIController : public AAIController
 	
 public:
 	ABallChaseAIController();
+	virtual void BeginPlay() override;
 	virtual void OnPossess(APawn* InPawn) override;
 	UPROPERTY(EditDefaultsOnly)
 	UBlackboardComponent* myBlackboard;
