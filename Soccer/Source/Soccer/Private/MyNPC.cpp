@@ -2,6 +2,7 @@
 
 
 #include "MyNPC.h"
+#include "Football.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
@@ -44,6 +45,12 @@ void AMyNPC::BeginPlay()
 	else
 	{
 		UE_LOG(LogTemp, Warning, TEXT("NPC has no controller!"));
+	}
+
+	if(ballReference)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Ball Reference is set: %s"), *ballReference->GetName());
+		
 	}
 	
 	// myCharacter = Cast<ACharacter>(GetOwner());
@@ -89,6 +96,16 @@ void AMyNPC::PawnEnter()
 void AMyNPC::PawnExit()
 {
 	Super::PawnExit();
+}
+
+float AMyNPC::GetBallDistance()
+{
+	if(ballReference)
+	{
+		float distance = FVector::Dist(GetActorLocation(), ballReference->GetActorLocation());
+		return distance;
+	}
+	return -1.0f; //unreachable distance
 }
 
 // Called every frame

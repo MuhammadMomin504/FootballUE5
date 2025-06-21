@@ -7,6 +7,7 @@
 #include "GameFramework/Character.h"
 #include "MyNPC.generated.h"
 
+class AFootball;
 class AAIController;
 class UPawnSensingComponent;
 //class ACharacterMovementController;
@@ -29,6 +30,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UPawnSensingComponent* pawnSensingComponent;
 
+	float GetBallDistance();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -40,7 +43,13 @@ protected:
 	void PawnEnter() override;
 	void PawnExit() override;
 
+	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "References")
+	AFootball* ballReference;
+	
+
 private:
+
+	
 	
 	
 };
