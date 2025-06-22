@@ -29,8 +29,10 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UPawnSensingComponent* pawnSensingComponent;
-	
 
+	void PawnEnter() override;
+	void PawnExit() override;
+	
 	bool ShouldPossessNPC();
 
 protected:
@@ -41,8 +43,7 @@ protected:
 	//void LookUp(float Value) override;
 	void MoveRight(float Value) override;
 	void Run(float Value) override;
-	void PawnEnter() override;
-	void PawnExit() override;
+	
 
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "References")
 	AFootball* ballReference;

@@ -25,8 +25,7 @@ protected:
 	void Turn(float Value) override;
 	void MoveRight(float Value) override;
 	void Run(float Value) override;
-	void PawnEnter() override;
-	void PawnExit() override;
+	
 	void TryPossessNPC();
 
 public:	
@@ -38,6 +37,9 @@ public:
 
 	void CheckProximityToBall();
 	void CheckProximityToNPC();
+
+	void PawnEnter() override;
+	void PawnExit() override;
 
 	// Called to bind functionality to input
 	void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

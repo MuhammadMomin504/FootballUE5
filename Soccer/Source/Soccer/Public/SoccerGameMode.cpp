@@ -3,6 +3,7 @@
 #include "SoccerGameMode.h"
 #include "SoccerCharacter.h"
 #include "MyNPC.h"
+#include "Character/MySoccerCharacter.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/PlayerController.h"
 #include "Engine/World.h"
@@ -31,9 +32,24 @@ void ASoccerGameMode::SwitchPlayerControlsToNPC(APawn* NewPawn)
 	{
 		if(storedOriginalPlayerController)
 		{
-			storedOriginalPlayerController->UnPossess(); // Unpossess the current pawn
-			storedOriginalPlayerController->Possess(NewPawn); // Possess the new pawn
-			UE_LOG(LogTemp, Warning, TEXT("Switching player controls to NPC"));
+			AMyNPC* currentNPC = Cast<AMyNPC>(NewPawn);
+			if(currentNPC)
+			{
+				//currentNPC->PawnEnter();
+				UE_LOG(LogTemp, Warning, TEXT("Switching player controls to NPC: %s"), *NewPawn->GetName());
+				
+				storedOriginalPlayerController->UnPossess(); // Unpossess the current pawn
+				storedOriginalPlayerController->Possess(NewPawn); // Possess the new pawn
+
+				AMySoccerCharacter* mySoccerCharacter = Cast<AMySoccerCharacter>(storedOriginalPawn);
+				if(mySoccerCharacter)
+				{
+					mySoccerCharacter->PawnExit();
+					//UE_LOG(LogTemp, Warning, TEXT("Exiting original pawn: %s"), *storedOriginalPawn->GetName());
+				}
+				
+			}
+			//UE_LOG(LogTemp, Warning, TEXT("Switching player controls to NPC"));
 		}
 		//newPC->PawnEnter();
 	}
@@ -53,41 +69,13 @@ void ASoccerGameMode::BeginPlay()
 	{
 		storedOriginalPawn = storedOriginalPlayerController->GetPawn();
 	}
-	// TArray<AActor*> FoundNPCs;
-	// UGameplayStatics::GetAllActorsOfClass(GetWorld(), APawn::StaticClass(), FoundNPCs);
-	//
-	// for (AActor* Actor : FoundNPCs)
-	// {
-	// 	if (Actor->GetName().Contains("BP_NPC"))
-	// 	{
-	// 		NPCPawnClass = Cast<APawn>(Actor);
-	// 		break;
-	// 	}
-	// }
-	//
+	
 	// GetWorldTimerManager().SetTimer(SwitchPawnTimerHandle, this, &ASoccerGameMode::SwitchToNewPawn, 5.0f, false);
 }
 
-void ASoccerGameMode::SwitchToNewPawn()
+void ASoccerGameMode::SwitchToDefaultPawn()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Switching to new pawn"));
-	APlayerController* PC = UGameplayStatics::GetPlayerController(this, 0);
-	if (PC && NPCPawnClass)
-	{
-		APawn* CurrentPawn = PC->GetPawn();
-		if (CurrentPawn)
-		{
-			FVector Location = CurrentPawn->GetActorLocation();
-			FRotator Rotation = CurrentPawn->GetActorRotation();
-			PC->Possess(NPCPawnClass);
-			
 
-			// Spawn and possess the new pawn
-			// APawn* NewPawn = GetWorld()->SpawnActor<APawn>(NPCPawnClass, Location, Rotation);
-			// if (NewPawn)
-			// {
-			// 	PC->Possess(NewPawn);
-			// }
-		}
-	}
+	
 }
+

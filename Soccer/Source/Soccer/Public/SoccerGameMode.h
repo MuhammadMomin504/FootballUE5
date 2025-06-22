@@ -8,6 +8,7 @@
 
 class AMyNPC;
 class ACharacterMovementController;
+class AMySoccerCharacter;
 
 UCLASS(minimalapi)
 
@@ -19,8 +20,7 @@ class ASoccerGameMode : public AGameModeBase
 public:
 	ASoccerGameMode();
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Gameplay Settings")
-	APawn* NPCPawnClass;
+	//UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Gameplay Settings")
 
 	UPROPERTY()
 	APlayerController* storedOriginalPlayerController = nullptr;
@@ -34,13 +34,13 @@ public:
 protected:
 
 	virtual void BeginPlay() override;
-	
-	UFUNCTION()
-	void SwitchToNewPawn();
+
 
 
 private:
 	FTimerHandle SwitchPawnTimerHandle;
+
+	void SwitchToDefaultPawn();
 
 };
 
