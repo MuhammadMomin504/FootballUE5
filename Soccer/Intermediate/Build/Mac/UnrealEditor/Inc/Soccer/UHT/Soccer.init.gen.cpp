@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSoccer_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x0AC20178,
+				0xFC1C3EA0,
 				0xC1E0E443,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeSoccer_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_Soccer.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Soccer(Z_Construct_UPackage__Script_Soccer, TEXT("/Script/Soccer"), Z_Registration_Info_UPackage__Script_Soccer, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x0AC20178, 0xC1E0E443));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Soccer(Z_Construct_UPackage__Script_Soccer, TEXT("/Script/Soccer"), Z_Registration_Info_UPackage__Script_Soccer, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xFC1C3EA0, 0xC1E0E443));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

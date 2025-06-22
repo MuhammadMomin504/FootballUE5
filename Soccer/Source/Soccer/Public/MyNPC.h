@@ -29,8 +29,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UPawnSensingComponent* pawnSensingComponent;
+	
 
-	float GetBallDistance();
+	bool ShouldPossessNPC();
 
 protected:
 	// Called when the game starts or when spawned
@@ -45,11 +46,14 @@ protected:
 
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "References")
 	AFootball* ballReference;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
+	float minimumDistanceFromBall = 100.0f; // Minimum distance from the ball to consider possessing the NPC
+	
 	
 
 private:
 
-	
-	
+	float GetBallDistance();
 	
 };

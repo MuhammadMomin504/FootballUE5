@@ -50,9 +50,14 @@ struct Z_Construct_UClass_AMyNPC_Statics
 		{ "Category", "References" },
 		{ "ModuleRelativePath", "Public/MyNPC.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_minimumDistanceFromBall_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "Public/MyNPC.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_pawnSensingComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ballReference;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_minimumDistanceFromBall;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -62,9 +67,11 @@ struct Z_Construct_UClass_AMyNPC_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyNPC_Statics::NewProp_pawnSensingComponent = { "pawnSensingComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMyNPC, pawnSensingComponent), Z_Construct_UClass_UPawnSensingComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_pawnSensingComponent_MetaData), NewProp_pawnSensingComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyNPC_Statics::NewProp_ballReference = { "ballReference", nullptr, (EPropertyFlags)0x0020080000000805, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMyNPC, ballReference), Z_Construct_UClass_AFootball_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ballReference_MetaData), NewProp_ballReference_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyNPC_Statics::NewProp_minimumDistanceFromBall = { "minimumDistanceFromBall", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMyNPC, minimumDistanceFromBall), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_minimumDistanceFromBall_MetaData), NewProp_minimumDistanceFromBall_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyNPC_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyNPC_Statics::NewProp_pawnSensingComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyNPC_Statics::NewProp_ballReference,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyNPC_Statics::NewProp_minimumDistanceFromBall,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMyNPC_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AMyNPC_Statics::DependentSingletons[])() = {
@@ -107,10 +114,10 @@ AMyNPC::~AMyNPC() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMyNPC, AMyNPC::StaticClass, TEXT("AMyNPC"), &Z_Registration_Info_UClass_AMyNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyNPC), 3238635572U) },
+		{ Z_Construct_UClass_AMyNPC, AMyNPC::StaticClass, TEXT("AMyNPC"), &Z_Registration_Info_UClass_AMyNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyNPC), 2299440168U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_3419049493(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_1984401607(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

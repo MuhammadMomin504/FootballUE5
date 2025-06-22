@@ -122,17 +122,18 @@ void AMySoccerCharacter::CheckProximityToNPC()
 				{
 					UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), proximityDistance);
 
-					if(currentNPC->GetBallDistance() <= 100.0f)
+					if(currentNPC->ShouldPossessNPC())
 					{
-						UE_LOG(LogTemp, Warning, TEXT("NPC is close to the ball: %f"), currentNPC->GetBallDistance());
+						UE_LOG(LogTemp, Warning, TEXT("NPC is close to the ball"));
+						canControl = true;
+						break;
 					}
 					else
 					{
-						UE_LOG(LogTemp, Warning, TEXT("NPC is too far from the ball: %f"), currentNPC->GetBallDistance());
+						UE_LOG(LogTemp, Warning, TEXT("NPC is too far from the ball"));
 					}
 					//soccerGameMode->SwitchPlayerControlsToNPC(Cast<APawn>(currentNPC));
-					canControl = true;
-					break;
+					
 				}
 				else
 				{

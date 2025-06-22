@@ -103,9 +103,22 @@ float AMyNPC::GetBallDistance()
 	if(ballReference)
 	{
 		float distance = FVector::Dist(GetActorLocation(), ballReference->GetActorLocation());
+		UE_LOG(LogTemp, Warning, TEXT("Distance to ball: %f"), distance);
 		return distance;
 	}
 	return -1.0f; //unreachable distance
+}
+
+bool AMyNPC::ShouldPossessNPC()
+{
+	if(ballReference)
+	{
+		if(GetBallDistance() <= minimumDistanceFromBall)
+			return true;
+
+		return false;
+	}
+	return false;
 }
 
 // Called every frame
