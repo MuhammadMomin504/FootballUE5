@@ -31,15 +31,9 @@ struct Z_Construct_UClass_AMyNPC_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//class ACharacterMovementController;\n" },
-#endif
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "MyNPC.h" },
 		{ "ModuleRelativePath", "Public/MyNPC.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "class ACharacterMovementController;" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_pawnSensingComponent_MetaData[] = {
 		{ "Category", "AI" },
@@ -114,10 +108,10 @@ AMyNPC::~AMyNPC() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMyNPC, AMyNPC::StaticClass, TEXT("AMyNPC"), &Z_Registration_Info_UClass_AMyNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyNPC), 2299440168U) },
+		{ Z_Construct_UClass_AMyNPC, AMyNPC::StaticClass, TEXT("AMyNPC"), &Z_Registration_Info_UClass_AMyNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyNPC), 828789260U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_1984401607(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_1728812946(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_MyNPC_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

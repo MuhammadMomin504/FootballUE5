@@ -10,6 +10,8 @@
 #include "Perception/PawnSensingComponent.h"
 
 #include "AIController.h"
+#include "BallChaseAIController.h"
+#include "SoccerGameMode.h"
 
 
 //#include "Runtime/AIModule/Classes/AIController.h"
@@ -37,15 +39,7 @@ void AMyNPC::BeginPlay()
 	Super::BeginPlay();
 	
 
-	AController* CurrentController = GetController();
-	if (CurrentController)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("NPC is possessed by: %s"), *CurrentController->GetName());
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("NPC has no controller!"));
-	}
+	myAIController = Cast<ABallChaseAIController>(GetController());
 
 	if(ballReference)
 	{
@@ -96,6 +90,10 @@ void AMyNPC::PawnEnter()
 void AMyNPC::PawnExit()
 {
 	Super::PawnExit();
+	if (myAIController)
+	{
+		myAIController->OnPossess(this);
+	}
 }
 
 float AMyNPC::GetBallDistance()
@@ -125,6 +123,17 @@ bool AMyNPC::ShouldPossessNPC()
 void AMyNPC::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	if(isControlledByPlayer)
+	{
+		if(soccerGameMode)
+		{
+			if(GetBallDistance() > minimumDistanceFromBall + 50.f)
+			{
+				soccerGameMode->SwitchToDefaultPawn(Cast<APawn>(this));
+				UE_LOG(LogTemp, Warning, TEXT("Switching to default pawn because NPC is too far from the ball: %f"), GetBallDistance() + 50.f);
+			}
+		}
+	}
 
 }
 

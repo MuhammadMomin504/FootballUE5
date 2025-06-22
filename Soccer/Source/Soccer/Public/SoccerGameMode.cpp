@@ -81,7 +81,8 @@ void ASoccerGameMode::SwitchToDefaultPawn(APawn* passedNPC)
 		storedOriginalPlayerController->UnPossess();
 		storedOriginalPlayerController->Possess(storedOriginalPawn);
 		currentNPC->PawnExit();
-		mySoccerCharacter->PawnEnter();
+		if(mySoccerCharacter)
+			mySoccerCharacter->PawnEnter();
 	}
 }
 

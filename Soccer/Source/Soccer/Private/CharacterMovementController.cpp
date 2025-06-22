@@ -129,11 +129,13 @@ void ACharacterMovementController::TryPossessNPC()
 void ACharacterMovementController::PawnExit()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Pawn Exit"));
+	isControlledByPlayer = false;
 }
 
 void ACharacterMovementController::PawnEnter()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Pawn Enter"));
+	isControlledByPlayer = true;
 }
 
 

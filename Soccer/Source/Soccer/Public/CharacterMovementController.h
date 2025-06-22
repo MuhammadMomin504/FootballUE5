@@ -9,6 +9,7 @@
 
 class ASoccerGameMode;
 class UCharacterMovementComponent;
+class ABallChaseAIController;
 
 
 
@@ -39,6 +40,7 @@ protected:
 	virtual void TryPossessNPC();
 	bool canControl = true;
 	ASoccerGameMode* soccerGameMode;
+	bool isControlledByPlayer = false;
 	
 
 

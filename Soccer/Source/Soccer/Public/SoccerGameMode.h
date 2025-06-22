@@ -31,6 +31,8 @@ public:
 	UFUNCTION()
 	void SwitchPlayerControlsToNPC(APawn* NewPawn);
 
+	void SwitchToDefaultPawn(APawn* passedNPC);
+
 protected:
 
 	virtual void BeginPlay() override;
@@ -40,7 +42,7 @@ protected:
 private:
 	FTimerHandle SwitchPawnTimerHandle;
 
-	void SwitchToDefaultPawn(APawn* passedNPC);
+	
 
 	AMySoccerCharacter* mySoccerCharacter;
 

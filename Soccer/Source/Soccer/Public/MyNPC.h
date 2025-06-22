@@ -10,7 +10,9 @@
 class AFootball;
 class AAIController;
 class UPawnSensingComponent;
-//class ACharacterMovementController;
+class ABallChaseAIController;
+
+
 
 UCLASS()
 class SOCCER_API AMyNPC : public ACharacterMovementController
@@ -25,7 +27,7 @@ public:
 
 	ACharacter* myCharacter;
 	
-	AAIController* myAIController;
+	ABallChaseAIController* myAIController;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UPawnSensingComponent* pawnSensingComponent;
