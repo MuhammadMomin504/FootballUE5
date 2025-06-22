@@ -40,7 +40,9 @@ protected:
 private:
 	FTimerHandle SwitchPawnTimerHandle;
 
-	void SwitchToDefaultPawn();
+	void SwitchToDefaultPawn(APawn* passedNPC);
+
+	AMySoccerCharacter* mySoccerCharacter;
 
 };
 

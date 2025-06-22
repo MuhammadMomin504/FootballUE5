@@ -50,11 +50,13 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
 	float minimumDistanceFromBall = 100.0f; // Minimum distance from the ball to consider possessing the NPC
+
 	
 	
 
 private:
 
 	float GetBallDistance();
+	
 	
 };

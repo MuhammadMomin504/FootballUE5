@@ -35,13 +35,12 @@ void ASoccerGameMode::SwitchPlayerControlsToNPC(APawn* NewPawn)
 			AMyNPC* currentNPC = Cast<AMyNPC>(NewPawn);
 			if(currentNPC)
 			{
-				//currentNPC->PawnEnter();
+				currentNPC->PawnEnter();
 				UE_LOG(LogTemp, Warning, TEXT("Switching player controls to NPC: %s"), *NewPawn->GetName());
 				
 				storedOriginalPlayerController->UnPossess(); // Unpossess the current pawn
 				storedOriginalPlayerController->Possess(NewPawn); // Possess the new pawn
 
-				AMySoccerCharacter* mySoccerCharacter = Cast<AMySoccerCharacter>(storedOriginalPawn);
 				if(mySoccerCharacter)
 				{
 					mySoccerCharacter->PawnExit();
@@ -68,14 +67,21 @@ void ASoccerGameMode::BeginPlay()
 	if(storedOriginalPlayerController)
 	{
 		storedOriginalPawn = storedOriginalPlayerController->GetPawn();
+		mySoccerCharacter = Cast<AMySoccerCharacter>(storedOriginalPawn);
 	}
 	
 	// GetWorldTimerManager().SetTimer(SwitchPawnTimerHandle, this, &ASoccerGameMode::SwitchToNewPawn, 5.0f, false);
 }
 
-void ASoccerGameMode::SwitchToDefaultPawn()
+void ASoccerGameMode::SwitchToDefaultPawn(APawn* passedNPC)
 {
-
-	
+	AMyNPC* currentNPC = Cast<AMyNPC>(passedNPC);
+	if(currentNPC)
+	{
+		storedOriginalPlayerController->UnPossess();
+		storedOriginalPlayerController->Possess(storedOriginalPawn);
+		currentNPC->PawnExit();
+		mySoccerCharacter->PawnEnter();
+	}
 }
 
