@@ -131,11 +131,21 @@ struct Z_Construct_UClass_AFootball_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Football.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinBounds_MetaData[] = {
+		{ "Category", "Bounds" },
+		{ "ModuleRelativePath", "Public/Football.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxBounds_MetaData[] = {
+		{ "Category", "Bounds" },
+		{ "ModuleRelativePath", "Public/Football.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_forceStrength;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_idleForceStrength;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_idleTimeDuration;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_footballMesh;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_MinBounds;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxBounds;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -151,11 +161,15 @@ const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFootball_Stati
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFootball_Statics::NewProp_idleForceStrength = { "idleForceStrength", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFootball, idleForceStrength), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_idleForceStrength_MetaData), NewProp_idleForceStrength_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFootball_Statics::NewProp_idleTimeDuration = { "idleTimeDuration", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFootball, idleTimeDuration), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_idleTimeDuration_MetaData), NewProp_idleTimeDuration_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFootball_Statics::NewProp_footballMesh = { "footballMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFootball, footballMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_footballMesh_MetaData), NewProp_footballMesh_MetaData) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFootball_Statics::NewProp_MinBounds = { "MinBounds", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFootball, MinBounds), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinBounds_MetaData), NewProp_MinBounds_MetaData) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFootball_Statics::NewProp_MaxBounds = { "MaxBounds", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFootball, MaxBounds), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxBounds_MetaData), NewProp_MaxBounds_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFootball_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFootball_Statics::NewProp_forceStrength,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFootball_Statics::NewProp_idleForceStrength,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFootball_Statics::NewProp_idleTimeDuration,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFootball_Statics::NewProp_footballMesh,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFootball_Statics::NewProp_MinBounds,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFootball_Statics::NewProp_MaxBounds,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFootball_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AFootball_Statics::DependentSingletons[])() = {
@@ -198,10 +212,10 @@ AFootball::~AFootball() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_Football_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AFootball, AFootball::StaticClass, TEXT("AFootball"), &Z_Registration_Info_UClass_AFootball, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFootball), 2663196375U) },
+		{ Z_Construct_UClass_AFootball, AFootball::StaticClass, TEXT("AFootball"), &Z_Registration_Info_UClass_AFootball, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFootball), 3934210884U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_Football_h_974480630(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_Football_h_266434894(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_Football_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_Football_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

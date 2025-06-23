@@ -128,7 +128,7 @@ void AMyNPC::Tick(float DeltaTime)
 		if(soccerGameMode)
 		{
 			//if(testTimer > 5.0f)
-			if(GetBallDistance() > minimumDistanceFromBall + 500.f)
+			if(GetBallDistance() > minimumDistanceFromBall + 1000.f)
 			{
 				soccerGameMode->SwitchToDefaultPawn(Cast<APawn>(this));
 				UE_LOG(LogTemp, Warning, TEXT("Switching to default pawn because NPC is too far from the ball: %f"), GetBallDistance() + 50.f);

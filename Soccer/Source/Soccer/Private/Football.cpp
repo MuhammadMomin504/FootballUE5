@@ -61,6 +61,16 @@ void AFootball::Tick(float DeltaTime)
 		ApplyIdleForce();
 	}
 
+
+	// FVector CurrentLocation = GetActorLocation();
+	//
+	// if (CurrentLocation.X < MinBounds.X || CurrentLocation.X > MaxBounds.X ||
+	// 	CurrentLocation.Y < MinBounds.Y || CurrentLocation.Y > MaxBounds.Y )
+	// {
+	// 	UE_LOG(LogTemp, Warning, TEXT("Ball out of bounds! Resetting..."));
+	// 	ResetLocation();
+	// }
+
 }
 
 void AFootball::OnFootballHit(UPrimitiveComponent* hitComp, AActor* otherActor, UPrimitiveComponent* otherComp,

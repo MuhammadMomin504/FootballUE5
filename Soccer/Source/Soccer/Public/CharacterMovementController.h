@@ -44,6 +44,8 @@ protected:
 	virtual void MoveRight(float Value);
 	virtual void Run(float Value);
 	virtual void TryPossessNPC();
+
+	virtual void ResetFootballPosition();
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	bool canControl = true;
 

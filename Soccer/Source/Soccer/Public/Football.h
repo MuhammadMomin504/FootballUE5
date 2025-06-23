@@ -50,6 +50,12 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* footballMesh;
 
+	UPROPERTY(EditAnywhere, Category = "Bounds")
+	FVector MinBounds = FVector(-3000.0f, -2000.0f, 0.0f);
+
+	UPROPERTY(EditAnywhere, Category = "Bounds")
+	FVector MaxBounds = FVector(3000.0f, 2000.0f, 2000.0f);
+
 	UFUNCTION()
 	void OnFootballHit(UPrimitiveComponent* hitComp, AActor* otherActor, UPrimitiveComponent* otherComp, FVector normalImpulse, const FHitResult& hit); // Function to handle collision events
 

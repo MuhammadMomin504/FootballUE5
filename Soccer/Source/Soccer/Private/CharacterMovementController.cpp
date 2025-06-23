@@ -118,7 +118,7 @@ void ACharacterMovementController::Tick(float DeltaTime)
 	}
 	else
 	{
-		GetCharacterMovement()->MaxWalkSpeed = FMath::RandRange(500.0f, 1500.0f);
+		GetCharacterMovement()->MaxWalkSpeed = FMath::RandRange(500.0f, 1000.0f);
 	}
 	
 	//currentSpeed = GetCharacterMovement()->Velocity.Size() / 100.0f; //divide by 100 to get speed in m/s
@@ -134,12 +134,19 @@ void ACharacterMovementController::SetupPlayerInputComponent(UInputComponent* Pl
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterMovementController::MoveRight);
 	PlayerInputComponent->BindAxis("Run", this, &ACharacterMovementController::Run);
 	PlayerInputComponent->BindAction("PossessNPC", IE_Pressed, this, &ACharacterMovementController::TryPossessNPC);
+	PlayerInputComponent->BindAction("ResetFootballLocation", IE_Pressed, this, &ACharacterMovementController::ResetFootballPosition);
 
 }
 
 void ACharacterMovementController::TryPossessNPC()
 {
 	UE_LOG(LogTemp, Warning, TEXT("E key is pressed"));
+}
+
+void ACharacterMovementController::ResetFootballPosition()
+{
+	if(ballReference)
+		ballReference->ResetLocation();
 }
 
 void ACharacterMovementController::PawnExit()
