@@ -49,6 +49,10 @@ struct Z_Construct_UClass_UTestCharacterAnimInstance_Statics
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Public/TestCharacterAnimInstance.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_isBallUnReachable_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/TestCharacterAnimInstance.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_shouldRun_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Public/TestCharacterAnimInstance.h" },
@@ -57,6 +61,8 @@ struct Z_Construct_UClass_UTestCharacterAnimInstance_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_characterMovementController;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_characterMovementComponent;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_currentSpeed;
+	static void NewProp_isBallUnReachable_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_isBallUnReachable;
 	static void NewProp_shouldRun_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_shouldRun;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
@@ -69,6 +75,11 @@ struct Z_Construct_UClass_UTestCharacterAnimInstance_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_characterMovementController = { "characterMovementController", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTestCharacterAnimInstance, characterMovementController), Z_Construct_UClass_ACharacterMovementController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_characterMovementController_MetaData), NewProp_characterMovementController_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_characterMovementComponent = { "characterMovementComponent", nullptr, (EPropertyFlags)0x001000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTestCharacterAnimInstance, characterMovementComponent), Z_Construct_UClass_UCharacterMovementComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_characterMovementComponent_MetaData), NewProp_characterMovementComponent_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_currentSpeed = { "currentSpeed", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTestCharacterAnimInstance, currentSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_currentSpeed_MetaData), NewProp_currentSpeed_MetaData) };
+void Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_isBallUnReachable_SetBit(void* Obj)
+{
+	((UTestCharacterAnimInstance*)Obj)->isBallUnReachable = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_isBallUnReachable = { "isBallUnReachable", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UTestCharacterAnimInstance), &Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_isBallUnReachable_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_isBallUnReachable_MetaData), NewProp_isBallUnReachable_MetaData) };
 void Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_shouldRun_SetBit(void* Obj)
 {
 	((UTestCharacterAnimInstance*)Obj)->shouldRun = 1;
@@ -78,6 +89,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTestChar
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_characterMovementController,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_characterMovementComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_currentSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_isBallUnReachable,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTestCharacterAnimInstance_Statics::NewProp_shouldRun,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UTestCharacterAnimInstance_Statics::PropPointers) < 2048);
@@ -122,10 +134,10 @@ UTestCharacterAnimInstance::~UTestCharacterAnimInstance() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_TestCharacterAnimInstance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTestCharacterAnimInstance, UTestCharacterAnimInstance::StaticClass, TEXT("UTestCharacterAnimInstance"), &Z_Registration_Info_UClass_UTestCharacterAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTestCharacterAnimInstance), 3291414875U) },
+		{ Z_Construct_UClass_UTestCharacterAnimInstance, UTestCharacterAnimInstance::StaticClass, TEXT("UTestCharacterAnimInstance"), &Z_Registration_Info_UClass_UTestCharacterAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTestCharacterAnimInstance), 670113454U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_TestCharacterAnimInstance_h_2392878645(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_TestCharacterAnimInstance_h_1766407571(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_TestCharacterAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_TestCharacterAnimInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

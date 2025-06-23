@@ -2,8 +2,10 @@
 
 
 #include "Football.h"
+#include "SoccerGameMode.h"
 #include "GameFramework/Character.h"
 #include "Components/StaticMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AFootball::AFootball()
@@ -16,7 +18,12 @@ AFootball::AFootball()
 // Called when the game starts or when spawned
 void AFootball::BeginPlay()
 {
+	initialLocation = GetActorLocation();
 	Super::BeginPlay();
+	soccerGameMode = Cast<ASoccerGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	if(soccerGameMode)
+		soccerGameMode->footballReference = this;
+	
 	footballMesh = FindComponentByClass<UStaticMeshComponent>();
 
 	if(footballMesh)
@@ -51,7 +58,7 @@ void AFootball::Tick(float DeltaTime)
 	if(idleTimeElapsed >= idleTimeDuration)
 	{
 		idleTimeElapsed = 0.f;
-		//ApplyIdleForce();
+		ApplyIdleForce();
 	}
 
 }
@@ -70,5 +77,10 @@ void AFootball::OnFootballHit(UPrimitiveComponent* hitComp, AActor* otherActor, 
 		footballMesh->AddForce(forceDirection * forceStrength, NAME_None, true);
 		idleTimeElapsed = 0.f;
 	}
+}
+
+void AFootball::ResetLocation()
+{
+	SetActorLocation(initialLocation);
 }
 

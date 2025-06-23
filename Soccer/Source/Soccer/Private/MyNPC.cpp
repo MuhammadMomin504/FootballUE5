@@ -2,8 +2,8 @@
 
 
 #include "MyNPC.h"
-#include "Football.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Football.h"
 #include "SoccerGameMode.h"
 #include "Components/CapsuleComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
@@ -42,11 +42,11 @@ void AMyNPC::BeginPlay()
 
 	// myAIController = Cast<ABallChaseAIController>(GetController());
 
-	if(ballReference)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Ball Reference is set: %s"), *ballReference->GetName());
-		
-	}
+	// if(!ballReference)
+	// {
+	// 	ballReference = soccerGameMode->footballReference;
+	// 	UE_LOG(LogTemp, Warning, TEXT("Ball Reference is set: %s"), *ballReference->GetName());
+	// }
 	
 	// myCharacter = Cast<ACharacter>(GetOwner());
 	// if(myCharacter)

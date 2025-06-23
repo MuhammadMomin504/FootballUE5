@@ -8,6 +8,7 @@
 #include "Perception/PawnSensingComponent.h"
 #include "GameFramework/Pawn.h"
 #include "EngineUtils.h"
+#include "CharacterMovementController.h"
 #include "VectorTypes.h"
 
 UMyBTTask_FindBall::UMyBTTask_FindBall()
@@ -25,6 +26,7 @@ EBTNodeResult::Type UMyBTTask_FindBall::ExecuteTask(UBehaviorTreeComponent& Owne
 	if (!AIPawn) return EBTNodeResult::Failed;
 
 	UPawnSensingComponent* sensingComponent = AIPawn->FindComponentByClass<UPawnSensingComponent>();
+	ACharacterMovementController* characterMovementController = Cast<ACharacterMovementController>(AIPawn);
 	if (!sensingComponent)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("PawnSensingComponent not found."));
@@ -68,13 +70,22 @@ EBTNodeResult::Type UMyBTTask_FindBall::ExecuteTask(UBehaviorTreeComponent& Owne
 						DrawDebugLine(AIPawn->GetWorld(), AIPawn->GetActorLocation(), Ball->GetActorLocation(), FColor::Green, false, 1.0f);
 						OwnerComp.GetBlackboardComponent()->SetValueAsObject("TargetActor", Ball);
 						UE_LOG(LogTemp, Warning, TEXT("AI sees the ball!"));
+						if(characterMovementController)
+						{
+							characterMovementController->isBallUnReachable = false;
+						}
 						return EBTNodeResult::Succeeded;
 					}
 				}
 			}
 			else
 			{
-				//UE_LOG(LogTemp, Warning, TEXT("Ball is behind the AI. Ignored."));
+				
+				// if(characterMovementController)
+				// {
+				// 	characterMovementController->isBallUnReachable = true;
+				// 	UE_LOG(LogTemp, Warning, TEXT("Ball is behind the AI. Ignored."));
+				// }
 			}
 		}
 

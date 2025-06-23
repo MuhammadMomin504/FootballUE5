@@ -6,6 +6,7 @@
 #include "GameFramework/GameModeBase.h"
 #include "SoccerGameMode.generated.h"
 
+class AFootball;
 class AAIController;
 class AMyNPC;
 class ACharacterMovementController;
@@ -34,6 +35,8 @@ public:
 	void SwitchPlayerControlsToNPC(APawn* NewPawn);
 
 	void SwitchToDefaultPawn(APawn* passedNPC);
+
+	AFootball* footballReference;
 
 	UPROPERTY(EditAnywhere, Category="AI")
 	TSubclassOf<AAIController> BallChaseAIControllerBPClass;

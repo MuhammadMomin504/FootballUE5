@@ -7,6 +7,7 @@
 #include "GameFramework/Character.h"
 #include "CharacterMovementController.generated.h"
 
+class AFootball;
 class ASoccerGameMode;
 class UCharacterMovementComponent;
 class ABallChaseAIController;
@@ -24,8 +25,13 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
 	float currentSpeed = 0.f;
+	
+	UPROPERTY(VisibleAnywhere, Category = "Movement")
+	bool isBallUnReachable = false;
 
 	bool shouldRun = false;
+
+	
 
 
 protected:
@@ -45,6 +51,10 @@ protected:
 	bool isControlledByPlayer = false;
 
 	ABallChaseAIController* myAIController;
+
+	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "References")
+	AFootball* ballReference;
+
 	
 
 
@@ -58,5 +68,7 @@ public:
 
 	virtual void PawnExit();
 	virtual void PawnEnter();
+
+	void SetRotation();
 
 };

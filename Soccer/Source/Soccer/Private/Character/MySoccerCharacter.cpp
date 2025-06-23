@@ -5,6 +5,7 @@
 #include "MyNPC.h"
 #include "SoccerGameMode.h"
 #include "BallChaseAIController.h"
+#include "Football.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Chaos/AABBTree.h"
 #include "Engine/OverlapResult.h"
@@ -164,10 +165,10 @@ void AMySoccerCharacter::CheckProximityToNPC()
 						canControl = true;
 						break;
 					}
-					else
-					{
-						UE_LOG(LogTemp, Warning, TEXT("NPC is too far from the ball"));
-					}
+					// else
+					// {
+					// 	UE_LOG(LogTemp, Warning, TEXT("NPC is too far from the ball"));
+					// }
 					//soccerGameMode->SwitchPlayerControlsToNPC(Cast<APawn>(currentNPC));
 					
 				}

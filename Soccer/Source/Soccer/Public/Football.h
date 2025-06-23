@@ -6,6 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "Football.generated.h"
 
+class ASoccerGameMode;
+
 UCLASS()
 class SOCCER_API AFootball : public AActor
 {
@@ -18,6 +20,10 @@ public:
 
 private:
 	float idleTimeElapsed = 0.f; // Time elapsed since the last kick
+
+	ASoccerGameMode* soccerGameMode;
+
+	FVector initialLocation;
 
 protected:
 	// Called when the game starts or when spawned
@@ -46,6 +52,8 @@ public:
 
 	UFUNCTION()
 	void OnFootballHit(UPrimitiveComponent* hitComp, AActor* otherActor, UPrimitiveComponent* otherComp, FVector normalImpulse, const FHitResult& hit); // Function to handle collision events
+
+	void ResetLocation();
 	
 
 };

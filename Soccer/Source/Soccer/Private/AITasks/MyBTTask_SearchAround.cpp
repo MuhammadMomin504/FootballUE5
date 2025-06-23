@@ -4,6 +4,7 @@
 #include "AITasks/MyBTTask_SearchAround.h"
 #include "GameFramework/Pawn.h"
 #include "AIController.h"
+#include "CharacterMovementController.h"
 
 UMyBTTask_SearchAround::UMyBTTask_SearchAround()
 {
@@ -17,7 +18,14 @@ EBTNodeResult::Type UMyBTTask_SearchAround::ExecuteTask(UBehaviorTreeComponent& 
 	APawn* Pawn = OwnerComp.GetAIOwner()->GetPawn();
 	if (!Pawn) return EBTNodeResult::Failed;
 
-	FRotator RandomRotation = FRotator(0.f, FMath::RandRange(-180.f, 180.f), 0.f);
+	ACharacterMovementController* CharacterController = Cast<ACharacterMovementController>(Pawn);
+
+	if(CharacterController)
+	{
+		CharacterController->SetRotation();
+	}
+
+	//FRotator RandomRotation = FRotator(0.f, FMath::RandRange(-180.f, 180.f), 0.f);
 	// Pawn->AddActorLocalRotation(RandomRotation);
 	// UE_LOG(LogTemp, Warning, TEXT("setting rotation...!"));
 

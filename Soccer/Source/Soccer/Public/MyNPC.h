@@ -7,7 +7,6 @@
 #include "GameFramework/Character.h"
 #include "MyNPC.generated.h"
 
-class AFootball;
 class AAIController;
 class UPawnSensingComponent;
 class ABallChaseAIController;
@@ -46,9 +45,6 @@ protected:
 	void MoveRight(float Value) override;
 	void Run(float Value) override;
 	
-
-	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "References")
-	AFootball* ballReference;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
 	float minimumDistanceFromBall = 100.0f; // Minimum distance from the ball to consider possessing the NPC

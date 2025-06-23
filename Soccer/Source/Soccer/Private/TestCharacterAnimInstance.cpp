@@ -25,11 +25,8 @@ void UTestCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 	if(characterMovementComponent != nullptr)
 	{
 		currentSpeed = characterMovementController->currentSpeed;
-	}
-
-	if(characterMovementController != nullptr)
-	{
 		shouldRun = characterMovementController->shouldRun;
+		isBallUnReachable = characterMovementController->isBallUnReachable;
 	}
 	
 	// if(characterMovementComponent != nullptr)

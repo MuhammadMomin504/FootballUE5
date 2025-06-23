@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacterMovementController() {}
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 SOCCER_API UClass* Z_Construct_UClass_ACharacterMovementController();
 SOCCER_API UClass* Z_Construct_UClass_ACharacterMovementController_NoRegister();
+SOCCER_API UClass* Z_Construct_UClass_AFootball_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Soccer();
 // End Cross Module References
 
@@ -37,6 +38,10 @@ struct Z_Construct_UClass_ACharacterMovementController_Statics
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Public/CharacterMovementController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_isBallUnReachable_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/CharacterMovementController.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_canControl_MetaData[] = {
 		{ "Category", "CharacterMovementController" },
 		{ "ModuleRelativePath", "Public/CharacterMovementController.h" },
@@ -45,12 +50,19 @@ struct Z_Construct_UClass_ACharacterMovementController_Statics
 		{ "Category", "CharacterMovementController" },
 		{ "ModuleRelativePath", "Public/CharacterMovementController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ballReference_MetaData[] = {
+		{ "Category", "References" },
+		{ "ModuleRelativePath", "Public/CharacterMovementController.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_currentSpeed;
+	static void NewProp_isBallUnReachable_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_isBallUnReachable;
 	static void NewProp_canControl_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_canControl;
 	static void NewProp_isControlledByPlayer_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_isControlledByPlayer;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ballReference;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -59,6 +71,11 @@ struct Z_Construct_UClass_ACharacterMovementController_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_currentSpeed = { "currentSpeed", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACharacterMovementController, currentSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_currentSpeed_MetaData), NewProp_currentSpeed_MetaData) };
+void Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_isBallUnReachable_SetBit(void* Obj)
+{
+	((ACharacterMovementController*)Obj)->isBallUnReachable = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_isBallUnReachable = { "isBallUnReachable", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ACharacterMovementController), &Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_isBallUnReachable_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_isBallUnReachable_MetaData), NewProp_isBallUnReachable_MetaData) };
 void Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_canControl_SetBit(void* Obj)
 {
 	((ACharacterMovementController*)Obj)->canControl = 1;
@@ -69,10 +86,13 @@ void Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_isControll
 	((ACharacterMovementController*)Obj)->isControlledByPlayer = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_isControlledByPlayer = { "isControlledByPlayer", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ACharacterMovementController), &Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_isControlledByPlayer_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_isControlledByPlayer_MetaData), NewProp_isControlledByPlayer_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_ballReference = { "ballReference", nullptr, (EPropertyFlags)0x0020080000000805, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACharacterMovementController, ballReference), Z_Construct_UClass_AFootball_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ballReference_MetaData), NewProp_ballReference_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACharacterMovementController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_currentSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_isBallUnReachable,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_canControl,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_isControlledByPlayer,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacterMovementController_Statics::NewProp_ballReference,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACharacterMovementController_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ACharacterMovementController_Statics::DependentSingletons[])() = {
@@ -115,10 +135,10 @@ ACharacterMovementController::~ACharacterMovementController() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACharacterMovementController, ACharacterMovementController::StaticClass, TEXT("ACharacterMovementController"), &Z_Registration_Info_UClass_ACharacterMovementController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACharacterMovementController), 166666055U) },
+		{ Z_Construct_UClass_ACharacterMovementController, ACharacterMovementController::StaticClass, TEXT("ACharacterMovementController"), &Z_Registration_Info_UClass_ACharacterMovementController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACharacterMovementController), 174200373U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_2365084958(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_1784508981(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_CharacterMovementController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

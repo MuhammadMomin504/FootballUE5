@@ -30,6 +30,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
 	float currentSpeed = 0.f;
 
+	UPROPERTY(BlueprintReadWrite, Category = "Movement")
+	bool isBallUnReachable = false;
+
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
 	bool shouldRun = false;

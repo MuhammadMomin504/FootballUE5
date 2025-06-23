@@ -6,6 +6,7 @@
 
 #include "SoccerGameMode.h"
 #include "BallChaseAIController.h"
+#include "Football.h"
 #include "Chaos/AABBTree.h"
 #include "Engine/OverlapResult.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -41,6 +42,12 @@ void ACharacterMovementController::BeginPlay()
 	if(myAIController)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("AI Controller possessed: %s"), *myAIController->GetName());
+	}
+
+	if(!ballReference)
+	{
+		ballReference = soccerGameMode->footballReference;
+		UE_LOG(LogTemp, Warning, TEXT("Ball Reference is set: %s"), *ballReference->GetName());
 	}
 	
 
@@ -111,7 +118,7 @@ void ACharacterMovementController::Tick(float DeltaTime)
 	}
 	else
 	{
-		GetCharacterMovement()->MaxWalkSpeed = 600.0f;
+		GetCharacterMovement()->MaxWalkSpeed = FMath::RandRange(500.0f, 1500.0f);
 	}
 	
 	//currentSpeed = GetCharacterMovement()->Velocity.Size() / 100.0f; //divide by 100 to get speed in m/s
@@ -149,6 +156,19 @@ void ACharacterMovementController::PawnEnter()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Pawn Enter"));
 	isControlledByPlayer = true;
+}
+
+void ACharacterMovementController::SetRotation()
+{
+	if(ballReference)
+	{
+		FVector ballLocation = ballReference->GetActorLocation();
+		FVector NPCLocation = GetActorLocation();
+		FRotator LookAtRotation = (ballLocation - NPCLocation).Rotation();
+		LookAtRotation.Pitch = 0.0f; // ignore vertical tilt
+		LookAtRotation.Roll = 0.0f;
+		SetActorRotation(LookAtRotation);
+	}
 }
 
 
