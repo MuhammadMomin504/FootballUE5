@@ -38,15 +38,20 @@ protected:
 	virtual void MoveRight(float Value);
 	virtual void Run(float Value);
 	virtual void TryPossessNPC();
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	bool canControl = true;
-	ASoccerGameMode* soccerGameMode;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	bool isControlledByPlayer = false;
+
+	ABallChaseAIController* myAIController;
 	
 
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	ASoccerGameMode* soccerGameMode;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

@@ -15,7 +15,8 @@ ASoccerGameMode::ASoccerGameMode()
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter"));
 	if (PlayerPawnBPClass.Class != NULL)
 	{
-		DefaultPawnClass = PlayerPawnBPClass.Class;
+		//DefaultPawnClass = PlayerPawnBPClass.Class;
+		DefaultPawnClass = AMySoccerCharacter::StaticClass(); 
 	}
 	
 }
@@ -44,7 +45,6 @@ void ASoccerGameMode::SwitchPlayerControlsToNPC(APawn* NewPawn)
 				if(mySoccerCharacter)
 				{
 					mySoccerCharacter->PawnExit();
-					//UE_LOG(LogTemp, Warning, TEXT("Exiting original pawn: %s"), *storedOriginalPawn->GetName());
 				}
 				
 			}

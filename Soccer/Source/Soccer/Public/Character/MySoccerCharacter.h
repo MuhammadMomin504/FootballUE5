@@ -7,6 +7,7 @@
 #include "GameFramework/Character.h"
 #include "MySoccerCharacter.generated.h"
 
+class AAIController;
 class AMyNPC;
 
 UCLASS()
@@ -46,5 +47,9 @@ public:
 
 private:
 	AMyNPC* currentNPC;
+
+	FTimerHandle SwitchPawnTimerHandle;
+	APawn* storedOriginalPawn;
+	AAIController* playerAIController;
 
 };

@@ -4,6 +4,7 @@
 #include "MyNPC.h"
 #include "Football.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "SoccerGameMode.h"
 #include "Components/CapsuleComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardComponent.h"
@@ -11,7 +12,7 @@
 
 #include "AIController.h"
 #include "BallChaseAIController.h"
-#include "SoccerGameMode.h"
+
 
 
 //#include "Runtime/AIModule/Classes/AIController.h"
@@ -39,7 +40,7 @@ void AMyNPC::BeginPlay()
 	Super::BeginPlay();
 	
 
-	myAIController = Cast<ABallChaseAIController>(GetController());
+	// myAIController = Cast<ABallChaseAIController>(GetController());
 
 	if(ballReference)
 	{
@@ -85,15 +86,12 @@ void AMyNPC::Run(float Value)
 void AMyNPC::PawnEnter()
 {
 	Super::PawnEnter();
+	canControl = false;
 }
 
 void AMyNPC::PawnExit()
 {
 	Super::PawnExit();
-	if (myAIController)
-	{
-		myAIController->OnPossess(this);
-	}
 }
 
 float AMyNPC::GetBallDistance()
@@ -101,7 +99,7 @@ float AMyNPC::GetBallDistance()
 	if(ballReference)
 	{
 		float distance = FVector::Dist(GetActorLocation(), ballReference->GetActorLocation());
-		UE_LOG(LogTemp, Warning, TEXT("Distance to ball: %f"), distance);
+		//UE_LOG(LogTemp, Warning, TEXT("Distance to ball: %f"), distance);
 		return distance;
 	}
 	return -1.0f; //unreachable distance
@@ -125,12 +123,16 @@ void AMyNPC::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	if(isControlledByPlayer)
 	{
+
+		//testTimer += DeltaTime;
 		if(soccerGameMode)
 		{
-			if(GetBallDistance() > minimumDistanceFromBall + 50.f)
+			//if(testTimer > 5.0f)
+			if(GetBallDistance() > minimumDistanceFromBall + 500.f)
 			{
 				soccerGameMode->SwitchToDefaultPawn(Cast<APawn>(this));
 				UE_LOG(LogTemp, Warning, TEXT("Switching to default pawn because NPC is too far from the ball: %f"), GetBallDistance() + 50.f);
+				//testTimer = 0.f;
 			}
 		}
 	}

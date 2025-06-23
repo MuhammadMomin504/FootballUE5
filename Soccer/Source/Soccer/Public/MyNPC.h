@@ -27,7 +27,7 @@ public:
 
 	ACharacter* myCharacter;
 	
-	ABallChaseAIController* myAIController;
+	// ABallChaseAIController* myAIController;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UPawnSensingComponent* pawnSensingComponent;
@@ -59,6 +59,8 @@ protected:
 private:
 
 	float GetBallDistance();
+
+	float testTimer = 0.f;
 	
 	
 };

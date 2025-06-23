@@ -6,9 +6,11 @@
 #include "GameFramework/GameModeBase.h"
 #include "SoccerGameMode.generated.h"
 
+class AAIController;
 class AMyNPC;
 class ACharacterMovementController;
 class AMySoccerCharacter;
+
 
 UCLASS(minimalapi)
 
@@ -33,15 +35,20 @@ public:
 
 	void SwitchToDefaultPawn(APawn* passedNPC);
 
+	UPROPERTY(EditAnywhere, Category="AI")
+	TSubclassOf<AAIController> BallChaseAIControllerBPClass;
+
 protected:
 
 	virtual void BeginPlay() override;
 
 
 
+
 private:
 	FTimerHandle SwitchPawnTimerHandle;
 
+	
 	
 
 	AMySoccerCharacter* mySoccerCharacter;

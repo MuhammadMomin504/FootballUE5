@@ -5,6 +5,7 @@
 
 
 #include "SoccerGameMode.h"
+#include "BallChaseAIController.h"
 #include "Chaos/AABBTree.h"
 #include "Engine/OverlapResult.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -35,6 +36,14 @@ ACharacterMovementController::ACharacterMovementController()
 void ACharacterMovementController::BeginPlay()
 {
 	soccerGameMode = Cast<ASoccerGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	myAIController = Cast<ABallChaseAIController>(GetController());
+	//UE_LOG(LogTemp, Warning, TEXT("Begin play"));
+	if(myAIController)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("AI Controller possessed: %s"), *myAIController->GetName());
+	}
+	
+
 	Super::BeginPlay();
 	//GetCharacterMovement()->
 	
@@ -128,7 +137,11 @@ void ACharacterMovementController::TryPossessNPC()
 
 void ACharacterMovementController::PawnExit()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Pawn Exit"));
+	if (myAIController)
+	{
+		myAIController->OnPossess(this);
+		UE_LOG(LogTemp, Warning, TEXT("Pawn Exit"));
+	}
 	isControlledByPlayer = false;
 }
 

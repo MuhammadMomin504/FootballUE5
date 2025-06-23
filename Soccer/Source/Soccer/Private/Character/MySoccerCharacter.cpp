@@ -4,6 +4,7 @@
 #include "Character/MySoccerCharacter.h"
 #include "MyNPC.h"
 #include "SoccerGameMode.h"
+#include "BallChaseAIController.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Chaos/AABBTree.h"
 #include "Engine/OverlapResult.h"
@@ -13,7 +14,11 @@ AMySoccerCharacter::AMySoccerCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	AutoPossessPlayer = EAutoReceiveInput::Player0;
+	AIControllerClass = ABallChaseAIController::StaticClass();
+	AutoPossessAI = EAutoPossessAI::PlacedInWorld;
+	
+	//
+	//AutoPossessPlayer = EAutoReceiveInput::Player0;
 
 }
 
@@ -21,6 +26,19 @@ AMySoccerCharacter::AMySoccerCharacter()
 void AMySoccerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	
+	canControl = true;
+	AIControllerClass = ABallChaseAIController::StaticClass();
+	storedOriginalPawn = Cast<APawn>(this);
+
+	if(storedOriginalPawn)
+	{
+		playerAIController = GetWorld()->SpawnActor<AAIController>(
+		soccerGameMode->BallChaseAIControllerBPClass,
+		storedOriginalPawn->GetActorLocation(),
+		storedOriginalPawn->GetActorRotation()
+		);
+	}
 	
 }
 
@@ -49,11 +67,30 @@ void AMySoccerCharacter::Run(float Value)
 void AMySoccerCharacter::PawnEnter()
 {
 	Super::PawnEnter();
+
+	if(storedOriginalPawn)
+	{
+		if(playerAIController)
+		{
+			playerAIController->UnPossess();
+			UE_LOG(LogTemp, Warning, TEXT("UnPossess"));
+		}
+	}
 }
 
 void AMySoccerCharacter::PawnExit()
 {
 	Super::PawnExit();
+	if(storedOriginalPawn)
+	{
+		if(playerAIController)
+		{
+			playerAIController->Possess(storedOriginalPawn);
+			isControlledByPlayer = false;
+			canControl = false;
+			UE_LOG(LogTemp, Warning, TEXT("Possess"));
+		}
+	}
 }
 
 void AMySoccerCharacter::TryPossessNPC()
@@ -72,8 +109,7 @@ void AMySoccerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	//if(canControl)
-		CheckProximityToNPC();
+	CheckProximityToNPC();
 
 }
 
@@ -120,7 +156,7 @@ void AMySoccerCharacter::CheckProximityToNPC()
 				
 				if(distance <= proximityDistance)
 				{
-					UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), proximityDistance);
+					//UE_LOG(LogTemp, Warning, TEXT("NPC is within proximity distance: %f"), proximityDistance);
 
 					if(currentNPC->ShouldPossessNPC())
 					{
