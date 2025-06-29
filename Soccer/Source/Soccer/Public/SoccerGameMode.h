@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "Interfaces/IHttpRequest.h"
+#include "Interfaces/IHttpResponse.h"
 #include "SoccerGameMode.generated.h"
 
 class AFootball;
@@ -55,6 +57,11 @@ private:
 	
 
 	AMySoccerCharacter* mySoccerCharacter;
+
+	void SendSignUpRequest();
+	void OnSignupResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
+	void SendLoginRequest();
+	void OnLoginResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
 };
 

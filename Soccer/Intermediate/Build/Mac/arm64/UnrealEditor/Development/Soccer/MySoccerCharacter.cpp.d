@@ -3912,6 +3912,9 @@
   Runtime/Net/Core/Public/Net/Core/Connection/NetEnums.h \
   Runtime/Engine/Classes/GameFramework/PlayerController.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameModeBase.generated.h \
+  Runtime/Online/HTTP/Public/Interfaces/IHttpRequest.h \
+  Runtime/Online/HTTP/Public/Interfaces/IHttpBase.h \
+  Runtime/Online/HTTP/Public/Interfaces/IHttpResponse.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerGameMode.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/BallChaseAIController.h \
   Runtime/AIModule/Classes/AIController.h \
