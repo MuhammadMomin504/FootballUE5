@@ -13,5 +13,14 @@ UCLASS()
 class SOCCER_API USoccerOverlay : public UUserWidget
 {
 	GENERATED_BODY()
+
+public:
+	UPROPERTY(meta=(BindWidget))
+	class UButton* SignupButton;
+
+
+protected:
+
+	//virtual void BeginPlay() override;
 	
 };
