@@ -8,10 +8,10 @@
 
 void USoccerOverlay::OnSignupButtonClicked()
 {
-	// if(myLoginAPI)
-	// {
-	// 	myLoginAPI->SendSignUpRequest();
-	// }
+	if(mySignUpLoginAPI)
+	{
+		mySignUpLoginAPI->SendSignUpRequest();
+	}
 	
 }
 
