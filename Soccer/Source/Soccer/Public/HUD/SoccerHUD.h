@@ -6,9 +6,8 @@
 #include "GameFramework/HUD.h"
 #include "SoccerHUD.generated.h"
 
-/**
- * 
- */
+class USoccerOverlay;
+
 UCLASS()
 class SOCCER_API ASoccerHUD : public AHUD
 {
@@ -19,7 +18,7 @@ protected:
 
 private:
 	UPROPERTY(EditDefaultsOnly, Category ="Soccer HUD")
-	TSubclassOf<class USoccerOverlay> soccerOverlayClass;
-
-	
+	TSubclassOf<USoccerOverlay> soccerOverlayClass;
+	UPROPERTY()
+	USoccerOverlay* soccerOverlay;
 };

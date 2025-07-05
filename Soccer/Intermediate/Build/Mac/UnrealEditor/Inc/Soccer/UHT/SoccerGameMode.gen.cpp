@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeSoccerGameMode() {}
 AIMODULE_API UClass* Z_Construct_UClass_AAIController_NoRegister();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
+ENGINE_API UClass* Z_Construct_UClass_AHUD_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_APlayerController_NoRegister();
 SOCCER_API UClass* Z_Construct_UClass_ASoccerGameMode();
@@ -97,6 +98,9 @@ struct Z_Construct_UClass_ASoccerGameMode_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_storedOriginalPawn_MetaData[] = {
 		{ "ModuleRelativePath", "Public/SoccerGameMode.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_myHUD_MetaData[] = {
+		{ "ModuleRelativePath", "Public/SoccerGameMode.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BallChaseAIControllerBPClass_MetaData[] = {
 		{ "Category", "AI" },
 		{ "ModuleRelativePath", "Public/SoccerGameMode.h" },
@@ -104,6 +108,7 @@ struct Z_Construct_UClass_ASoccerGameMode_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_storedOriginalPlayerController;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_storedOriginalPawn;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_myHUD;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_BallChaseAIControllerBPClass;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -118,10 +123,12 @@ struct Z_Construct_UClass_ASoccerGameMode_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASoccerGameMode_Statics::NewProp_storedOriginalPlayerController = { "storedOriginalPlayerController", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASoccerGameMode, storedOriginalPlayerController), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_storedOriginalPlayerController_MetaData), NewProp_storedOriginalPlayerController_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASoccerGameMode_Statics::NewProp_storedOriginalPawn = { "storedOriginalPawn", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASoccerGameMode, storedOriginalPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_storedOriginalPawn_MetaData), NewProp_storedOriginalPawn_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASoccerGameMode_Statics::NewProp_myHUD = { "myHUD", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASoccerGameMode, myHUD), Z_Construct_UClass_AHUD_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_myHUD_MetaData), NewProp_myHUD_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASoccerGameMode_Statics::NewProp_BallChaseAIControllerBPClass = { "BallChaseAIControllerBPClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASoccerGameMode, BallChaseAIControllerBPClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AAIController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BallChaseAIControllerBPClass_MetaData), NewProp_BallChaseAIControllerBPClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASoccerGameMode_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASoccerGameMode_Statics::NewProp_storedOriginalPlayerController,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASoccerGameMode_Statics::NewProp_storedOriginalPawn,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASoccerGameMode_Statics::NewProp_myHUD,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASoccerGameMode_Statics::NewProp_BallChaseAIControllerBPClass,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASoccerGameMode_Statics::PropPointers) < 2048);
@@ -165,10 +172,10 @@ ASoccerGameMode::~ASoccerGameMode() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerGameMode_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASoccerGameMode, ASoccerGameMode::StaticClass, TEXT("ASoccerGameMode"), &Z_Registration_Info_UClass_ASoccerGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASoccerGameMode), 3984027686U) },
+		{ Z_Construct_UClass_ASoccerGameMode, ASoccerGameMode::StaticClass, TEXT("ASoccerGameMode"), &Z_Registration_Info_UClass_ASoccerGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASoccerGameMode), 1952929244U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerGameMode_h_1193955694(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerGameMode_h_3938928660(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_SoccerGameMode_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

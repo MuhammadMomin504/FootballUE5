@@ -76,6 +76,7 @@ void ASoccerGameMode::BeginPlay()
 	{
 		storedOriginalPawn = storedOriginalPlayerController->GetPawn();
 		mySoccerCharacter = Cast<AMySoccerCharacter>(storedOriginalPawn);
+		myHUD = storedOriginalPlayerController->GetHUD();
 	}
 
 	//SendSignUpRequest();

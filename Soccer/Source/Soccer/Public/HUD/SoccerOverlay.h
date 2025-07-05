@@ -6,9 +6,9 @@
 #include "Blueprint/UserWidget.h"
 #include "SoccerOverlay.generated.h"
 
-/**
- * 
- */
+class ASoccerGameMode;
+class UMySignUpLoginAPI;
+
 UCLASS()
 class SOCCER_API USoccerOverlay : public UUserWidget
 {
@@ -19,8 +19,18 @@ public:
 	class UButton* SignupButton;
 
 
-protected:
+private:
+	UFUNCTION()
+	void OnSignupButtonClicked();
 
-	//virtual void BeginPlay() override;
+	
+protected:
+	virtual void NativeConstruct() override;
+
+	UPROPERTY()
+	UMySignUpLoginAPI* mySignUpLoginAPI;
+	
+
+	
 	
 };

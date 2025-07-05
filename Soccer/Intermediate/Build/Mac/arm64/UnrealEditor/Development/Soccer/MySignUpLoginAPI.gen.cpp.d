@@ -1,4 +1,4 @@
-/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/SoccerHUD.cpp.o: \
+/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/MySignUpLoginAPI.gen.cpp.o: \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedPCH.Engine.Project.ValApi.Cpp20.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedDefinitions.Engine.Project.ValApi.Cpp20.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h \
@@ -3869,97 +3869,64 @@
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/MRUFavoritesList.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/MRUList.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/UnrealEd/UHT/AssetEditorSubsystem.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/HUD/SoccerHUD.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySignUpLoginAPI.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Definitions.Soccer.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/SoccerHUD.h \
-  Runtime/Core/Public/CoreMinimal.h \
-  Runtime/Engine/Classes/GameFramework/HUD.h \
-  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
-  Runtime/CoreUObject/Public/Templates/SubclassOf.h \
-  Runtime/Engine/Classes/GameFramework/Actor.h \
-  Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
-  Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
-  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/HUD.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerHUD.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/SoccerOverlay.h \
-  Runtime/UMG/Public/Blueprint/UserWidget.h \
-  Runtime/UMG/Public/Blueprint/WidgetChild.h \
-  Runtime/CoreUObject/Public/UObject/Object.h \
-  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetChild.generated.h \
-  Runtime/CoreUObject/Public/UObject/ObjectSaveContext.h \
-  Runtime/Core/Public/Containers/UnrealString.h \
-  Runtime/Core/Public/HAL/Platform.h \
-  Runtime/CoreUObject/Public/UObject/CookEnums.h \
-  Runtime/Core/Public/HAL/PlatformMath.h \
-  Runtime/CoreUObject/Public/UObject/ObjectSaveOverride.h \
-  Runtime/Core/Public/Containers/Array.h \
-  Runtime/CoreUObject/Public/UObject/FieldPath.h \
-  Runtime/SlateCore/Public/Styling/SlateColor.h \
-  Runtime/SlateCore/Public/Layout/Geometry.h \
-  Runtime/SlateCore/Public/Input/CursorReply.h \
-  Runtime/SlateCore/Public/Input/Events.h \
-  Runtime/SlateCore/Public/Input/Reply.h \
-  Runtime/SlateCore/Public/Widgets/SWidget.h \
-  Runtime/SlateCore/Public/Layout/Margin.h \
-  Runtime/UMG/Public/Components/SlateWrapperTypes.h \
-  Runtime/Core/Public/Misc/Attribute.h \
-  Runtime/Slate/Public/Widgets/Input/IVirtualKeyboardEntry.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/SlateWrapperTypes.generated.h \
-  Runtime/UMG/Public/Components/Widget.h \
-  Runtime/FieldNotification/Public/FieldNotificationDeclaration.h \
-  Runtime/FieldNotification/Public/FieldNotificationId.h \
-  Runtime/FieldNotification/Public/IFieldNotificationClassDescriptor.h \
-  Runtime/FieldNotification/Public/INotifyFieldValueChanged.h \
-  Runtime/CoreUObject/Public/UObject/Interface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/FieldNotification/UHT/INotifyFieldValueChanged.generated.h \
-  Runtime/SlateCore/Public/Layout/Visibility.h \
-  Runtime/SlateCore/Public/Types/SlateStructs.h \
-  Runtime/UMG/Public/Components/Visual.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Visual.generated.h \
-  Runtime/SlateCore/Public/Styling/SlateBrush.h \
-  Runtime/CoreUObject/Public/UObject/TextProperty.h \
-  Runtime/UMG/Public/Slate/WidgetTransform.h \
-  Runtime/Core/Public/Math/TransformCalculus2D.h \
-  Runtime/SlateCore/Public/Rendering/SlateRenderTransform.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetTransform.generated.h \
-  Runtime/CoreUObject/Public/UObject/UObjectThreadContext.h \
-  Runtime/Engine/Classes/GameFramework/PlayerController.h \
-  Runtime/UMG/Public/Blueprint/WidgetNavigation.h \
-  Runtime/SlateCore/Public/Types/NavigationMetaData.h \
-  Runtime/SlateCore/Public/Types/SlateEnums.h \
-  Runtime/SlateCore/Public/Input/NavigationReply.h \
-  Runtime/SlateCore/Public/Types/ISlateMetaData.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetNavigation.generated.h \
-  Runtime/SlateCore/Public/Widgets/WidgetPixelSnapping.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Widget.generated.h \
-  Runtime/UMG/Public/Components/NamedSlotInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/NamedSlotInterface.generated.h \
-  Runtime/Engine/Classes/Engine/World.h \
-  Runtime/Engine/Classes/Engine/LocalPlayer.h \
-  Runtime/Slate/Public/Widgets/Layout/Anchors.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Slate/UHT/Anchors.generated.h \
-  Runtime/Core/Public/Logging/MessageLog.h \
-  Runtime/Core/Public/Stats/Stats.h Runtime/Engine/Public/EngineStats.h \
-  Runtime/SlateCore/Public/SlateGlobals.h \
-  Runtime/UMG/Public/Animation/WidgetAnimationEvents.h \
-  Runtime/Core/Public/Delegates/DelegateCombinations.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetAnimationEvents.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerOverlay.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerGameMode.h \
-  Runtime/Engine/Classes/GameFramework/GameModeBase.h \
-  Runtime/Core/Public/Misc/Guid.h \
-  Runtime/Engine/Classes/GameFramework/Pawn.h \
-  Runtime/Engine/Classes/GameFramework/Info.h \
-  Runtime/Engine/Classes/Engine/ServerStatReplicator.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ServerStatReplicator.generated.h \
-  Runtime/CoreOnline/Public/Online/CoreOnline.h \
-  Runtime/Net/Core/Public/Net/Core/Connection/NetEnums.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameModeBase.generated.h \
-  Runtime/Online/HTTP/Public/Interfaces/IHttpRequest.h \
-  Runtime/Online/HTTP/Public/Interfaces/IHttpBase.h \
+  Runtime/CoreUObject/Public/UObject/GeneratedCppIncludes.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/MySignUpLoginAPI.h \
+  Runtime/Core/Public/CoreMinimal.h Runtime/Online/HTTP/Public/HttpFwd.h \
+  Runtime/Core/Public/Templates/SharedPointer.h \
+  Runtime/Core/Public/Misc/Optional.h \
   Runtime/Online/HTTP/Public/Interfaces/IHttpResponse.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerGameMode.generated.h
+  Runtime/Online/HTTP/Public/Interfaces/IHttpBase.h \
+  Runtime/CoreUObject/Public/UObject/NoExportTypes.h \
+  Runtime/Core/Public/PixelFormat.h \
+  Runtime/Core/Public/Misc/FallbackStruct.h \
+  Runtime/Core/Public/Misc/Guid.h Runtime/Core/Public/Misc/DateTime.h \
+  Runtime/Core/Public/Misc/Timespan.h \
+  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
+  Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/CoreGlobals.h Runtime/Core/Public/HAL/Platform.h \
+  Runtime/Core/Public/Misc/EnumClassFlags.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/Core/Public/Templates/UniquePtr.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
+  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
+  Runtime/CoreUObject/Public/UObject/UnrealType.h \
+  Runtime/CoreUObject/Public/Serialization/TestUndeclaredScriptStructObjectReferences.h \
+  Runtime/CoreUObject/Public/UObject/ObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
+  Runtime/Core/Public/Math/InterpCurvePoint.h \
+  Runtime/Core/Public/Math/UnitConversion.h \
+  Runtime/Core/Public/Containers/Array.h Runtime/Core/Public/CoreTypes.h \
+  Runtime/Core/Public/Delegates/Delegate.h \
+  Runtime/Core/Public/Internationalization/Text.h \
+  Runtime/Core/Public/Templates/ValueOrError.h \
+  Runtime/Core/Public/Math/UnitConversion.inl \
+  Runtime/Core/Public/CoreFwd.h Runtime/Core/Public/Misc/OptionalFwd.h \
+  Runtime/Core/Public/Math/Vector.h Runtime/Core/Public/Math/Vector4.h \
+  Runtime/Core/Public/Math/Vector2D.h \
+  Runtime/Core/Public/Math/TwoVectors.h Runtime/Core/Public/Math/Plane.h \
+  Runtime/Core/Public/Math/Rotator.h Runtime/Core/Public/Math/Quat.h \
+  Runtime/Core/Public/Math/IntPoint.h \
+  Runtime/Core/Public/Math/IntVector.h Runtime/Core/Public/Math/Color.h \
+  Runtime/Core/Public/Math/Box.h Runtime/Core/Public/Math/Box2D.h \
+  Runtime/Core/Public/Math/BoxSphereBounds.h \
+  Runtime/Core/Public/Math/OrientedBox.h \
+  Runtime/Core/Public/Math/Matrix.h \
+  Runtime/Core/Public/Math/ScalarRegister.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  Runtime/Core/Public/Math/RangeBound.h \
+  Runtime/Core/Public/Math/Interval.h Runtime/Core/Public/Math/Sphere.h \
+  Runtime/Core/Public/Internationalization/PolyglotTextData.h \
+  Runtime/Core/Public/Containers/Map.h \
+  Runtime/Core/Public/Internationalization/LocalizedTextSourceTypes.h \
+  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
+  Runtime/CoreUObject/Public/AssetRegistry/AssetBundleData.h \
+  Runtime/CoreUObject/Public/AssetRegistry/AssetData.h \
+  /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/ICursor.h \
+  /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/IInputInterface.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySignUpLoginAPI.generated.h \
+  Runtime/CoreUObject/Public/UObject/ScriptMacros.h

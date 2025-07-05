@@ -32,6 +32,9 @@ public:
 
 	UPROPERTY()
 	APawn* storedOriginalPawn = nullptr;
+
+	UPROPERTY()
+	AHUD* myHUD;
 	
 	UFUNCTION()
 	void SwitchPlayerControlsToNPC(APawn* NewPawn);

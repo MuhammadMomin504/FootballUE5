@@ -2,23 +2,24 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "HttpFwd.h"
 #include "Interfaces/IHttpResponse.h"
-#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "MySignUpLoginAPI.generated.h"
 
 /**
  * 
  */
-class SOCCER_API MyLoginAPI
+UCLASS()
+class SOCCER_API UMySignUpLoginAPI : public UObject
 {
+	GENERATED_BODY()
+
 public:
-	// MyLoginAPI();
-	// ~MyLoginAPI();
-
-
-
 	void SendSignUpRequest();
 	void OnSignupResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 	void SendLoginRequest();
 	void OnLoginResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
+	
 };

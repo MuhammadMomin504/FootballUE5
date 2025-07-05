@@ -1,22 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+
 #include "HttpModule.h"
 #include "Json.h"
 #include "JsonUtilities.h"
 #include "JsonUtils/JsonPointer.h"
 #include "UObject/ConstructorHelpers.h"
-#include "MyLoginAPI.h"
+#include "MySignUpLoginAPI.h"
 
-// MyLoginAPI::MyLoginAPI()
-// {
-// 	
-// }
-//
-// MyLoginAPI::~MyLoginAPI()
-// {
-// }
-
-void MyLoginAPI::SendSignUpRequest()
+void UMySignUpLoginAPI::SendSignUpRequest()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Signup Request Called"));
 	TSharedPtr<FJsonObject> jsonObject = MakeShareable(new FJsonObject());
@@ -50,7 +42,8 @@ void MyLoginAPI::SendSignUpRequest()
 	UE_LOG(LogTemp, Warning, TEXT("Signup Request Proceeded"));
 }
 
-void MyLoginAPI::OnSignupResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
+void UMySignUpLoginAPI::OnSignupResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response,
+	bool bWasSuccessful)
 {
 	if (!bWasSuccessful || !Response.IsValid())
 	{
@@ -61,8 +54,9 @@ void MyLoginAPI::OnSignupResponseReceived(FHttpRequestPtr Request, FHttpResponse
 	UE_LOG(LogTemp, Warning, TEXT("Signup response: %s"), *Response->GetContentAsString());
 }
 
-void MyLoginAPI::SendLoginRequest()
+void UMySignUpLoginAPI::SendLoginRequest()
 {
+
 	TSharedPtr<FJsonObject> jsonObject = MakeShareable(new FJsonObject());
 	jsonObject->SetStringField(TEXT("email"), "john@example.com");
 	jsonObject->SetStringField(TEXT("password"), "password123");
@@ -93,7 +87,7 @@ void MyLoginAPI::SendLoginRequest()
 	HttpRequest->ProcessRequest();
 }
 
-void MyLoginAPI::OnLoginResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
+void UMySignUpLoginAPI::OnLoginResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
 {
 	if (!bWasSuccessful || !Response.IsValid())
 	{

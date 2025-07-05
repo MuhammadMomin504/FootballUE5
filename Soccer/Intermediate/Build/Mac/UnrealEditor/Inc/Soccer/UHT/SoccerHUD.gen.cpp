@@ -31,9 +31,6 @@ struct Z_Construct_UClass_ASoccerHUD_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
-#endif
 		{ "HideCategories", "Rendering Actor Input Replication" },
 		{ "IncludePath", "HUD/SoccerHUD.h" },
 		{ "ModuleRelativePath", "Public/HUD/SoccerHUD.h" },
@@ -43,8 +40,13 @@ struct Z_Construct_UClass_ASoccerHUD_Statics
 		{ "Category", "Soccer HUD" },
 		{ "ModuleRelativePath", "Public/HUD/SoccerHUD.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_soccerOverlay_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/HUD/SoccerHUD.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_soccerOverlayClass;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_soccerOverlay;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -53,8 +55,10 @@ struct Z_Construct_UClass_ASoccerHUD_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASoccerHUD_Statics::NewProp_soccerOverlayClass = { "soccerOverlayClass", nullptr, (EPropertyFlags)0x0044000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASoccerHUD, soccerOverlayClass), Z_Construct_UClass_UClass, Z_Construct_UClass_USoccerOverlay_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_soccerOverlayClass_MetaData), NewProp_soccerOverlayClass_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASoccerHUD_Statics::NewProp_soccerOverlay = { "soccerOverlay", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASoccerHUD, soccerOverlay), Z_Construct_UClass_USoccerOverlay_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_soccerOverlay_MetaData), NewProp_soccerOverlay_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASoccerHUD_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASoccerHUD_Statics::NewProp_soccerOverlayClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASoccerHUD_Statics::NewProp_soccerOverlay,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASoccerHUD_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ASoccerHUD_Statics::DependentSingletons[])() = {
@@ -98,10 +102,10 @@ ASoccerHUD::~ASoccerHUD() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerHUD_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASoccerHUD, ASoccerHUD::StaticClass, TEXT("ASoccerHUD"), &Z_Registration_Info_UClass_ASoccerHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASoccerHUD), 2225819934U) },
+		{ Z_Construct_UClass_ASoccerHUD, ASoccerHUD::StaticClass, TEXT("ASoccerHUD"), &Z_Registration_Info_UClass_ASoccerHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASoccerHUD), 3464510278U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerHUD_h_2370632722(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerHUD_h_1100601(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerHUD_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerHUD_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

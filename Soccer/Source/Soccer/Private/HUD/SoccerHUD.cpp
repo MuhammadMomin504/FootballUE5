@@ -3,6 +3,7 @@
 
 #include "HUD/SoccerHUD.h"
 #include "HUD/SoccerOverlay.h"
+#include "SoccerGameMode.h"
 
 #include "Blueprint/UserWidget.h"
 
@@ -15,7 +16,7 @@ void ASoccerHUD::BeginPlay()
 		APlayerController* controller = world->GetFirstPlayerController();
 		if(controller)
 		{
-			USoccerOverlay* soccerOverlay = CreateWidget<USoccerOverlay>(controller, soccerOverlayClass);
+			soccerOverlay = CreateWidget<USoccerOverlay>(controller, soccerOverlayClass);
 			soccerOverlay->AddToViewport();
 		}
 	}
