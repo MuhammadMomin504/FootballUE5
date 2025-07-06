@@ -3878,6 +3878,8 @@
   Runtime/Core/Public/Misc/Optional.h \
   Runtime/Online/HTTP/Public/Interfaces/IHttpResponse.h \
   Runtime/Online/HTTP/Public/Interfaces/IHttpBase.h \
+  Runtime/InteractiveToolsFramework/Public/TargetInterfaces/MeshTargetInterfaceTypes.h \
+  Runtime/Core/Public/CoreTypes.h \
   Runtime/CoreUObject/Public/UObject/NoExportTypes.h \
   Runtime/Core/Public/PixelFormat.h \
   Runtime/Core/Public/Misc/FallbackStruct.h \
@@ -3900,7 +3902,7 @@
   Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
   Runtime/Core/Public/Math/InterpCurvePoint.h \
   Runtime/Core/Public/Math/UnitConversion.h \
-  Runtime/Core/Public/Containers/Array.h Runtime/Core/Public/CoreTypes.h \
+  Runtime/Core/Public/Containers/Array.h \
   Runtime/Core/Public/Delegates/Delegate.h \
   Runtime/Core/Public/Internationalization/Text.h \
   Runtime/Core/Public/Templates/ValueOrError.h \

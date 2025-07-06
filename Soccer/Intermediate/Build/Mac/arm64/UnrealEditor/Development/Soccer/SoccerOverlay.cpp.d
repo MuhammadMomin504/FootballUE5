@@ -3947,6 +3947,8 @@
   Runtime/Core/Public/Misc/Optional.h \
   Runtime/Online/HTTP/Public/Interfaces/IHttpResponse.h \
   Runtime/Online/HTTP/Public/Interfaces/IHttpBase.h \
+  Runtime/InteractiveToolsFramework/Public/TargetInterfaces/MeshTargetInterfaceTypes.h \
+  Runtime/Core/Public/CoreTypes.h \
   Runtime/CoreUObject/Public/UObject/NoExportTypes.h \
   Runtime/Core/Public/PixelFormat.h \
   Runtime/Core/Public/Misc/FallbackStruct.h \
@@ -3966,7 +3968,6 @@
   Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
   Runtime/Core/Public/Math/InterpCurvePoint.h \
   Runtime/Core/Public/Math/UnitConversion.h \
-  Runtime/Core/Public/CoreTypes.h \
   Runtime/Core/Public/Delegates/Delegate.h \
   Runtime/Core/Public/Internationalization/Text.h \
   Runtime/Core/Public/Templates/ValueOrError.h \
@@ -4003,4 +4004,11 @@
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/PanelSlot.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/PanelWidget.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/ContentWidget.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Button.generated.h
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Button.generated.h \
+  Runtime/UMG/Public/Components/EditableTextBox.h \
+  Runtime/SlateCore/Public/Fonts/SlateFontInfo.h \
+  Runtime/UMG/Public/Components/TextWidgetTypes.h \
+  Runtime/Slate/Public/Framework/Text/TextLayout.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/TextWidgetTypes.generated.h \
+  Runtime/Slate/Public/Widgets/Text/ISlateEditableTextWidget.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/EditableTextBox.generated.h

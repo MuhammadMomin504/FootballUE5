@@ -5,12 +5,22 @@
 #include "MySignUpLoginAPI.h"
 
 #include "Components/Button.h"
+#include "Components/EditableTextBox.h"
 
 void USoccerOverlay::OnSignupButtonClicked()
 {
+	if(!mySignUpLoginAPI || !emailTextField || !passwordTextField)
+	{
+		UE_LOG(LogTemp, Error, TEXT("SignUp API or TextFields are not initialized"));
+		return;
+	}
+
+	FString email = emailTextField->GetText().ToString();
+	FString password = passwordTextField->GetText().ToString();
+	
 	if(mySignUpLoginAPI)
 	{
-		mySignUpLoginAPI->SendSignUpRequest();
+		mySignUpLoginAPI->SendSignUpRequest(email, password);
 	}
 	
 }

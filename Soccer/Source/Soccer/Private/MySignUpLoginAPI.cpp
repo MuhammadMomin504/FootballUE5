@@ -8,13 +8,15 @@
 #include "UObject/ConstructorHelpers.h"
 #include "MySignUpLoginAPI.h"
 
-void UMySignUpLoginAPI::SendSignUpRequest()
+void UMySignUpLoginAPI::SendSignUpRequest(FString email, FString password)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Signup Request Called"));
 	TSharedPtr<FJsonObject> jsonObject = MakeShareable(new FJsonObject());
 	jsonObject->SetStringField(TEXT("name"), "John Doe");
-	jsonObject->SetStringField(TEXT("email"), "john154654@example.com");
-	jsonObject->SetStringField(TEXT("password"), "password123");
+	jsonObject->SetStringField(TEXT("email"), email);
+	jsonObject->SetStringField(TEXT("password"), password);
+	// jsonObject->SetStringField(TEXT("email"), "john154654@example.com");
+	// jsonObject->SetStringField(TEXT("password"), "password123");
 
 	FString requestBody;
 	TSharedRef<TJsonWriter<>> writer = TJsonWriterFactory<>::Create(&requestBody);

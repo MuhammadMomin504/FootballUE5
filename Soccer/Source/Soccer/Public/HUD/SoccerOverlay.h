@@ -8,6 +8,8 @@
 
 class ASoccerGameMode;
 class UMySignUpLoginAPI;
+class UEditableTextBox;
+class UButton;
 
 UCLASS()
 class SOCCER_API USoccerOverlay : public UUserWidget
@@ -16,7 +18,13 @@ class SOCCER_API USoccerOverlay : public UUserWidget
 
 public:
 	UPROPERTY(meta=(BindWidget))
-	class UButton* SignupButton;
+	UButton* SignupButton;
+
+	UPROPERTY(meta=(BindWidget))
+	UEditableTextBox* emailTextField;
+
+	UPROPERTY(meta=(BindWidget))
+	UEditableTextBox* passwordTextField;
 
 
 private:

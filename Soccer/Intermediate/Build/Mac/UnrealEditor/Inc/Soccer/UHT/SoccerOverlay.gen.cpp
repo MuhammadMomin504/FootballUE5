@@ -14,6 +14,7 @@ SOCCER_API UClass* Z_Construct_UClass_UMySignUpLoginAPI_NoRegister();
 SOCCER_API UClass* Z_Construct_UClass_USoccerOverlay();
 SOCCER_API UClass* Z_Construct_UClass_USoccerOverlay_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UButton_NoRegister();
+UMG_API UClass* Z_Construct_UClass_UEditableTextBox_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget();
 UPackage* Z_Construct_UPackage__Script_Soccer();
 // End Cross Module References
@@ -73,11 +74,23 @@ struct Z_Construct_UClass_USoccerOverlay_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/HUD/SoccerOverlay.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_emailTextField_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/HUD/SoccerOverlay.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_passwordTextField_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/HUD/SoccerOverlay.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_mySignUpLoginAPI_MetaData[] = {
 		{ "ModuleRelativePath", "Public/HUD/SoccerOverlay.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SignupButton;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_emailTextField;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_passwordTextField;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_mySignUpLoginAPI;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -91,9 +104,13 @@ struct Z_Construct_UClass_USoccerOverlay_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USoccerOverlay_Statics::NewProp_SignupButton = { "SignupButton", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USoccerOverlay, SignupButton), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SignupButton_MetaData), NewProp_SignupButton_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USoccerOverlay_Statics::NewProp_emailTextField = { "emailTextField", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USoccerOverlay, emailTextField), Z_Construct_UClass_UEditableTextBox_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_emailTextField_MetaData), NewProp_emailTextField_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USoccerOverlay_Statics::NewProp_passwordTextField = { "passwordTextField", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USoccerOverlay, passwordTextField), Z_Construct_UClass_UEditableTextBox_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_passwordTextField_MetaData), NewProp_passwordTextField_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USoccerOverlay_Statics::NewProp_mySignUpLoginAPI = { "mySignUpLoginAPI", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USoccerOverlay, mySignUpLoginAPI), Z_Construct_UClass_UMySignUpLoginAPI_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_mySignUpLoginAPI_MetaData), NewProp_mySignUpLoginAPI_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USoccerOverlay_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USoccerOverlay_Statics::NewProp_SignupButton,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USoccerOverlay_Statics::NewProp_emailTextField,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USoccerOverlay_Statics::NewProp_passwordTextField,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USoccerOverlay_Statics::NewProp_mySignUpLoginAPI,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_USoccerOverlay_Statics::PropPointers) < 2048);
@@ -138,10 +155,10 @@ USoccerOverlay::~USoccerOverlay() {}
 struct Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerOverlay_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USoccerOverlay, USoccerOverlay::StaticClass, TEXT("USoccerOverlay"), &Z_Registration_Info_UClass_USoccerOverlay, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USoccerOverlay), 129723320U) },
+		{ Z_Construct_UClass_USoccerOverlay, USoccerOverlay::StaticClass, TEXT("USoccerOverlay"), &Z_Registration_Info_UClass_USoccerOverlay, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USoccerOverlay), 4170957712U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerOverlay_h_2985648983(TEXT("/Script/Soccer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerOverlay_h_352837097(TEXT("/Script/Soccer"),
 	Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerOverlay_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_muhammadmomin_Documents_Folders_Development_UEGitProjects_FootballUE5_Soccer_Source_Soccer_Public_HUD_SoccerOverlay_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
