@@ -4011,4 +4011,19 @@
   Runtime/Slate/Public/Framework/Text/TextLayout.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/TextWidgetTypes.generated.h \
   Runtime/Slate/Public/Widgets/Text/ISlateEditableTextWidget.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/EditableTextBox.generated.h
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/EditableTextBox.generated.h \
+  Runtime/UMG/Public/Components/CanvasPanel.h \
+  Runtime/Slate/Public/Widgets/Layout/SConstraintCanvas.h \
+  Runtime/SlateCore/Public/Widgets/DeclarativeSyntaxSupport.h \
+  Runtime/SlateCore/Public/SlotBase.h \
+  Runtime/SlateCore/Public/Layout/Children.h \
+  Runtime/SlateCore/Public/Widgets/SPanel.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/CanvasPanel.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/SoccerHUD.h \
+  Runtime/Engine/Classes/GameFramework/HUD.h \
+  Runtime/Engine/Classes/GameFramework/Actor.h \
+  Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
+  Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/HUD.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerHUD.generated.h
