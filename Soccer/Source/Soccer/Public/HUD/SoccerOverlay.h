@@ -6,10 +6,11 @@
 #include "Blueprint/UserWidget.h"
 #include "SoccerOverlay.generated.h"
 
-class ASoccerGameMode;
 class UMySignUpLoginAPI;
 class UEditableTextBox;
 class UButton;
+class UCanvasPanel;
+class ASoccerHUD;
 
 UCLASS()
 class SOCCER_API USoccerOverlay : public UUserWidget
@@ -26,10 +27,19 @@ public:
 	UPROPERTY(meta=(BindWidget))
 	UEditableTextBox* passwordTextField;
 
+	UFUNCTION()
+	void ShowLoginPanel(bool shouldShow);
+
+	UFUNCTION()
+	void SetSoccerHUDReference(ASoccerHUD* passedSoccerHUD);
+
 
 private:
 	UFUNCTION()
 	void OnSignupButtonClicked();
+
+	UPROPERTY()
+	ASoccerHUD* mySoccerHUD;
 
 	
 protected:
@@ -37,8 +47,7 @@ protected:
 
 	UPROPERTY()
 	UMySignUpLoginAPI* mySignUpLoginAPI;
-	
 
-	
-	
+	UPROPERTY(meta = (BindWidget))
+	UCanvasPanel* SSignupPanel;
 };

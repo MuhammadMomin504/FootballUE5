@@ -11,6 +11,8 @@
 void UMySignUpLoginAPI::SendSignUpRequest(FString email, FString password)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Signup Request Called"));
+	UE_LOG(LogTemp, Warning, TEXT("Email: %s, Password: %s"), *email, *password);
+	
 	TSharedPtr<FJsonObject> jsonObject = MakeShareable(new FJsonObject());
 	jsonObject->SetStringField(TEXT("name"), "John Doe");
 	jsonObject->SetStringField(TEXT("email"), email);

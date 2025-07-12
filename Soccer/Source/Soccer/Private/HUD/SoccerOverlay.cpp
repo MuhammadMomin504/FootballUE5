@@ -6,6 +6,9 @@
 
 #include "Components/Button.h"
 #include "Components/EditableTextBox.h"
+#include "Components/CanvasPanel.h"
+#include "HUD/SoccerHUD.h"
+
 
 void USoccerOverlay::OnSignupButtonClicked()
 {
@@ -21,6 +24,11 @@ void USoccerOverlay::OnSignupButtonClicked()
 	if(mySignUpLoginAPI)
 	{
 		mySignUpLoginAPI->SendSignUpRequest(email, password);
+		ShowLoginPanel(false);
+		if(mySoccerHUD)
+		{
+			mySoccerHUD->UnpauseGameButtonCallBack();
+		}
 	}
 	
 }
@@ -37,5 +45,23 @@ void USoccerOverlay::NativeConstruct()
 	{
 		mySignUpLoginAPI = NewObject<UMySignUpLoginAPI>();
 	}
+	
 
 }
+
+void USoccerOverlay::ShowLoginPanel(bool shouldShow)
+{
+	if(SSignupPanel)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Disabling panel"));
+		//SSignupPanel->SetIsEnabled(false);
+		SSignupPanel->SetVisibility(shouldShow ? ESlateVisibility::Visible : ESlateVisibility::Hidden);
+	}
+}
+
+void USoccerOverlay::SetSoccerHUDReference(ASoccerHUD* passedSoccerHUD)
+{
+	mySoccerHUD = passedSoccerHUD;
+}
+
+

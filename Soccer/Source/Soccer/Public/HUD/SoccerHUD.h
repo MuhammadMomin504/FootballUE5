@@ -7,6 +7,7 @@
 #include "SoccerHUD.generated.h"
 
 class USoccerOverlay;
+class ASoccerGameMode;
 
 UCLASS()
 class SOCCER_API ASoccerHUD : public AHUD
@@ -21,4 +22,13 @@ private:
 	TSubclassOf<USoccerOverlay> soccerOverlayClass;
 	UPROPERTY()
 	USoccerOverlay* soccerOverlay;
+	ASoccerGameMode* mySoccerGameMode;
+
+public:
+
+	void PauseGameButtonCallBack();
+	void UnpauseGameButtonCallBack();
+	void SetReference();
+
 };
+

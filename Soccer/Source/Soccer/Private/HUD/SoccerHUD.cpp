@@ -4,6 +4,7 @@
 #include "HUD/SoccerHUD.h"
 #include "HUD/SoccerOverlay.h"
 #include "SoccerGameMode.h"
+#include "Kismet/GameplayStatics.h"
 
 #include "Blueprint/UserWidget.h"
 
@@ -18,7 +19,34 @@ void ASoccerHUD::BeginPlay()
 		{
 			soccerOverlay = CreateWidget<USoccerOverlay>(controller, soccerOverlayClass);
 			soccerOverlay->AddToViewport();
+			SetReference();
 		}
+		mySoccerGameMode = Cast<ASoccerGameMode>(UGameplayStatics::GetGameMode(world));
 	}
 
+}
+
+void ASoccerHUD::PauseGameButtonCallBack()
+{
+	if(mySoccerGameMode)
+	{
+		mySoccerGameMode->PauseGame();
+	}
+}
+
+void ASoccerHUD::UnpauseGameButtonCallBack()
+{
+	if(mySoccerGameMode)
+	{
+		mySoccerGameMode->UnpauseGame();
+	}
+}
+
+void ASoccerHUD::SetReference()
+{
+	if(soccerOverlay)
+	{
+		soccerOverlay->SetSoccerHUDReference(this);		
+	}
+	
 }

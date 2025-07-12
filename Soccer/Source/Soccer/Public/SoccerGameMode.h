@@ -41,6 +41,9 @@ public:
 
 	void SwitchToDefaultPawn(APawn* passedNPC);
 
+	void PauseGame();
+	void UnpauseGame();
+
 	AFootball* footballReference;
 
 	UPROPERTY(EditAnywhere, Category="AI")
@@ -55,16 +58,7 @@ protected:
 
 private:
 	FTimerHandle SwitchPawnTimerHandle;
-
-	
-	
-
 	AMySoccerCharacter* mySoccerCharacter;
-
-	void SendSignUpRequest();
-	void OnSignupResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
-	void SendLoginRequest();
-	void OnLoginResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
 };
 

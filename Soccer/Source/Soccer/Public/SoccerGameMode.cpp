@@ -77,110 +77,10 @@ void ASoccerGameMode::BeginPlay()
 		storedOriginalPawn = storedOriginalPlayerController->GetPawn();
 		mySoccerCharacter = Cast<AMySoccerCharacter>(storedOriginalPawn);
 		myHUD = storedOriginalPlayerController->GetHUD();
+		//PauseGame();
 	}
-
-	//SendSignUpRequest();
-	//SendLoginRequest();
-	// GetWorldTimerManager().SetTimer(SwitchPawnTimerHandle, this, &ASoccerGameMode::SwitchToNewPawn, 5.0f, false);
-}
-
-void ASoccerGameMode::SendSignUpRequest()
-{
-	UE_LOG(LogTemp, Warning, TEXT("Signup Request Called"));
-	TSharedPtr<FJsonObject> jsonObject = MakeShareable(new FJsonObject());
-	jsonObject->SetStringField(TEXT("name"), "John Doe");
-	jsonObject->SetStringField(TEXT("email"), "john154654@example.com");
-	jsonObject->SetStringField(TEXT("password"), "password123");
-
-	FString requestBody;
-	TSharedRef<TJsonWriter<>> writer = TJsonWriterFactory<>::Create(&requestBody);
-	FJsonSerializer::Serialize(jsonObject.ToSharedRef(), writer);
-
-	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> HttpRequest = FHttpModule::Get().CreateRequest();
-	HttpRequest->SetURL("https://auth-server-production-0171.up.railway.app/api/auth/signup");
-	HttpRequest->SetVerb("POST");
-	HttpRequest->SetHeader("Content-Type", "application/json");
-	HttpRequest->SetContentAsString(requestBody);
-
-	HttpRequest->OnProcessRequestComplete().BindLambda([](FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
-	{
-		if (!bWasSuccessful || !Response.IsValid())
-		{
-			UE_LOG(LogTemp, Error, TEXT("Signup request failed."));
-			return;
-		}
 	
-		FString ResponseString = Response->GetContentAsString();
-		UE_LOG(LogTemp, Warning, TEXT("Signup Response: %s"), *ResponseString);
-	});
-	//HttpRequest->OnProcessRequestComplete().BindUObject(this, &ASoccerGameMode::OnSignupResponseReceived);
-	HttpRequest->ProcessRequest();
-	UE_LOG(LogTemp, Warning, TEXT("Signup Request Proceeded"));
-}
-
-void ASoccerGameMode::OnSignupResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
-{
-	if (!bWasSuccessful || !Response.IsValid())
-	{
-		UE_LOG(LogTemp, Error, TEXT("Signup request failed"));
-		return;
-	}
-
-	UE_LOG(LogTemp, Warning, TEXT("Signup response: %s"), *Response->GetContentAsString());
-}
-
-
-void ASoccerGameMode::SendLoginRequest()
-{
-	TSharedPtr<FJsonObject> jsonObject = MakeShareable(new FJsonObject());
-	jsonObject->SetStringField(TEXT("email"), "john@example.com");
-	jsonObject->SetStringField(TEXT("password"), "password123");
-
-	FString RequestBody;
-	TSharedRef<TJsonWriter<>> writer = TJsonWriterFactory<>::Create(&RequestBody);
-	FJsonSerializer::Serialize(jsonObject.ToSharedRef(), writer);
-
-	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> HttpRequest = FHttpModule::Get().CreateRequest();
-	HttpRequest->SetURL("https://auth-server-production-0171.up.railway.app/api/auth/login");
-	HttpRequest->SetVerb("POST");
-	HttpRequest->SetHeader("Content-Type", "application/json");
-	HttpRequest->SetContentAsString(RequestBody);
-
-	HttpRequest->OnProcessRequestComplete().BindLambda([](FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
-	{
-		if (!bWasSuccessful || !Response.IsValid())
-		{
-			UE_LOG(LogTemp, Error, TEXT("Sign in request failed."));
-			return;
-		}
-	
-		FString ResponseString = Response->GetContentAsString();
-		UE_LOG(LogTemp, Warning, TEXT("Sign in Response: %s"), *ResponseString);
-	});
-
-	//HttpRequest->OnProcessRequestComplete().BindUObject(this, &YourClass::OnLoginResponseReceived);
-	HttpRequest->ProcessRequest();
-}
-
-void ASoccerGameMode::OnLoginResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
-{
-	if (!bWasSuccessful || !Response.IsValid())
-	{
-		UE_LOG(LogTemp, Error, TEXT("Login request failed"));
-		return;
-	}
-
-	UE_LOG(LogTemp, Warning, TEXT("Login response: %s"), *Response->GetContentAsString());
-
-	// Optionally parse token from JSON response
-	TSharedPtr<FJsonObject> JsonResponse;
-	TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Response->GetContentAsString());
-
-	if (FJsonSerializer::Deserialize(Reader, JsonResponse) && JsonResponse.IsValid())
-	{
-		FString Token = JsonResponse->GetStringField(TEXT("token"));  // Adjust field name based on actual response
-		UE_LOG(LogTemp, Warning, TEXT("Received Token: %s"), *Token);
-	}
+	 GetWorldTimerManager().SetTimer(SwitchPawnTimerHandle, this, &ASoccerGameMode::PauseGame, 1.0f, false);
 }
 
 void ASoccerGameMode::SwitchToDefaultPawn(APawn* passedNPC)
@@ -193,6 +93,22 @@ void ASoccerGameMode::SwitchToDefaultPawn(APawn* passedNPC)
 		currentNPC->PawnExit();
 		if(mySoccerCharacter)
 			mySoccerCharacter->PawnEnter();
+	}
+}
+
+void ASoccerGameMode::PauseGame()
+{
+	if(storedOriginalPlayerController)
+	{
+		storedOriginalPlayerController->SetPause(true);
+	}
+}
+
+void ASoccerGameMode::UnpauseGame()
+{
+	if(storedOriginalPlayerController)
+	{
+		storedOriginalPlayerController->SetPause(false);
 	}
 }
 
