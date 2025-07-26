@@ -8,6 +8,7 @@
 #include "GameFramework/PlayerController.h"
 #include "Engine/World.h"
 #include "UObject/ConstructorHelpers.h"
+#include "HUD/MiniMapHUD.h"
 
 #include "HttpModule.h"
 //#include "Interfaces/IHttpRequest.h"
@@ -16,6 +17,8 @@
 #include "Json.h"
 #include "JsonUtilities.h"
 #include "JsonUtils/JsonPointer.h"
+
+
 
 ASoccerGameMode::ASoccerGameMode()
 {
@@ -77,10 +80,11 @@ void ASoccerGameMode::BeginPlay()
 		storedOriginalPawn = storedOriginalPlayerController->GetPawn();
 		mySoccerCharacter = Cast<AMySoccerCharacter>(storedOriginalPawn);
 		myHUD = storedOriginalPlayerController->GetHUD();
+		mySoccerCharacter->SetHUDReference(Cast<AMiniMapHUD>(myHUD));
 		//PauseGame();
 	}
 	
-	 GetWorldTimerManager().SetTimer(SwitchPawnTimerHandle, this, &ASoccerGameMode::PauseGame, 1.0f, false);
+	 //GetWorldTimerManager().SetTimer(SwitchPawnTimerHandle, this, &ASoccerGameMode::PauseGame, 1.0f, false);
 }
 
 void ASoccerGameMode::SwitchToDefaultPawn(APawn* passedNPC)

@@ -13,6 +13,7 @@ class AAIController;
 class AMyNPC;
 class ACharacterMovementController;
 class AMySoccerCharacter;
+class AMiniMapHUD;
 
 
 UCLASS(minimalapi)
@@ -45,6 +46,8 @@ public:
 	void UnpauseGame();
 
 	AFootball* footballReference;
+
+	AMiniMapHUD* miniMapHUD;
 
 	UPROPERTY(EditAnywhere, Category="AI")
 	TSubclassOf<AAIController> BallChaseAIControllerBPClass;

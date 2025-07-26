@@ -3949,6 +3949,13 @@
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStatics.generated.h \
   Runtime/Engine/Classes/Engine/World.h \
   Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/MiniMapHUD.h \
+  Runtime/Engine/Classes/GameFramework/HUD.h \
+  Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
+  Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/HUD.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MiniMapHUD.generated.h \
   Runtime/Online/HTTP/Public/HttpModule.h \
   Runtime/Core/Public/Containers/Array.h \
   Runtime/Core/Public/Containers/Map.h \

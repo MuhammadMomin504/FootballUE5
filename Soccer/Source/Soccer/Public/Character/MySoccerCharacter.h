@@ -9,6 +9,7 @@
 
 class AAIController;
 class AMyNPC;
+class AMiniMapHUD;
 
 UCLASS()
 class SOCCER_API AMySoccerCharacter : public ACharacterMovementController
@@ -16,20 +17,9 @@ class SOCCER_API AMySoccerCharacter : public ACharacterMovementController
 	GENERATED_BODY()
 
 public:
+
 	// Sets default values for this character's properties
 	AMySoccerCharacter();
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-	void MoveForward(float Value) override;
-	void Turn(float Value) override;
-	void MoveRight(float Value) override;
-	void Run(float Value) override;
-	
-	void TryPossessNPC();
-
-public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -41,9 +31,19 @@ public:
 
 	void PawnEnter() override;
 	void PawnExit() override;
-
+	void SetHUDReference(AMiniMapHUD* miniMapHUD);
 	// Called to bind functionality to input
 	void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+	void MoveForward(float Value) override;
+	void Turn(float Value) override;
+	void MoveRight(float Value) override;
+	void Run(float Value) override;
+	
+	void TryPossessNPC();
 
 private:
 	AMyNPC* currentNPC;
@@ -51,5 +51,7 @@ private:
 	FTimerHandle SwitchPawnTimerHandle;
 	APawn* storedOriginalPawn;
 	AAIController* playerAIController;
+	
+	AMiniMapHUD* miniMap;
 
 };

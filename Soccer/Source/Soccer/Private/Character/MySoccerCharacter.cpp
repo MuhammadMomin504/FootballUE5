@@ -9,6 +9,8 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Chaos/AABBTree.h"
 #include "Engine/OverlapResult.h"
+#include "HUD/MiniMapHUD.h"
+//#include "GameFramework/HUD.h"
 
 // Sets default values
 AMySoccerCharacter::AMySoccerCharacter()
@@ -103,6 +105,11 @@ void AMySoccerCharacter::TryPossessNPC()
 		canControl = false;
 		currentNPC = nullptr;
 	}
+}
+
+void AMySoccerCharacter::SetHUDReference(AMiniMapHUD* miniMapHUD)
+{
+	miniMap = miniMapHUD;
 }
 
 // Called every frame

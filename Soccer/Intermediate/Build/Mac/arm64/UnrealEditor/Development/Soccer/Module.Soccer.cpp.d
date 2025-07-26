@@ -1,4 +1,4 @@
-/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/MySoccerCharacter.cpp.o: \
+/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Module.Soccer.cpp.o: \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedPCH.Engine.Project.ValApi.Cpp20.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/SoccerEditor/Development/Engine/SharedDefinitions.Engine.Project.ValApi.Cpp20.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h \
@@ -3869,28 +3869,52 @@
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/MRUFavoritesList.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Editor/UnrealEd/Public/MRUList.h \
   /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/UnrealEd/UHT/AssetEditorSubsystem.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/Character/MySoccerCharacter.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Module.Soccer.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Soccer/Definitions.Soccer.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/Character/MySoccerCharacter.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/BallChaseAIController.gen.cpp \
+  Runtime/CoreUObject/Public/UObject/GeneratedCppIncludes.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/BallChaseAIController.h \
   Runtime/Core/Public/CoreMinimal.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/CharacterMovementController.h \
-  Runtime/Engine/Classes/GameFramework/Character.h \
+  Runtime/AIModule/Classes/AIController.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
   Runtime/CoreUObject/Public/UObject/UObjectGlobals.h \
   Runtime/CoreUObject/Public/Templates/SubclassOf.h \
+  Runtime/Engine/Public/EngineDefines.h \
+  Runtime/AIModule/Classes/AITypes.h Runtime/Core/Public/Stats/Stats.h \
+  Runtime/NavigationSystem/Public/NavigationSystemTypes.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAgentSelector.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavAgentSelector.generated.h \
+  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
+  Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AITypes.generated.h \
+  Runtime/GameplayTasks/Classes/GameplayTaskOwnerInterface.h \
+  Runtime/GameplayTasks/Classes/GameplayTask.h \
+  Runtime/Engine/Classes/GameFramework/Pawn.h \
+  Runtime/Engine/Classes/GameFramework/Controller.h \
+  Runtime/AIModule/Classes/Perception/AIPerceptionListenerInterface.h \
+  Runtime/CoreUObject/Public/UObject/Interface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIPerceptionListenerInterface.generated.h \
+  Runtime/AIModule/Classes/GenericTeamAgentInterface.h \
+  Runtime/Engine/Classes/GameFramework/Actor.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/GenericTeamAgentInterface.generated.h \
+  Runtime/Engine/Public/VisualLogger/VisualLoggerDebugSnapshotInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/VisualLoggerDebugSnapshotInterface.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIController.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/BallChaseAIController.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/CharacterMovementController.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/CharacterMovementController.h \
+  Runtime/Engine/Classes/GameFramework/Character.h \
   Runtime/CoreUObject/Public/UObject/CoreNet.h \
   Runtime/Engine/Classes/Engine/NetSerialization.h \
   Runtime/Engine/Classes/Engine/EngineTypes.h \
   Runtime/Engine/Classes/Components/ActorComponent.h \
-  Runtime/Engine/Classes/GameFramework/Actor.h \
-  Runtime/Engine/Classes/GameFramework/Pawn.h \
   Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
   Runtime/CoreUObject/Public/UObject/Object.h \
   Runtime/Core/Public/Serialization/BitWriter.h \
   Runtime/Core/Public/Containers/BitArray.h \
   Runtime/Experimental/Iris/Core/Public/Iris/Serialization/IrisObjectReferencePackageMap.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/IrisCore/UHT/IrisObjectReferencePackageMap.generated.h \
-  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementReplication.generated.h \
   Runtime/Engine/Classes/Animation/AnimationAsset.h \
   Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
@@ -3899,12 +3923,119 @@
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/CharacterMovementController.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySoccerCharacter.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/Football.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/Football.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/Football.generated.h \
+  Runtime/Engine/Classes/Engine/HitResult.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MovementController.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/MovementController.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MovementController.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyBTTask_FindBall.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/AITasks/MyBTTask_FindBall.h \
+  Runtime/AIModule/Classes/BehaviorTree/Tasks/BTTask_BlackboardBase.h \
+  Runtime/AIModule/Classes/BehaviorTree/BTTaskNode.h \
+  Runtime/AIModule/Classes/BehaviorTree/BTNode.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeTypes.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKey.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
+  Runtime/InputCore/Classes/InputCoreTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BehaviorTreeTypes.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeComponent.h \
+  Runtime/GameplayTags/Classes/GameplayTagContainer.h \
+  Runtime/Core/Public/Misc/ComparisonUtility.h \
+  Runtime/Core/Public/Containers/StringFwd.h \
+  Runtime/Core/Public/Containers/StringView.h \
+  Runtime/Core/Public/HAL/Platform.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagContainer.generated.h \
+  Runtime/AIModule/Classes/BrainComponent.h \
+  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
+  Runtime/AIModule/Classes/AIResourceInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIResourceInterface.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BrainComponent.generated.h \
+  Runtime/Core/Public/ProfilingDebugging/CsvProfiler.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BehaviorTreeComponent.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardAssetProvider.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardAssetProvider.generated.h \
+  Runtime/AIModule/Classes/Tasks/AITask.h \
+  Runtime/CoreUObject/Public/UObject/Package.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AITask.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BTNode.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BTTaskNode.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BTTask_BlackboardBase.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyBTTask_FindBall.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyBTTask_SearchAround.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/AITasks/MyBTTask_SearchAround.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyBTTask_SearchAround.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyNPC.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/MyNPC.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MyNPC.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySignUpLoginAPI.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/MySignUpLoginAPI.h \
+  Runtime/Online/HTTP/Public/HttpFwd.h \
+  Runtime/Core/Public/Templates/SharedPointer.h \
+  Runtime/Core/Public/Misc/Optional.h \
+  Runtime/Online/HTTP/Public/Interfaces/IHttpResponse.h \
+  Runtime/Online/HTTP/Public/Interfaces/IHttpBase.h \
+  Runtime/InteractiveToolsFramework/Public/TargetInterfaces/MeshTargetInterfaceTypes.h \
+  Runtime/Core/Public/CoreTypes.h \
+  Runtime/CoreUObject/Public/UObject/NoExportTypes.h \
+  Runtime/Core/Public/PixelFormat.h \
+  Runtime/Core/Public/Misc/FallbackStruct.h \
+  Runtime/Core/Public/Misc/Guid.h Runtime/Core/Public/Misc/DateTime.h \
+  Runtime/Core/Public/Misc/Timespan.h \
+  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
+  Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/CoreGlobals.h \
+  Runtime/Core/Public/Misc/EnumClassFlags.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/Core/Public/Templates/UniquePtr.h \
+  Runtime/CoreUObject/Public/UObject/UnrealType.h \
+  Runtime/CoreUObject/Public/Serialization/TestUndeclaredScriptStructObjectReferences.h \
+  Runtime/CoreUObject/Public/UObject/ObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
+  Runtime/Core/Public/Math/InterpCurvePoint.h \
+  Runtime/Core/Public/Math/UnitConversion.h \
+  Runtime/Core/Public/Containers/Array.h \
+  Runtime/Core/Public/Delegates/Delegate.h \
+  Runtime/Core/Public/Internationalization/Text.h \
+  Runtime/Core/Public/Templates/ValueOrError.h \
+  Runtime/Core/Public/Math/UnitConversion.inl \
+  Runtime/Core/Public/CoreFwd.h Runtime/Core/Public/Misc/OptionalFwd.h \
+  Runtime/Core/Public/Math/Vector.h Runtime/Core/Public/Math/Vector4.h \
+  Runtime/Core/Public/Math/Vector2D.h \
+  Runtime/Core/Public/Math/TwoVectors.h Runtime/Core/Public/Math/Plane.h \
+  Runtime/Core/Public/Math/Rotator.h Runtime/Core/Public/Math/Quat.h \
+  Runtime/Core/Public/Math/IntPoint.h \
+  Runtime/Core/Public/Math/IntVector.h Runtime/Core/Public/Math/Color.h \
+  Runtime/Core/Public/Math/Box.h Runtime/Core/Public/Math/Box2D.h \
+  Runtime/Core/Public/Math/BoxSphereBounds.h \
+  Runtime/Core/Public/Math/OrientedBox.h \
+  Runtime/Core/Public/Math/Matrix.h \
+  Runtime/Core/Public/Math/ScalarRegister.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  Runtime/Core/Public/Math/RangeBound.h \
+  Runtime/Core/Public/Math/Interval.h Runtime/Core/Public/Math/Sphere.h \
+  Runtime/Core/Public/Internationalization/PolyglotTextData.h \
+  Runtime/Core/Public/Containers/Map.h \
+  Runtime/Core/Public/Internationalization/LocalizedTextSourceTypes.h \
+  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
+  Runtime/CoreUObject/Public/AssetRegistry/AssetBundleData.h \
+  Runtime/CoreUObject/Public/AssetRegistry/AssetData.h \
+  /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/ICursor.h \
+  /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/IInputInterface.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySignUpLoginAPI.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySoccerCharacter.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/Character/MySoccerCharacter.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySoccerCharacter.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerCharacter.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerCharacter.h \
+  Runtime/Core/Public/Logging/LogMacros.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerCharacter.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerGameMode.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerGameMode.h \
   Runtime/Engine/Classes/GameFramework/GameModeBase.h \
-  Runtime/Core/Public/Misc/Guid.h \
   Runtime/Engine/Classes/GameFramework/Info.h \
   Runtime/Engine/Classes/Engine/ServerStatReplicator.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ServerStatReplicator.generated.h \
@@ -3913,42 +4044,173 @@
   Runtime/Engine/Classes/GameFramework/PlayerController.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameModeBase.generated.h \
   Runtime/Online/HTTP/Public/Interfaces/IHttpRequest.h \
-  Runtime/Online/HTTP/Public/Interfaces/IHttpBase.h \
-  Runtime/Online/HTTP/Public/Interfaces/IHttpResponse.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerGameMode.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/BallChaseAIController.h \
-  Runtime/AIModule/Classes/AIController.h \
-  Runtime/Engine/Public/EngineDefines.h \
-  Runtime/AIModule/Classes/AITypes.h Runtime/Core/Public/Stats/Stats.h \
-  Runtime/NavigationSystem/Public/NavigationSystemTypes.h \
-  Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
-  Runtime/Engine/Classes/AI/Navigation/NavAgentSelector.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavAgentSelector.generated.h \
-  Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AITypes.generated.h \
-  Runtime/GameplayTasks/Classes/GameplayTaskOwnerInterface.h \
-  Runtime/GameplayTasks/Classes/GameplayTask.h \
-  Runtime/Engine/Classes/GameFramework/Controller.h \
-  Runtime/AIModule/Classes/Perception/AIPerceptionListenerInterface.h \
-  Runtime/CoreUObject/Public/UObject/Interface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIPerceptionListenerInterface.generated.h \
-  Runtime/AIModule/Classes/GenericTeamAgentInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/GenericTeamAgentInterface.generated.h \
-  Runtime/Engine/Public/VisualLogger/VisualLoggerDebugSnapshotInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/VisualLoggerDebugSnapshotInterface.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIController.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/BallChaseAIController.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/Football.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/Football.generated.h \
-  Runtime/Engine/Classes/Kismet/KismetMathLibrary.h \
-  Runtime/CoreUObject/Public/UObject/Script.h \
-  Runtime/Core/Public/Math/RandomStream.h \
-  Runtime/CoreUObject/Public/UObject/UnrealType.h \
-  Runtime/CoreUObject/Public/UObject/Stack.h \
-  Runtime/Engine/Classes/Kismet/BlueprintFunctionLibrary.h \
-  Runtime/Core/Public/Misc/QualifiedFrameTime.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/KismetMathLibrary.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Engine/Classes/Kismet/KismetMathLibrary.inl \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerHUD.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/SoccerHUD.h \
+  Runtime/Engine/Classes/GameFramework/HUD.h \
+  Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
+  Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/HUD.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerHUD.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerOverlay.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/SoccerOverlay.h \
+  Runtime/UMG/Public/Blueprint/UserWidget.h \
+  Runtime/UMG/Public/Blueprint/WidgetChild.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetChild.generated.h \
+  Runtime/CoreUObject/Public/UObject/ObjectSaveContext.h \
+  Runtime/CoreUObject/Public/UObject/CookEnums.h \
+  Runtime/Core/Public/HAL/PlatformMath.h \
+  Runtime/CoreUObject/Public/UObject/ObjectSaveOverride.h \
+  Runtime/CoreUObject/Public/UObject/FieldPath.h \
+  Runtime/SlateCore/Public/Styling/SlateColor.h \
+  Runtime/SlateCore/Public/Layout/Geometry.h \
+  Runtime/SlateCore/Public/Input/CursorReply.h \
+  Runtime/SlateCore/Public/Input/Events.h \
+  Runtime/SlateCore/Public/Input/Reply.h \
+  Runtime/SlateCore/Public/Widgets/SWidget.h \
+  Runtime/SlateCore/Public/Layout/Margin.h \
+  Runtime/UMG/Public/Components/SlateWrapperTypes.h \
+  Runtime/Core/Public/Misc/Attribute.h \
+  Runtime/Slate/Public/Widgets/Input/IVirtualKeyboardEntry.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/SlateWrapperTypes.generated.h \
+  Runtime/UMG/Public/Components/Widget.h \
+  Runtime/FieldNotification/Public/FieldNotificationDeclaration.h \
+  Runtime/FieldNotification/Public/FieldNotificationId.h \
+  Runtime/FieldNotification/Public/IFieldNotificationClassDescriptor.h \
+  Runtime/FieldNotification/Public/INotifyFieldValueChanged.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/FieldNotification/UHT/INotifyFieldValueChanged.generated.h \
+  Runtime/SlateCore/Public/Layout/Visibility.h \
+  Runtime/SlateCore/Public/Types/SlateStructs.h \
+  Runtime/UMG/Public/Components/Visual.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Visual.generated.h \
+  Runtime/SlateCore/Public/Styling/SlateBrush.h \
+  Runtime/CoreUObject/Public/UObject/TextProperty.h \
+  Runtime/UMG/Public/Slate/WidgetTransform.h \
+  Runtime/Core/Public/Math/TransformCalculus2D.h \
+  Runtime/SlateCore/Public/Rendering/SlateRenderTransform.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetTransform.generated.h \
+  Runtime/CoreUObject/Public/UObject/UObjectThreadContext.h \
+  Runtime/UMG/Public/Blueprint/WidgetNavigation.h \
+  Runtime/SlateCore/Public/Types/NavigationMetaData.h \
+  Runtime/SlateCore/Public/Types/SlateEnums.h \
+  Runtime/SlateCore/Public/Input/NavigationReply.h \
+  Runtime/SlateCore/Public/Types/ISlateMetaData.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetNavigation.generated.h \
+  Runtime/SlateCore/Public/Widgets/WidgetPixelSnapping.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Widget.generated.h \
+  Runtime/UMG/Public/Components/NamedSlotInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/NamedSlotInterface.generated.h \
+  Runtime/Engine/Classes/Engine/World.h \
+  Runtime/Engine/Classes/Engine/LocalPlayer.h \
+  Runtime/Slate/Public/Widgets/Layout/Anchors.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Slate/UHT/Anchors.generated.h \
+  Runtime/Core/Public/Logging/MessageLog.h \
+  Runtime/Engine/Public/EngineStats.h \
+  Runtime/SlateCore/Public/SlateGlobals.h \
+  Runtime/UMG/Public/Animation/WidgetAnimationEvents.h \
+  Runtime/Core/Public/Delegates/DelegateCombinations.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetAnimationEvents.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerOverlay.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/TestCharacterAnimInstance.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/TestCharacterAnimInstance.h \
+  Runtime/Engine/Classes/Animation/AnimInstance.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/TestCharacterAnimInstance.generated.h \
+  Runtime/Engine/Classes/Components/SkeletalMeshComponent.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/AITasks/MyBTTask_FindBall.cpp \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardComponent.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKeyType.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKeyEnums.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardKeyEnums.generated.h \
+  Runtime/CoreUObject/Public/Templates/IsUEnumClass.h \
+  Runtime/CoreUObject/Public/UObject/ReflectedTypeAccessors.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardKeyType.generated.h \
+  Runtime/AIModule/Classes/AISystem.h \
+  Runtime/Engine/Classes/AI/AISystemBase.h \
+  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/AISystemBase.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AISystem.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardData.h \
+  Runtime/Engine/Classes/Engine/DataAsset.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardData.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardComponent.generated.h \
+  Runtime/AIModule/Classes/Perception/PawnSensingComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/PawnSensingComponent.generated.h \
+  Runtime/Engine/Public/EngineUtils.h Runtime/Engine/Public/HitProxies.h \
+  Runtime/Engine/Classes/Engine/Level.h \
+  Runtime/CoreUObject/Public/UObject/UObjectHash.h \
+  Runtime/Core/Public/ProfilingDebugging/ProfilingHelpers.h \
+  Runtime/Engine/Classes/GameFramework/WorldSettings.h \
+  Runtime/Core/Public/Algo/Accumulate.h Runtime/Core/Public/Algo/Copy.h \
+  Runtime/GeometryCore/Public/VectorTypes.h \
+  Runtime/GeometryCore/Public/MathUtil.h \
+  Runtime/GeometryCore/Public/GeometryBase.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cfloat \
+  Runtime/Core/Public/Serialization/Archive.h \
+  Runtime/Core/Public/Templates/UnrealTypeTraits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/swap_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/polymorphic_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/char_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdio \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/noexcept_move_assign_container.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/__wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/streambuf \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/nl_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/AITasks/MyBTTask_SearchAround.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/BallChaseAIController.cpp \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTree.h \
+  Runtime/Engine/Classes/Engine/Blueprint.h \
+  Runtime/AIModule/Classes/BehaviorTree/BTCompositeNode.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BTCompositeNode.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BehaviorTree.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/CharacterMovementController.cpp \
   Runtime/Experimental/Chaos/Public/Chaos/AABBTree.h \
   Runtime/Experimental/Chaos/Public/Chaos/AABB.h \
   Runtime/Experimental/Chaos/Public/Chaos/AABBVectorized.h \
@@ -3991,15 +4253,9 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__hash_table \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/swap_allocator.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/polymorphic_allocator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_allocator.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind.h \
@@ -4012,25 +4268,17 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/array \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_fwd.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_bool.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_parse_context.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_error.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string_view.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/char_traits.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integral.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/tables.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_32_64_or_128_bit.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_output.h \
@@ -4042,41 +4290,6 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/unicode.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/width_estimation_table.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/noexcept_move_assign_container.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/locale \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_xlocale.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_ctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/__wctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_stdlib.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/streambuf \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/nl_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h \
@@ -4090,15 +4303,393 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  Runtime/Core/Public/ProfilingDebugging/CsvProfiler.h \
   Runtime/Engine/Classes/Engine/OverlapResult.h \
   Runtime/Experimental/Chaos/Public/Chaos/PhysicsObject.h \
   Runtime/Engine/Classes/Engine/ActorInstanceHandle.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/OverlapResult.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/MiniMapHUD.h \
-  Runtime/Engine/Classes/GameFramework/HUD.h \
-  Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
-  Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/HUD.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MiniMapHUD.generated.h
+  Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
+  Runtime/Engine/Public/WorldCollision.h \
+  Runtime/Engine/Classes/Animation/AnimMontage.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationAvoidanceTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationAvoidanceTypes.generated.h \
+  Runtime/Engine/Public/AI/RVOAvoidanceInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RVOAvoidanceInterface.generated.h \
+  Runtime/Engine/Classes/GameFramework/PawnMovementComponent.h \
+  Runtime/Engine/Classes/GameFramework/NavMovementComponent.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAgentInterface.h \
+  Runtime/Engine/Classes/AI/Navigation/PathFollowingAgentInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PathFollowingAgentInterface.generated.h \
+  Runtime/Engine/Classes/GameFramework/MovementComponent.h \
+  Runtime/PhysicsCore/Public/Chaos/ChaosEngineInterface.h \
+  Runtime/Engine/Classes/Components/SceneComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/MovementComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PawnMovementComponent.generated.h \
+  Runtime/Engine/Classes/Interfaces/NetworkPredictionInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NetworkPredictionInterface.generated.h \
+  Runtime/Engine/Public/CharacterMovementComponentAsync.h \
+  Runtime/Experimental/Chaos/Public/Chaos/SimCallbackObject.h \
+  Runtime/Engine/Public/CollisionQueryParams.h \
+  Runtime/PhysicsCore/Public/CollisionShape.h \
+  Runtime/Engine/Public/Engine/OverlapInfo.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponentAsync.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponent.generated.h \
+  Runtime/Engine/Classes/Kismet/KismetMathLibrary.h \
+  Runtime/CoreUObject/Public/UObject/Script.h \
+  Runtime/CoreUObject/Public/UObject/Stack.h \
+  Runtime/Engine/Classes/Kismet/BlueprintFunctionLibrary.h \
+  Runtime/Core/Public/Misc/QualifiedFrameTime.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/KismetMathLibrary.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Engine/Classes/Kismet/KismetMathLibrary.inl \
+  Runtime/Engine/Classes/Kismet/GameplayStatics.h \
+  Runtime/Engine/Classes/Engine/LatentActionManager.h \
+  Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
+  Runtime/Engine/Classes/Engine/CollisionProfile.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/KismetSystemLibrary.generated.h \
+  Runtime/Engine/Classes/Sound/DialogueTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DialogueTypes.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStaticsTypes.h \
+  /Users/Shared/Epic\ Games/UE_5.4/Engine/Source/Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStaticsTypes.generated.h \
+  Runtime/Engine/Classes/Particles/WorldPSCPool.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStatics.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/Football.cpp \
+  Runtime/Engine/Classes/Components/StaticMeshComponent.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/HUD/SoccerHUD.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/HUD/SoccerOverlay.cpp \
+  Runtime/UMG/Public/Components/Button.h \
+  Runtime/SlateCore/Public/Styling/SlateTypes.h \
+  Runtime/UMG/Public/Components/ContentWidget.h \
+  Runtime/UMG/Public/Components/PanelWidget.h \
+  Runtime/UMG/Public/Components/PanelSlot.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/PanelSlot.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/PanelWidget.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/ContentWidget.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Button.generated.h \
+  Runtime/UMG/Public/Components/EditableTextBox.h \
+  Runtime/SlateCore/Public/Fonts/SlateFontInfo.h \
+  Runtime/UMG/Public/Components/TextWidgetTypes.h \
+  Runtime/Slate/Public/Framework/Text/TextLayout.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/TextWidgetTypes.generated.h \
+  Runtime/Slate/Public/Widgets/Text/ISlateEditableTextWidget.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/EditableTextBox.generated.h \
+  Runtime/UMG/Public/Components/CanvasPanel.h \
+  Runtime/Slate/Public/Widgets/Layout/SConstraintCanvas.h \
+  Runtime/SlateCore/Public/Widgets/DeclarativeSyntaxSupport.h \
+  Runtime/SlateCore/Public/SlotBase.h \
+  Runtime/SlateCore/Public/Layout/Children.h \
+  Runtime/SlateCore/Public/Widgets/SPanel.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/CanvasPanel.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/MovementController.cpp \
+  Runtime/Engine/Classes/Components/CapsuleComponent.h \
+  Runtime/Engine/Classes/Components/ShapeComponent.h \
+  Runtime/Engine/Classes/Components/PrimitiveComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ShapeComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CapsuleComponent.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/MyLoginAPI.cpp \
+  Runtime/Online/HTTP/Public/HttpModule.h \
+  Runtime/Core/Public/Misc/AssertionMacros.h \
+  Runtime/Core/Public/Misc/CoreMisc.h Runtime/Json/Public/Json.h \
+  Runtime/Core/Public/Misc/MonolithicHeaderBoilerplate.h \
+  Runtime/Core/Public/Core.h \
+  Runtime/Core/Public/Containers/ContainersFwd.h \
+  Runtime/Core/Public/HAL/PlatformCrt.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformMemory.h \
+  Runtime/Core/Public/HAL/PlatformMemory.h \
+  Runtime/Core/Public/Misc/Char.h \
+  Runtime/Core/Public/Templates/EnableIf.h \
+  Runtime/Core/Public/Templates/AndOrNot.h \
+  Runtime/Core/Public/Templates/IsArithmetic.h \
+  Runtime/Core/Public/Templates/IsFloatingPoint.h \
+  Runtime/Core/Public/Templates/IsIntegral.h \
+  Runtime/Core/Public/Templates/IsPointer.h \
+  Runtime/Core/Public/Templates/IsPODType.h \
+  Runtime/Core/Public/Templates/IsUECoreType.h \
+  Runtime/Core/Public/Templates/IsSigned.h \
+  Runtime/Core/Public/Templates/IsTriviallyCopyAssignable.h \
+  Runtime/Core/Public/Templates/IsTriviallyCopyConstructible.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformMisc.h \
+  Runtime/Core/Public/HAL/PlatformMisc.h \
+  Runtime/Core/Public/Logging/LogVerbosity.h \
+  Runtime/Core/Public/Misc/VarArgs.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformStricmp.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformString.h \
+  Runtime/Core/Public/HAL/PlatformString.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformStackWalk.h \
+  Runtime/Core/Public/HAL/PlatformStackWalk.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformMath.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformNamedPipe.h \
+  Runtime/Core/Public/HAL/PlatformNamedPipe.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformTime.h \
+  Runtime/Core/Public/HAL/PlatformTime.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformProcess.h \
+  Runtime/Core/Public/HAL/PlatformProcess.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformCriticalSection.h \
+  Runtime/Core/Public/HAL/CriticalSection.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformAtomics.h \
+  Runtime/Core/Public/HAL/PlatformAtomics.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformTLS.h \
+  Runtime/Core/Public/HAL/PlatformTLS.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformFile.h \
+  Runtime/Core/Public/HAL/PlatformFile.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformAffinity.h \
+  Runtime/Core/Public/HAL/PlatformAffinity.h \
+  Runtime/Core/Public/HAL/PlatformIncludes.h \
+  Runtime/Core/Public/HAL/PlatformFileManager.h \
+  Runtime/Core/Public/HAL/UnrealMemory.h \
+  Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h \
+  Runtime/Core/Public/Templates/AlignmentTemplates.h \
+  Runtime/Core/Public/Templates/RemoveReference.h \
+  Runtime/Core/Public/Templates/IntegralConstant.h \
+  Runtime/Core/Public/Templates/IsClass.h \
+  Runtime/Core/Public/Templates/TypeCompatibleBytes.h \
+  Runtime/Core/Public/Traits/IsContiguousContainer.h \
+  Runtime/Core/Public/Templates/IsTriviallyDestructible.h \
+  Runtime/Core/Public/Misc/CString.h \
+  Runtime/Core/Public/Templates/IsEnumClass.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformProperties.h \
+  Runtime/Core/Public/HAL/PlatformProperties.h \
+  Runtime/Core/Public/Misc/EngineVersionBase.h \
+  Runtime/Core/Public/Internationalization/TextNamespaceFwd.h \
+  Runtime/Core/Public/Templates/Less.h \
+  Runtime/Core/Public/Templates/Greater.h \
+  Runtime/Core/Public/Logging/LogCategory.h \
+  Runtime/Core/Public/UObject/UnrealNames.h \
+  Runtime/Core/Public/Misc/OutputDevice.h \
+  Runtime/Core/Public/Misc/MessageDialog.h \
+  Runtime/Core/Public/Misc/Exec.h \
+  Runtime/Core/Public/Math/NumericLimits.h \
+  Runtime/Core/Public/Math/UnrealMathUtility.h \
+  Runtime/Core/Public/Templates/UnrealTemplate.h \
+  Runtime/Core/Public/Templates/Decay.h \
+  Runtime/Core/Public/Templates/Invoke.h \
+  Runtime/Core/Public/Templates/MemoryOps.h \
+  Runtime/Core/Public/Misc/CoreDefines.h \
+  Runtime/Core/Public/Containers/ContainerAllocationPolicies.h \
+  Runtime/Core/Public/UObject/UObjectHierarchyFwd.h \
+  Runtime/Core/Public/HAL/FileManager.h \
+  Runtime/Core/Public/ProfilingDebugging/ScopedDebugInfo.h \
+  Runtime/Core/Public/Features/IModularFeature.h \
+  Runtime/Core/Public/ProfilingDebugging/ExternalProfiler.h \
+  Runtime/Core/Public/Containers/StringConv.h \
+  Runtime/Core/Public/Misc/Build.h Runtime/Core/Public/HAL/MemoryBase.h \
+  Runtime/Core/Public/Misc/ByteSwap.h \
+  Runtime/Core/Public/Misc/Compression.h \
+  Runtime/Core/Public/Misc/StringUtility.h \
+  Runtime/Core/Public/Misc/Parse.h Runtime/Core/Public/Misc/Crc.h \
+  Runtime/Core/Public/UObject/ObjectVersion.h \
+  Runtime/Core/Public/Templates/TypeHash.h \
+  Runtime/Core/Public/Containers/EnumAsByte.h \
+  Runtime/Core/Public/Serialization/ArchiveProxy.h \
+  Runtime/Core/Public/Serialization/NameAsStringProxyArchive.h \
+  Runtime/Core/Public/Templates/Sorting.h \
+  Runtime/Core/Public/Containers/ScriptArray.h \
+  Runtime/Core/Public/Containers/MRUArray.h \
+  Runtime/Core/Public/Containers/IndirectArray.h \
+  Runtime/Core/Public/Misc/ITransaction.h \
+  Runtime/Core/Public/Containers/ArrayBuilder.h \
+  Runtime/Core/Public/Serialization/BitReader.h \
+  Runtime/Core/Public/Containers/SparseArray.h \
+  Runtime/Core/Public/Misc/StructBuilder.h \
+  Runtime/Core/Public/Algo/Reverse.h Runtime/Core/Public/HAL/Event.h \
+  Runtime/Core/Public/Misc/ScopedEvent.h \
+  Runtime/Core/Public/HAL/Runnable.h \
+  Runtime/Core/Public/HAL/RunnableThread.h \
+  Runtime/Core/Public/Misc/SingleThreadEvent.h \
+  Runtime/Core/Public/Misc/SingleThreadRunnable.h \
+  Runtime/Core/Public/HAL/ThreadManager.h \
+  Runtime/Core/Public/Misc/IQueuedWork.h \
+  Runtime/Core/Public/Misc/QueuedThreadPool.h \
+  Runtime/Core/Public/HAL/ThreadSafeCounter.h \
+  Runtime/Core/Public/HAL/ThreadSafeCounter64.h \
+  Runtime/Core/Public/HAL/ThreadSafeBool.h \
+  Runtime/Core/Public/Misc/NoopCounter.h \
+  Runtime/Core/Public/Misc/ScopeLock.h \
+  Runtime/Core/Public/HAL/TlsAutoCleanup.h \
+  Runtime/Core/Public/HAL/ThreadSingleton.h \
+  Runtime/Core/Public/Containers/ArrayView.h \
+  Runtime/Core/Public/Misc/CommandLine.h \
+  Runtime/Core/Public/Misc/FileHelper.h Runtime/Core/Public/Misc/Paths.h \
+  Runtime/Core/Public/Containers/StaticArray.h \
+  Runtime/Core/Public/Containers/StaticBitArray.h \
+  Runtime/Core/Public/Containers/Set.h \
+  Runtime/Core/Public/Containers/MapBuilder.h \
+  Runtime/Core/Public/Containers/List.h \
+  Runtime/Core/Public/Containers/ResourceArray.h \
+  Runtime/Core/Public/Containers/DynamicRHIResourceArray.h \
+  Runtime/Core/Public/Templates/RefCounting.h \
+  Runtime/Core/Public/UObject/WeakObjectPtrTemplates.h \
+  Runtime/Core/Public/UObject/ScriptDelegates.h \
+  Runtime/Core/Public/Delegates/DelegateSettings.h \
+  Runtime/Core/Public/Delegates/IDelegateInstance.h \
+  Runtime/Core/Public/Delegates/DelegateBase.h \
+  Runtime/Core/Public/Delegates/MulticastDelegateBase.h \
+  Runtime/Core/Public/Delegates/IntegerSequence.h \
+  Runtime/Core/Public/Templates/Tuple.h \
+  Runtime/Core/Public/HAL/ThreadingBase.h \
+  Runtime/Core/Public/Internationalization/CulturePointer.h \
+  Runtime/Core/Public/Internationalization/TextLocalizationManager.h \
+  Runtime/Core/Public/Internationalization/ITextData.h \
+  Runtime/Core/Public/Templates/IsArray.h \
+  Runtime/Core/Public/Templates/RemoveExtent.h \
+  Runtime/Core/Public/Internationalization/TextLocalizationManagerGlobals.h \
+  Runtime/Core/Public/Templates/UniqueObj.h \
+  Runtime/Core/Public/Internationalization/Internationalization.h \
+  Runtime/Core/Public/Internationalization/Culture.h \
+  Runtime/Core/Public/Misc/NetworkGuid.h \
+  Runtime/Core/Public/Math/ColorList.h \
+  Runtime/Core/Public/Math/IntRect.h Runtime/Core/Public/Math/Edge.h \
+  Runtime/Core/Public/Math/CapsuleShape.h \
+  Runtime/Core/Public/Math/Range.h Runtime/Core/Public/Math/RangeSet.h \
+  Runtime/Core/Public/Math/Axis.h \
+  Runtime/Core/Public/Math/RotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/RotationAboutPointMatrix.h \
+  Runtime/Core/Public/Math/ScaleRotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/RotationMatrix.h \
+  Runtime/Core/Public/Math/PerspectiveMatrix.h \
+  Runtime/Core/Public/Math/OrthoMatrix.h \
+  Runtime/Core/Public/Math/TranslationMatrix.h \
+  Runtime/Core/Public/Math/QuatRotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/InverseRotationMatrix.h \
+  Runtime/Core/Public/Math/ScaleMatrix.h \
+  Runtime/Core/Public/Math/MirrorMatrix.h \
+  Runtime/Core/Public/Math/ClipProjectionMatrix.h \
+  Runtime/Core/Public/Math/InterpCurve.h \
+  Runtime/Core/Public/Math/CurveEdInterface.h \
+  Runtime/Core/Public/Math/Float32.h Runtime/Core/Public/Math/Float16.h \
+  Runtime/Core/Public/Math/Float16Color.h \
+  Runtime/Core/Public/Math/Vector2DHalf.h \
+  Runtime/Core/Public/Math/Transform.h \
+  Runtime/Core/Public/Math/ConvexHull2d.h \
+  Runtime/Core/Public/Math/UnrealMath.h \
+  Runtime/Core/Public/Math/SHMath.h \
+  Runtime/Core/Public/Logging/LogSuppressionInterface.h \
+  Runtime/Core/Public/Logging/LogScopedCategoryAndVerbosityOverride.h \
+  Runtime/Core/Public/HAL/OutputDevices.h \
+  Runtime/Core/Public/Logging/LogScopedVerbosityOverride.h \
+  Runtime/Core/Public/Misc/OutputDeviceRedirector.h \
+  Runtime/Core/Public/Misc/OutputDeviceNull.h \
+  Runtime/Core/Public/Misc/OutputDeviceMemory.h \
+  Runtime/Core/Public/Misc/OutputDeviceFile.h \
+  Runtime/Core/Public/Templates/Atomic.h \
+  Runtime/Core/Public/Misc/OutputDeviceDebug.h \
+  Runtime/Core/Public/Misc/OutputDeviceArchiveWrapper.h \
+  Runtime/Core/Public/Misc/OutputDeviceError.h \
+  Runtime/Core/Public/Misc/OutputDeviceAnsiError.h \
+  Runtime/Core/Public/Misc/BufferedOutputDevice.h \
+  Runtime/Core/Public/Stats/StatsMisc.h \
+  Runtime/Core/Public/Containers/LockFreeList.h \
+  Runtime/Core/Public/Containers/LockFreeFixedSizeAllocator.h \
+  Runtime/Core/Public/Containers/ChunkedArray.h \
+  Runtime/Core/Public/Misc/CoreStats.h \
+  Runtime/Core/Public/Misc/TimeGuard.h \
+  Runtime/Core/Public/Misc/MemStack.h \
+  Runtime/Core/Public/Async/AsyncWork.h \
+  Runtime/Core/Public/Serialization/MemoryArchive.h \
+  Runtime/Core/Public/Serialization/MemoryWriter.h \
+  Runtime/Core/Public/Serialization/LargeMemoryWriter.h \
+  Runtime/Core/Public/Memory/MemoryFwd.h \
+  Runtime/Core/Public/Memory/MemoryView.h \
+  Runtime/Core/Public/Serialization/LargeMemoryData.h \
+  Runtime/Core/Public/Serialization/LargeMemoryReader.h \
+  Runtime/Core/Public/Serialization/BufferArchive.h \
+  Runtime/Core/Public/Serialization/MemoryReader.h \
+  Runtime/Core/Public/Serialization/ArrayReader.h \
+  Runtime/Core/Public/Serialization/ArrayWriter.h \
+  Runtime/Core/Public/Serialization/BufferReader.h \
+  Runtime/Core/Public/Serialization/BufferWriter.h \
+  Runtime/Core/Public/Misc/Variant.h \
+  Runtime/Core/Public/Misc/WildcardString.h \
+  Runtime/Core/Public/Containers/CircularBuffer.h \
+  Runtime/Core/Public/Containers/CircularQueue.h \
+  Runtime/Core/Public/Containers/Queue.h \
+  Runtime/Core/Public/Containers/Ticker.h \
+  Runtime/Core/Public/Misc/ConfigCacheIni.h \
+  Runtime/Core/Public/Misc/OutputDeviceHelper.h \
+  Runtime/Core/Public/Misc/SlowTaskStack.h \
+  Runtime/Core/Public/Misc/FeedbackContext.h \
+  Runtime/Core/Public/Misc/SlowTask.h \
+  Runtime/Core/Public/Misc/ScopedSlowTask.h \
+  Runtime/Core/Public/Misc/AutomationTest.h \
+  Runtime/Core/Public/Templates/ScopedCallback.h \
+  Runtime/Core/Public/Misc/CoreDelegates.h \
+  Runtime/Core/Public/Misc/CallbackDevice.h \
+  Runtime/Core/Public/Misc/ObjectThumbnail.h \
+  Runtime/Core/Public/Misc/LocalTimestampDirectoryVisitor.h \
+  Runtime/Core/Public/Serialization/CustomVersion.h \
+  Runtime/Core/Public/UObject/BlueprintsObjectVersion.h \
+  Runtime/Core/Public/UObject/BuildObjectVersion.h \
+  Runtime/Core/Public/UObject/CoreObjectVersion.h \
+  Runtime/Core/Public/UObject/EditorObjectVersion.h \
+  Runtime/Core/Public/UObject/FrameworkObjectVersion.h \
+  Runtime/Core/Public/UObject/MobileObjectVersion.h \
+  Runtime/Core/Public/UObject/NetworkingObjectVersion.h \
+  Runtime/Core/Public/UObject/OnlineObjectVersion.h \
+  Runtime/Core/Public/UObject/PhysicsObjectVersion.h \
+  Runtime/Core/Public/UObject/PlatformObjectVersion.h \
+  Runtime/Core/Public/UObject/RenderingObjectVersion.h \
+  Runtime/Core/Public/UObject/SequencerObjectVersion.h \
+  Runtime/Core/Public/UObject/VRObjectVersion.h \
+  Runtime/Core/Public/Misc/App.h \
+  Runtime/Core/Public/Misc/OutputDeviceConsole.h \
+  Runtime/Core/Public/Misc/MonitoredProcess.h \
+  Runtime/Core/Public/Misc/EnumRange.h Runtime/Json/Public/JsonGlobals.h \
+  Runtime/Json/Public/Policies/JsonPrintPolicy.h \
+  Runtime/Json/Public/Policies/PrettyJsonPrintPolicy.h \
+  Runtime/Json/Public/Policies/CondensedJsonPrintPolicy.h \
+  Runtime/Json/Public/Serialization/JsonTypes.h \
+  Runtime/Json/Public/Dom/JsonValue.h \
+  Runtime/Json/Public/Dom/JsonObject.h \
+  Runtime/Json/Public/Serialization/JsonReader.h \
+  Runtime/Json/Public/Serialization/JsonWriter.h \
+  Runtime/Json/Public/Serialization/JsonSerializer.h \
+  Runtime/Json/Public/Serialization/JsonSerializerMacros.h \
+  Runtime/JsonUtilities/Public/JsonUtilities.h \
+  Runtime/JsonUtilities/Public/JsonObjectConverter.h \
+  Runtime/JsonUtilities/Public/JsonObjectWrapper.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/JsonUtilities/UHT/JsonObjectWrapper.generated.h \
+  Runtime/TraceLog/Public/Trace/Detail/Channel.h \
+  Runtime/Json/Public/JsonUtils/JsonPointer.h \
+  Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/MyLoginAPI.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/MyNPC.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/MySignUpLoginAPI.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Private/TestCharacterAnimInstance.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerCharacter.cpp \
+  Runtime/Engine/Classes/Camera/CameraComponent.h \
+  Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
+  Runtime/Engine/Classes/Engine/BlendableInterface.h \
+  Runtime/Engine/Classes/Engine/Scene.h \
+  Runtime/Engine/Classes/Camera/CameraTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CameraComponent.generated.h \
+  Runtime/Engine/Classes/GameFramework/SpringArmComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SpringArmComponent.generated.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputComponent.h \
+  Runtime/Engine/Classes/Components/InputComponent.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputAction.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputModifiers.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputActionValue.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputActionValue.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputModifiers.generated.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputTriggers.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputTriggers.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputAction.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputComponent.generated.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputSubsystems.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputSubsystemInterface.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedPlayerInput.h \
+  Runtime/Engine/Classes/GameFramework/PlayerInput.h \
+  Runtime/Slate/Public/Framework/Commands/InputChord.h \
+  Runtime/Engine/Public/GestureRecognizer.h \
+  Runtime/Engine/Public/KeyState.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PlayerInput.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedPlayerInput.generated.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/PlayerMappableKeySlot.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/PlayerMappableKeySlot.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputSubsystemInterface.generated.h \
+  Runtime/Engine/Public/Subsystems/LocalPlayerSubsystem.h \
+  Runtime/Engine/Public/Subsystems/WorldSubsystem.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputSubsystems.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Soccer.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Soccer.h \
+  Runtime/Core/Public/Modules/ModuleManager.h
