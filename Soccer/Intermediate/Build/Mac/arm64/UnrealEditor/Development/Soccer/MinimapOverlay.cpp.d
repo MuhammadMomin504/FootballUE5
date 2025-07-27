@@ -3940,4 +3940,24 @@
   Runtime/Core/Public/Delegates/DelegateCombinations.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetAnimationEvents.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MinimapOverlay.generated.h
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MinimapOverlay.generated.h \
+  Runtime/UMG/Public/Components/Image.h \
+  Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
+  Runtime/Engine/Public/Slate/SlateTextureAtlasInterface.h \
+  Runtime/Engine/Classes/Engine/Texture.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SlateTextureAtlasInterface.generated.h \
+  Runtime/Engine/Classes/Engine/StreamableManager.h \
+  Runtime/Core/Public/Containers/ArrayView.h \
+  Runtime/Core/Public/Math/NumericLimits.h \
+  Runtime/CoreUObject/Public/Misc/PackageAccessTracking.h \
+  Runtime/Core/Public/CoreTypes.h Runtime/Core/Public/Misc/Optional.h \
+  Runtime/CoreUObject/Public/Misc/PackageName.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
+  Runtime/CoreUObject/Public/UObject/ObjectHandle.h \
+  Runtime/CoreUObject/Public/UObject/Package.h \
+  Runtime/CoreUObject/Public/Templates/Casts.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/CoreUObject/Public/UObject/Class.h \
+  Runtime/CoreUObject/Public/UObject/GCObject.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Image.generated.h

@@ -3927,6 +3927,79 @@
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/Football.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/Football.generated.h \
   Runtime/Engine/Classes/Engine/HitResult.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MiniMapHUD.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/MiniMapHUD.h \
+  Runtime/Engine/Classes/GameFramework/HUD.h \
+  Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
+  Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/HUD.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MiniMapHUD.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MinimapOverlay.gen.cpp \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/MinimapOverlay.h \
+  Runtime/UMG/Public/Blueprint/UserWidget.h \
+  Runtime/UMG/Public/Blueprint/WidgetChild.h \
+  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetChild.generated.h \
+  Runtime/CoreUObject/Public/UObject/ObjectSaveContext.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/HAL/Platform.h \
+  Runtime/CoreUObject/Public/UObject/CookEnums.h \
+  Runtime/Core/Public/HAL/PlatformMath.h \
+  Runtime/CoreUObject/Public/UObject/ObjectSaveOverride.h \
+  Runtime/Core/Public/Containers/Array.h \
+  Runtime/CoreUObject/Public/UObject/FieldPath.h \
+  Runtime/SlateCore/Public/Styling/SlateColor.h \
+  Runtime/SlateCore/Public/Layout/Geometry.h \
+  Runtime/SlateCore/Public/Input/CursorReply.h \
+  Runtime/SlateCore/Public/Input/Events.h \
+  Runtime/SlateCore/Public/Input/Reply.h \
+  Runtime/SlateCore/Public/Widgets/SWidget.h \
+  Runtime/SlateCore/Public/Layout/Margin.h \
+  Runtime/UMG/Public/Components/SlateWrapperTypes.h \
+  Runtime/Core/Public/Misc/Attribute.h \
+  Runtime/Slate/Public/Widgets/Input/IVirtualKeyboardEntry.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/SlateWrapperTypes.generated.h \
+  Runtime/UMG/Public/Components/Widget.h \
+  Runtime/FieldNotification/Public/FieldNotificationDeclaration.h \
+  Runtime/FieldNotification/Public/FieldNotificationId.h \
+  Runtime/FieldNotification/Public/IFieldNotificationClassDescriptor.h \
+  Runtime/FieldNotification/Public/INotifyFieldValueChanged.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/FieldNotification/UHT/INotifyFieldValueChanged.generated.h \
+  Runtime/SlateCore/Public/Layout/Visibility.h \
+  Runtime/SlateCore/Public/Types/SlateStructs.h \
+  Runtime/UMG/Public/Components/Visual.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Visual.generated.h \
+  Runtime/SlateCore/Public/Styling/SlateBrush.h \
+  Runtime/CoreUObject/Public/UObject/TextProperty.h \
+  Runtime/UMG/Public/Slate/WidgetTransform.h \
+  Runtime/Core/Public/Math/TransformCalculus2D.h \
+  Runtime/SlateCore/Public/Rendering/SlateRenderTransform.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetTransform.generated.h \
+  Runtime/CoreUObject/Public/UObject/UObjectThreadContext.h \
+  Runtime/Engine/Classes/GameFramework/PlayerController.h \
+  Runtime/UMG/Public/Blueprint/WidgetNavigation.h \
+  Runtime/SlateCore/Public/Types/NavigationMetaData.h \
+  Runtime/SlateCore/Public/Types/SlateEnums.h \
+  Runtime/SlateCore/Public/Input/NavigationReply.h \
+  Runtime/SlateCore/Public/Types/ISlateMetaData.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetNavigation.generated.h \
+  Runtime/SlateCore/Public/Widgets/WidgetPixelSnapping.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Widget.generated.h \
+  Runtime/UMG/Public/Components/NamedSlotInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/NamedSlotInterface.generated.h \
+  Runtime/Engine/Classes/Engine/World.h \
+  Runtime/Engine/Classes/Engine/LocalPlayer.h \
+  Runtime/Slate/Public/Widgets/Layout/Anchors.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Slate/UHT/Anchors.generated.h \
+  Runtime/Core/Public/Logging/MessageLog.h \
+  Runtime/Engine/Public/EngineStats.h \
+  Runtime/SlateCore/Public/SlateGlobals.h \
+  Runtime/UMG/Public/Animation/WidgetAnimationEvents.h \
+  Runtime/Core/Public/Delegates/DelegateCombinations.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetAnimationEvents.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MinimapOverlay.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MovementController.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/MovementController.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MovementController.generated.h \
@@ -3945,10 +4018,8 @@
   Runtime/Core/Public/Misc/ComparisonUtility.h \
   Runtime/Core/Public/Containers/StringFwd.h \
   Runtime/Core/Public/Containers/StringView.h \
-  Runtime/Core/Public/HAL/Platform.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagContainer.generated.h \
   Runtime/AIModule/Classes/BrainComponent.h \
-  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
   Runtime/AIModule/Classes/AIResourceInterface.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIResourceInterface.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BrainComponent.generated.h \
@@ -3986,7 +4057,6 @@
   Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
   Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
   Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
-  Runtime/Core/Public/Containers/UnrealString.h \
   Runtime/Core/Public/CoreGlobals.h \
   Runtime/Core/Public/Misc/EnumClassFlags.h \
   Runtime/Core/Public/Templates/Function.h \
@@ -3997,7 +4067,6 @@
   Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
   Runtime/Core/Public/Math/InterpCurvePoint.h \
   Runtime/Core/Public/Math/UnitConversion.h \
-  Runtime/Core/Public/Containers/Array.h \
   Runtime/Core/Public/Delegates/Delegate.h \
   Runtime/Core/Public/Internationalization/Text.h \
   Runtime/Core/Public/Templates/ValueOrError.h \
@@ -4029,6 +4098,7 @@
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySoccerCharacter.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/Character/MySoccerCharacter.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySoccerCharacter.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/Soccer.init.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerCharacter.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerCharacter.h \
   Runtime/Core/Public/Logging/LogMacros.h \
@@ -4041,77 +4111,14 @@
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ServerStatReplicator.generated.h \
   Runtime/CoreOnline/Public/Online/CoreOnline.h \
   Runtime/Net/Core/Public/Net/Core/Connection/NetEnums.h \
-  Runtime/Engine/Classes/GameFramework/PlayerController.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameModeBase.generated.h \
   Runtime/Online/HTTP/Public/Interfaces/IHttpRequest.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerGameMode.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerHUD.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/SoccerHUD.h \
-  Runtime/Engine/Classes/GameFramework/HUD.h \
-  Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
-  Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/HUD.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerHUD.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerOverlay.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/SoccerOverlay.h \
-  Runtime/UMG/Public/Blueprint/UserWidget.h \
-  Runtime/UMG/Public/Blueprint/WidgetChild.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetChild.generated.h \
-  Runtime/CoreUObject/Public/UObject/ObjectSaveContext.h \
-  Runtime/CoreUObject/Public/UObject/CookEnums.h \
-  Runtime/Core/Public/HAL/PlatformMath.h \
-  Runtime/CoreUObject/Public/UObject/ObjectSaveOverride.h \
-  Runtime/CoreUObject/Public/UObject/FieldPath.h \
-  Runtime/SlateCore/Public/Styling/SlateColor.h \
-  Runtime/SlateCore/Public/Layout/Geometry.h \
-  Runtime/SlateCore/Public/Input/CursorReply.h \
-  Runtime/SlateCore/Public/Input/Events.h \
-  Runtime/SlateCore/Public/Input/Reply.h \
-  Runtime/SlateCore/Public/Widgets/SWidget.h \
-  Runtime/SlateCore/Public/Layout/Margin.h \
-  Runtime/UMG/Public/Components/SlateWrapperTypes.h \
-  Runtime/Core/Public/Misc/Attribute.h \
-  Runtime/Slate/Public/Widgets/Input/IVirtualKeyboardEntry.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/SlateWrapperTypes.generated.h \
-  Runtime/UMG/Public/Components/Widget.h \
-  Runtime/FieldNotification/Public/FieldNotificationDeclaration.h \
-  Runtime/FieldNotification/Public/FieldNotificationId.h \
-  Runtime/FieldNotification/Public/IFieldNotificationClassDescriptor.h \
-  Runtime/FieldNotification/Public/INotifyFieldValueChanged.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/FieldNotification/UHT/INotifyFieldValueChanged.generated.h \
-  Runtime/SlateCore/Public/Layout/Visibility.h \
-  Runtime/SlateCore/Public/Types/SlateStructs.h \
-  Runtime/UMG/Public/Components/Visual.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Visual.generated.h \
-  Runtime/SlateCore/Public/Styling/SlateBrush.h \
-  Runtime/CoreUObject/Public/UObject/TextProperty.h \
-  Runtime/UMG/Public/Slate/WidgetTransform.h \
-  Runtime/Core/Public/Math/TransformCalculus2D.h \
-  Runtime/SlateCore/Public/Rendering/SlateRenderTransform.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetTransform.generated.h \
-  Runtime/CoreUObject/Public/UObject/UObjectThreadContext.h \
-  Runtime/UMG/Public/Blueprint/WidgetNavigation.h \
-  Runtime/SlateCore/Public/Types/NavigationMetaData.h \
-  Runtime/SlateCore/Public/Types/SlateEnums.h \
-  Runtime/SlateCore/Public/Input/NavigationReply.h \
-  Runtime/SlateCore/Public/Types/ISlateMetaData.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetNavigation.generated.h \
-  Runtime/SlateCore/Public/Widgets/WidgetPixelSnapping.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Widget.generated.h \
-  Runtime/UMG/Public/Components/NamedSlotInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/NamedSlotInterface.generated.h \
-  Runtime/Engine/Classes/Engine/World.h \
-  Runtime/Engine/Classes/Engine/LocalPlayer.h \
-  Runtime/Slate/Public/Widgets/Layout/Anchors.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Slate/UHT/Anchors.generated.h \
-  Runtime/Core/Public/Logging/MessageLog.h \
-  Runtime/Engine/Public/EngineStats.h \
-  Runtime/SlateCore/Public/SlateGlobals.h \
-  Runtime/UMG/Public/Animation/WidgetAnimationEvents.h \
-  Runtime/Core/Public/Delegates/DelegateCombinations.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetAnimationEvents.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerOverlay.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/TestCharacterAnimInstance.gen.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/TestCharacterAnimInstance.h \
@@ -4690,6 +4697,7 @@
   Runtime/Engine/Public/Subsystems/LocalPlayerSubsystem.h \
   Runtime/Engine/Public/Subsystems/WorldSubsystem.h \
   ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputSubsystems.generated.h \
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerGameMode.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Soccer.cpp \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Soccer.h \
   Runtime/Core/Public/Modules/ModuleManager.h

@@ -9,6 +9,7 @@
 #include "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySignUpLoginAPI.gen.cpp"
 #include "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySoccerCharacter.gen.cpp"
 #include "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerCharacter.gen.cpp"
+#include "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerGameMode.gen.cpp"
 #include "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerHUD.gen.cpp"
 #include "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerOverlay.gen.cpp"
 #include "/Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/TestCharacterAnimInstance.gen.cpp"

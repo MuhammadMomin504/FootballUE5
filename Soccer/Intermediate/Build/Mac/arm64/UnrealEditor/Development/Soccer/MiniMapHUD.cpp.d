@@ -3914,40 +3914,6 @@
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStaticsTypes.generated.h \
   Runtime/Engine/Classes/Particles/WorldPSCPool.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStatics.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerGameMode.h \
-  Runtime/Engine/Classes/GameFramework/GameModeBase.h \
-  Runtime/Core/Public/Misc/Guid.h \
-  Runtime/Engine/Classes/GameFramework/Pawn.h \
-  Runtime/Engine/Classes/GameFramework/Info.h \
-  Runtime/Engine/Classes/Engine/ServerStatReplicator.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ServerStatReplicator.generated.h \
-  Runtime/CoreOnline/Public/Online/CoreOnline.h \
-  Runtime/Net/Core/Public/Net/Core/Connection/NetEnums.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameModeBase.generated.h \
-  Runtime/Online/HTTP/Public/Interfaces/IHttpRequest.h \
-  Runtime/Online/HTTP/Public/Interfaces/IHttpBase.h \
-  Runtime/Online/HTTP/Public/Interfaces/IHttpResponse.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerGameMode.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/SoccerCharacter.h \
-  Runtime/Engine/Classes/GameFramework/Character.h \
-  Runtime/CoreUObject/Public/UObject/UObjectGlobals.h \
-  Runtime/CoreUObject/Public/UObject/CoreNet.h \
-  Runtime/Engine/Classes/Engine/NetSerialization.h \
-  Runtime/Engine/Classes/Components/ActorComponent.h \
-  Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
-  Runtime/Core/Public/Serialization/BitWriter.h \
-  Runtime/Core/Public/Containers/BitArray.h \
-  Runtime/Experimental/Iris/Core/Public/Iris/Serialization/IrisObjectReferencePackageMap.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/IrisCore/UHT/IrisObjectReferencePackageMap.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementReplication.generated.h \
-  Runtime/Engine/Classes/Animation/AnimationAsset.h \
-  Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
-  Runtime/Core/Public/HAL/IConsoleManager.h \
-  Runtime/CoreUObject/Public/UObject/Class.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
-  Runtime/Core/Public/Logging/LogMacros.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/SoccerCharacter.generated.h \
   /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/HUD/MinimapOverlay.h \
   Runtime/UMG/Public/Blueprint/UserWidget.h \
   Runtime/UMG/Public/Blueprint/WidgetChild.h \
@@ -4007,8 +3973,4 @@
   Runtime/Core/Public/Delegates/DelegateCombinations.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetAnimationEvents.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MinimapOverlay.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/Character/MySoccerCharacter.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Source/Soccer/Public/CharacterMovementController.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/CharacterMovementController.generated.h \
-  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MySoccerCharacter.generated.h
+  /Users/muhammadmomin/Documents/Folders/Development/UEGitProjects/FootballUE5/Soccer/Intermediate/Build/Mac/UnrealEditor/Inc/Soccer/UHT/MinimapOverlay.generated.h

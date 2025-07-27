@@ -6,7 +6,6 @@
 #include "GameFramework/HUD.h"
 #include "MiniMapHUD.generated.h"
 
-class AMySoccerCharacter;
 class UMinimapOverlay;
 class ASoccerGameMode;
 
@@ -17,10 +16,12 @@ class SOCCER_API AMiniMapHUD : public AHUD
 
 public:
 	ASoccerGameMode* mySoccerGameMode;
-	AMySoccerCharacter* playerCharacter;
+
+	void WorldToMiniMap(const FVector& worldLocation);
 
 protected:
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaSeconds) override;
 
 	UPROPERTY(EditDefaultsOnly, Category = "MiniMap HUD")
 	TSubclassOf<UMinimapOverlay> minimapOverlayClass;

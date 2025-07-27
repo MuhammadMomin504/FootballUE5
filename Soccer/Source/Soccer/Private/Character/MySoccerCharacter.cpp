@@ -119,6 +119,11 @@ void AMySoccerCharacter::Tick(float DeltaTime)
 
 	CheckProximityToNPC();
 
+	if(miniMap)
+	{
+		miniMap->WorldToMiniMap(GetActorLocation());
+	}
+
 }
 
 // Called to bind functionality to input

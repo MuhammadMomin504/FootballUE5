@@ -18,5 +18,10 @@ class SOCCER_API UMinimapOverlay : public UUserWidget
 public:
 	UPROPERTY(meta=(BindWidget))
 	UImage* PlayerPointer;
+
+	void UpdateMinimap(const FVector& worldLocation);
+
+protected:
+	virtual void NativeConstruct() override;
 	
 };
